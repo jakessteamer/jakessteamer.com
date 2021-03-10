@@ -1,0 +1,25 @@
+.container {
+  @extend %center;
+  flex-direction: column;
+  padding: 0 toRem(20px);
+  min-height: 100vh;
+  text-align: center;
+  background: center / cover no-repeat url('../images/big.jpg');
+
+  .title {
+    font-size: toRem(48px);
+    font-family: "Rajdhani", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .photo {
+    @include size(100%, auto);
+    max-width: toRem(400px);
+    border-radius: toRem(10px);
+  }
+
+  .description {
+    font-family: "Homemade Apple", cursive;
+  }
+}
+
