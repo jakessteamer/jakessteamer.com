@@ -9,7 +9,7 @@ import { FaArrowDown, FaPhoneAlt } from 'react-icons/fa';
 export default function FabIcon() {
   const callCompany = () => {
     if (typeof window !== 'undefined') {
-      window.open('tel:4322459220');
+      window.open('tel:4328474600');
     }
   };
   return (
