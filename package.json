@@ -1,93 +1,124 @@
 {
-  "name": "webpack-boilerplate",
-  "version": "1.0.0",
-  "description": "Webpack 5 boilerplate.",
-  "main": "index.js",
-  "author": "Sacinandan Kisor das",
-  "license": "MIT",
+  "name": "next-netlify-starter",
+  "version": "0.3.0",
+  "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "lint": "eslint ./components/** ./pages/** -c .eslintrc.json --ext js,jsx",
+    "lint-fix": "eslint ./components/** ./pages/** -c .eslintrc.json --fix --ext js,jsx"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sacinandan/webpack-boilerplate"
+  "engines": {
+    "node": ">=14.8.0"
   },
-  "keywords": [
-    "webpack",
-    "webpack 5",
-    "webpack boilerplate",
-    "babel",
-    "jest",
-    "eslint"
-  ],
-  "dependencies": {},
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "airtable": "^0.10.1",
+    "axios": "^0.21.1",
+    "netlify-plugin-cache-nextjs": "^1.5.2",
+    "next": "10.0.9",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.4.0"
+  },
   "devDependencies": {
-    "@babel/core": "^7.12.1",
-    "@babel/plugin-proposal-class-properties": "^7.12.1",
-    "@babel/preset-env": "^7.12.1",
+    "@babel/core": "^7.13.10",
+    "@babel/eslint-parser": "^7.13.10",
+    "@tailwindcss/jit": "^0.1.8",
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.2.5",
-    "babel-eslint": "^10.1.0",
-    "babel-jest": "^26.6.3",
-    "babel-loader": "^8.1.0",
-    "clean-webpack-plugin": "^3.0.0",
-    "compression-webpack-plugin": "^7.1.2",
-    "copy-webpack-plugin": "^6.2.1",
-    "cross-env": "^7.0.2",
-    "css-loader": "^5.0.0",
-    "css-minimizer-webpack-plugin": "^1.1.5",
-    "eslint": "^7.2.0",
-    "eslint-config-airbnb-base": "^14.2.1",
+    "classnames": "^2.2.6",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.3.1",
-    "file-loader": "^6.2.0",
-    "html-loader": "^1.3.2",
-    "html-webpack-plugin": "^4.5.0",
-    "image-minimizer-webpack-plugin": "^1.0.0",
-    "imagemin-gifsicle": "^7.0.0",
-    "imagemin-jpegtran": "^7.0.0",
-    "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-optipng": "^8.0.0",
-    "imagemin-pngquant": "^9.0.1",
-    "imagemin-svgo": "^8.0.0",
-    "jest": "^26.6.3",
-    "mini-css-extract-plugin": "^1.0.0",
-    "node-sass": "^4.14.1",
-    "postcss": "^8.2.7",
-    "postcss-cli": "^8.3.1",
-    "postcss-loader": "^4.0.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "globby": "^11.0.3",
+    "postcss": "^8.2.8",
+    "postcss-100vh-fix": "^1.0.2",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-hover-media-feature": "^1.0.0",
+    "postcss-load-config": "^3.0.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.2.1",
-    "rimraf": "^3.0.2",
-    "sass-loader": "^10.0.3",
-    "style-loader": "^2.0.0",
-    "tailwindcss": "^2.0.3",
-    "webpack": "^5.9.0",
-    "webpack-cli": "^4.2.0",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.2.0"
+    "tailwindcss": "^2.0.4",
+    "tailwindcss-aspect-ratio": "^3.0.0",
+    "tailwindcss-responsive-embed": "^1.0.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "airbnb",
+      "airbnb/hooks",
+      "plugin:prettier/recommended"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "endOfLine": "auto"
+        }
+      ],
+      "react/display-name": 1,
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "jsx-a11y/label-has-for": [
+        "off"
+      ]
+    }
   },
+  "eslintIgnore": [
+    "node_modules/*",
+    ".next/*",
+    ".netlify"
+  ],
   "prettier": {
     "arrowParens": "always",
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "none"
-  }
+  },
+  "prettierIgnore": [
+    "node_modules/*",
+    ".next/*",
+    ".netlify/*"
+  ],
+  "postcss": {
+    "plugins": {
+      "@tailwindcss/jit": {},
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead",
+    "not op_mini all"
+  ]
 }

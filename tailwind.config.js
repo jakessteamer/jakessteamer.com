@@ -1,9 +1,11 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const { fontFamily } = require('tailwindcss/defaultTheme');
 const tailwindTypography = require('@tailwindcss/typography');
+const tailwindcssResponsiveEmbed = require('tailwindcss-responsive-embed');
+const tailwindcssAspectRatio = require('tailwindcss-aspect-ratio');
 
 module.exports = {
-  purge: ['./src/**/*.html', './src/**/*.js'],
+  purge: ['./components/**/*.js', './pages/**/*.js'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -13,5 +15,9 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: [tailwindTypography]
+  plugins: [
+    tailwindTypography,
+    tailwindcssResponsiveEmbed,
+    tailwindcssAspectRatio
+  ]
 };

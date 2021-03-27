@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+[dev]
+  command = "npm run dev" # Command to start your dev server
+  port = 8888 # The port that the netlify dev will be accessible on
+  autoLaunch = true # a Boolean value that determines if Netlify Dev launches the local server address in your browser

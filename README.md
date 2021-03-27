@@ -1,3 +1,2 @@
-# Jake's Steamer The Carpet Cleaner
+# Next + Netlify Starter
 
-Carpet Cleaning Website
