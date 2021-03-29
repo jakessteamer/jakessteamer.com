@@ -2,8 +2,9 @@
   command = "npm run build"
   publish = "out"
 
-[[plugins]]
-  package = "/node_modules/@netlify/plugin-nextjs"
+[context.branch-deploy]
+  command = "npm run build"
+  publish = "out"
 
 [dev]
   command = "npm run dev" # Command to start your dev server
