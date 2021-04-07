@@ -105,28 +105,46 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="mr-3">
-              <Link href="#services-section">
+              {/* <Link href="/#service-section">
                 <a
-                  onClick={navigateToSection}
+                  href="#service-section"
                   className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
                 >
                   Services
                 </a>
-              </Link>
+              </Link> */}
+              <a
+                href="/#service-section"
+                className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+              >
+                Services
+              </a>
             </li>
             <li className="mr-3">
-              <Link href="#image-gallery-section">
+              {/* <Link href="/#image-gallery-section">
                 <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
                   Gallery
                 </a>
-              </Link>
+              </Link> */}
+              <a
+                href="/#img-gallery-section"
+                className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+              >
+                Gallery
+              </a>
             </li>
             <li className="mr-3">
-              <Link href="/#testimonials-section">
+              {/* <Link href="/#testimonials-section">
                 <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
                   Testimonials
                 </a>
-              </Link>
+              </Link> */}
+              <a
+                href="/#testimonial-section"
+                className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+              >
+                Testimonials
+              </a>
             </li>
             {/* <li className="mr-3">
               <Link href="#contact-section">

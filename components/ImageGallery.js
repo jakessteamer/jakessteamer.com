@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 import SvgWaveDivider from './SVGWaveDivider';
 
 export default function ImageGallery() {
+  useEffect(() => {
+    configureAnchors({ offset: -134 });
+  });
   return (
-    <div>
+    <ScrollableAnchor key="img-gallery-section" id="img-gallery-section">
       <section id="image-gallery-section">
         <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
           Image Gallery
@@ -51,7 +55,7 @@ export default function ImageGallery() {
           </div>
         </div>
       </section>
-      <SvgWaveDivider />
-    </div>
+      {/* <SvgWaveDivider /> */}
+    </ScrollableAnchor>
   );
 }

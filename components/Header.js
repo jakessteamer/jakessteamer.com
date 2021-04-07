@@ -17,7 +17,7 @@ export default function Header() {
         quality={100}
         alt="kid and mom on clean carpet"
       />
-      <Navbar />
+      {/* <Navbar /> */}
       <section id="hero-main" className="z-10">
         <h1 className="text-5xl font-bold leading-tight text-center hero-headline">
           Cleaner. Happier. Healthier.

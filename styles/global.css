@@ -22,45 +22,15 @@
 .hero-headline {
   color: white;
   text-shadow: 0.125em 0.125em 0.125em rgb(0 0 0 / 10%);
-  margin: auto;
-}
-.hero-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 15vh 85vh;
-  grid-template-areas:
-    'nav'
-    'hero';
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-#navbar {
-  grid-area: nav;
-  /* display: grid; */
-}
 
-.hero-bg-image {
-  /* background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.19681375968356096) 100%
-    ),
-    url('/public/static/images/kid-and-mom-on-carpet-lg.jpg'); */
-}
-#hero-main {
-  grid-area: hero;
-  display: grid;
-}
-
-.hero-subheading-container {
+/* .hero-subheading-container {
   display: flex;
   flex-direction: column;
   margin: auto;
   padding-bottom: 3em;
-}
+} */
 
 .logo {
   height: 7rem;
@@ -138,122 +108,6 @@
 
 .custom-shape-divider-bottom-1612154150 .shape-fill {
   fill: #ffffff;
-}
-/* Services Section */
-/* #services {
-  display: grid;
-  grid-template-columns: 50vw 50vw;
-  grid-template-rows: 50vh 50vh;
-} */
-
-/*
-*   SERVICE LIST GRID
-*/
-@media (min-width: 640px) {
-  #services-section {
-    display: grid;
-    grid-template-areas:
-      'head head'
-      's1 s1'
-      's2 imgs'
-      's3 imgs'
-      's4 s4';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat (5, 1fr);
-  }
-
-  #service-section-heading {
-    grid-area: head;
-    width: 100%;
-  }
-  #carpet-service {
-    grid-area: s1;
-  }
-  #stain-odor-service {
-    grid-area: s2;
-    width: 32rem;
-  }
-  #upholstery-service {
-    grid-area: s3;
-    width: 32rem;
-  }
-  #overlapping-imgs-grid {
-    grid-area: imgs;
-    width: 32rem;
-  }
-  #area-rug-service {
-    grid-area: s4;
-  }
-
-  /* -------------SECTION 2------------------- */
-  #services-section2 {
-    display: grid;
-    grid-template-areas:
-      'wdrs wdrs'
-      'oli ts'
-      'oli adcs';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat (3, 1fr);
-  }
-
-  #tile-service {
-    grid-area: ts;
-  }
-  #wood-floor-service {
-    grid-area: wfs;
-    width: 32rem;
-  }
-  #airduct-service {
-    grid-area: adcs;
-    width: 32rem;
-  }
-  #overlapping-imgs-grid2 {
-    grid-area: oli;
-    width: 32rem;
-  }
-  #water-damage-service {
-    grid-area: wdrs;
-  }
-}
-
-.service-images {
-  display: grid;
-  position: relative;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-}
-.service-image-1 {
-  z-index: 10;
-  grid-column: 1 / 4;
-  grid-row: 1 / 5;
-}
-.service-image-2 {
-  z-index: 20;
-  grid-column-start: 3;
-  grid-column-end: 6;
-  grid-row-start: 4;
-  grid-row-end: 7;
-}
-.service-image-3 {
-  z-index: 30;
-  grid-column-start: 5;
-  grid-column-end: 8;
-  grid-row-start: 2;
-  grid-row-end: 5;
-}
-.service-image-tile {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.rounded-top {
-  border-radius: 0.5rem 0.5rem 0 0;
-}
-.rounded-bottom {
-  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .testimonial {

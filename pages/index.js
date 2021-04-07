@@ -7,17 +7,19 @@ import Testimonials from '../components/Testimonials';
 import CTA from '../components/CTA';
 import AboutUs from '../components/AboutUs';
 import SVGDivider from '../components/SVGDivider';
+import SVGWaveDivider from '../components/SVGWaveDivider';
 
 export default function Home() {
-  return (
-    <Container>
-      <Hero />
-      <SVGDivider />
-      <Services />
-      <ImageGallery />
-      <Testimonials />
-      <CTA />
-      <AboutUs />
-    </Container>
-  );
+    return (
+        <Container>
+            <Hero />
+            {/* <SVGDivider /> */}
+            <Services />
+            <ImageGallery />
+            <SVGWaveDivider />
+            <Testimonials />
+            <CTA />
+            <AboutUs />
+        </Container>
+    );
 }

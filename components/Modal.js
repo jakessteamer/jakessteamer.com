@@ -1,8 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useState } from 'react';
+/* eslint-disable react/button-has-type */
+import React from 'react';
 
 export default function Modal() {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = React.useState(false);
   return (
     <>
       <button
@@ -23,7 +24,6 @@ export default function Modal() {
                   <h3 className="text-3xl font-semibold">Modal Title</h3>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                    type="button"
                     onClick={() => setShowModal(false)}
                   >
                     <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
