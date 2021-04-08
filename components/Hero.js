@@ -16,6 +16,7 @@ export default function Hero() {
                 layout="fill"
                 objectFit="cover"
                 quality={100}
+                priority
                 alt="kid and mom on clean carpet"
             />
             <header className="grid grid-rows-2 items-center h-screen ">
