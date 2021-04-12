@@ -20,7 +20,7 @@
 }
 
 .hero-headline {
-  color: white;
+  color: var(--royal-blue);
   text-shadow: 0.125em 0.125em 0.125em rgb(0 0 0 / 10%);
 }
 
@@ -44,6 +44,9 @@
   text-shadow: 0.125em 0.125em 0.125em rgb(0 0 0 / 10%);
 }
 
+nav ul li {
+  text-shadow: 0.125em 0.125em 0.125em rgb(0 0 0 / 10%);
+}
 /* Hero SVG Shape Divider */
 
 .custom-shape-divider-bottom-1612037810 {
@@ -242,6 +245,44 @@
   color: black;
 }
 
+/* FabIcon Refactor */
+
+.mdc-position {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 100;
+}
+
+.arrow-position {
+  position: fixed;
+  bottom: 1rem;
+  right: 1.78rem;
+  z-index: 100;
+}
+
+.mdc-fab, [role="button"] {
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: none;
+  fill: currentColor;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  background-color: #126ee2;
+  color: black;
+  border-radius: 50%;
+  border: 1px solid #0c50a7;
+}
+
 .heading-underline {
   border: 0;
   height: 1px;
@@ -276,4 +317,10 @@ width:
 }
 .bg-white {
   background-color: #fff;
+}
+.bg-bed4ff {
+  background-color: #bed4ff;
+}
+.border-dark-blue {
+  border-color: #0c50a7;
 }

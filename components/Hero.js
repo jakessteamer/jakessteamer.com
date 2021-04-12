@@ -12,41 +12,35 @@ export default function Hero() {
         <>
             <Image
                 className="hero-bg-img z-0"
-                src="/images/kid-and-mom-on-carpet-lg.jpg"
+                src="/images/hero/kid-and-mom-on-carpet-default-lg-97-opacity.png"
                 layout="fill"
                 objectFit="cover"
                 quality={100}
                 alt="kid and mom on clean carpet"
             />
-            <header className="grid grid-rows-2 items-center h-screen ">
-                {/* <Image
-                className="hero-bg-img z-0"
-                src="/images/kid-and-mom-on-carpet-lg.jpg"
-                layout="fill"
-                objectFit="cover"
-                quality={100}
-                alt="kid and mom on clean carpet"
-            /> */}
-                <h1 className="z-10 text-5xl font-bold leading-tight text-center hero-headline">
+            <header className="grid grid-rows-2 grid-cols-1 items-center h-screen ">
+                <h1 className="z-10 text-4xl sm:text-6xl lg:text-7xl  leading-none font-extrabold tracking-tight text-center hero-headline">
                     Cleaner. Happier. Healthier.
                 </h1>
-                <div className="z-10 text-center">
-                    <p id="hero-subheadline" className="leading-normal font-bold text-4xl mb-8">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold md:font-bold z-10 mt-36 md:mt-48 text-center hero-headline">
+                    The Carpet Cleaning Professionals
+                </h2>
+
+                {/* <div className=" text-4xl z-10 text-center">
+                    <h2 className="font-bold leading-tight hero-headline">
                         The Carpet Cleaning Professionals
-                    </p>
-                    <div className=" text-4xl">
-                        <h2 className="font-bold leading-tight hero-headline">
-                            Call Jake's Steamer!
-                        </h2>
-                        <a
-                            className="font-bold leading-tight hero-headline brand-blue"
-                            href="tel:+14328474600">
-                            432-847-4600
-                        </a>
-                    </div>
-                </div>
+                    </h2>
+                </div> */}
             </header>
             <SVGDivider />
+            <div className="text-center text-4xl">
+                <h2 className="font-bold leading-tight hero-headline">Call Jake's Steamer!</h2>
+                <a
+                    className="font-bold leading-tight hero-headline brand-blue"
+                    href="tel:+14328474600">
+                    432-847-4600
+                </a>
+            </div>
         </>
     );
 }
