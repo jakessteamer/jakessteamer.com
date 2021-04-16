@@ -10,13 +10,14 @@ import SVGDivider from './SVGDivider';
 
 export default function Hero() {
     return (
-        <section className="flex flex-col justify-evenly mt-8 md:mt-12 text-center gap-64 h-screen w-full">
+        <section className="flex flex-col justify-evenly mt-8 md:mt-12 text-center gap-52 h-screen w-full">
             <Image
                 className="opacity-95"
                 src="/images/kid-and-mom-on-carpet-high-def.jpg"
                 layout="fill"
                 objectFit="cover"
                 quality={100}
+                priority
                 alt="kid and mom on clean carpet"
             />
             {/* <div className="img-bg-overlay"></div> */}
