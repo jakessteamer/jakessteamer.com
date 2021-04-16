@@ -23,7 +23,7 @@ export default function Services() {
                             We are committed to making sure that your home is as healthy and clean
                             as possible. Your home or office is where you live and work, where your
                             kids play, where your pets nap, which is why we take every single client
-                            interaction as if it is the single most important job we have ever done.{' '}
+                            interaction as if it is the single most important job we have ever done.
                             <b className="text-gray-800">
                                 Questions? Quote? Call Jake's Steamer The Carpet Cleaner today!
                             </b>
@@ -51,7 +51,7 @@ export default function Services() {
                                 </p>
 
                                 <Link href="/Carpets">
-                                    <a className="border-2 border-dark-blue brand-blue rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
+                                    <a className="learn-more-btn rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
                                         Learn More
                                         <svg
                                             fill="none"
@@ -84,7 +84,7 @@ export default function Services() {
                                     material.
                                 </p>
                                 <Link href="/Upholstery">
-                                    <a className="border-2 border-dark-blue brand-blue rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
+                                    <a className="learn-more-btn rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
                                         Learn More
                                         <svg
                                             fill="none"
@@ -116,7 +116,7 @@ export default function Services() {
                                     out the most stubborn stains and odors.
                                 </p>
                                 <Link href="/StainOdorRemoval">
-                                    <a className="border-2 border-dark-blue brand-blue rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
+                                    <a className="learn-more-btn rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
                                         Learn More
                                         <svg
                                             fill="none"
@@ -151,7 +151,7 @@ export default function Services() {
                                     and enhance your floors.
                                 </p>
                                 <Link href="/TileAndWoodFloorRestoration">
-                                    <a className="border-2 border-dark-blue brand-blue rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
+                                    <a className="learn-more-btn rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
                                         Learn More
                                         <svg
                                             fill="none"
@@ -187,7 +187,7 @@ export default function Services() {
                                     protected.
                                 </p>
                                 <Link href="/WaterDamageRestoration">
-                                    <a className="border-2 border-dark-blue brand-blue rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
+                                    <a className="learn-more-btn rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
                                         Learn More
                                         <svg
                                             fill="none"
@@ -220,7 +220,7 @@ export default function Services() {
                                     killer deodorizer, and anti-bacterial sealant.
                                 </p>
                                 <Link href="/Airducts" className="mt-4">
-                                    <a className="border-2 border-dark-blue brand-blue rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
+                                    <a className="learn-more-btn rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
                                         Learn More
                                         <svg
                                             fill="none"

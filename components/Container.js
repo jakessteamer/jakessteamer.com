@@ -73,7 +73,7 @@ export default function Container(props) {
         />
             </Head>
             <Navbar />
-            {children}
+            <main>{children}</main>
             <FabIcon />
             <Footer />
         </>
