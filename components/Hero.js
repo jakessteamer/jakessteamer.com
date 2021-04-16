@@ -10,7 +10,7 @@ import SVGDivider from './SVGDivider';
 
 export default function Hero() {
     return (
-        <section className="flex flex-col justify-evenly mt-8 md:mt-12 text-center gap-52 h-screen w-full">
+        <section className="flex flex-col justify-evenly mt-8 md:mt-12 text-center gap-y-64 h-screen w-full">
             <Image
                 className="opacity-95"
                 src="/images/kid-and-mom-on-carpet-high-def.jpg"
@@ -21,10 +21,10 @@ export default function Hero() {
                 alt="kid and mom on clean carpet"
             />
             {/* <div className="img-bg-overlay"></div> */}
-            <h1 className="z-10 text-4xl sm:text-6xl lg:text-7xl  leading-none font-extrabold tracking-tight hero-headline">
+            <h1 className="z-10 text-4xl sm:text-6xl lg:text-7xl  leading-none font-extrabold tracking-tight hero-headline ">
                 Cleaner. Happier. Healthier.
             </h1>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold md:font-bold z-10 hero-headline">
+            <h2 className="text-3xl -mt-4 md:text-4xl lg:text-5xl font-semibold md:font-bold z-10 hero-headline">
                 The Carpet Cleaning Professionals
             </h2>
             {/* <div className="absolute top-0 bottom-0 left-0 right-0 h-screen w-full flex flex-col justify-center">
