@@ -5,9 +5,6 @@ import Link from 'next/link';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
 export default function Services() {
-    useEffect(() => {
-        configureAnchors({ offset: -134 });
-    });
     return (
         <ScrollableAnchor key="service-section" id="service-section">
             <section id="#services-section" className="text-gray-600 body-font">

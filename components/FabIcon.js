@@ -10,7 +10,7 @@ export default function FabIcon() {
     };
     return (
         <div className="mdc-position md:hidden">
-            <div className="arrow bounce arrow-position" aria-hidden="true">
+            <div className="arrow bounce arrow-position text-black" aria-hidden="true">
                 <svg
                     stroke="currentColor"
                     fill="currentColor"
