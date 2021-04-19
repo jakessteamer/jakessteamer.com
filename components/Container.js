@@ -8,42 +8,34 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 export default function Container(props) {
-  const { children, ...customMeta } = props;
-  const router = useRouter();
-  const meta = {
-    title: "Jake's Steamer",
-    description:
-      "Jake's Steamer is a certified, licensed, and insured carpet cleaning company. Call 432-847-4600 for carpet, upholstery, tile, air duct, area rug, water damage services. Jake's steamer is based in Seminole, Texas. We proudly serve Seminole and the surrounding counties.",
-    image:
-      'https://jakessteamer.com/images/logos/jakessteamer-company-logo-square.png',
-    type: 'website',
-    ...customMeta
-  };
+    const { children, ...customMeta } = props;
+    const router = useRouter();
+    const meta = {
+        title: "Jake's Steamer",
+        description:
+            "Jake's Steamer is a certified, licensed, and insured carpet cleaning company. Call 432-847-4600 for carpet, upholstery, tile, air duct, area rug, water damage services. Jake's steamer is based in Seminole, Texas. We proudly serve Seminole and the surrounding counties.",
+        image: 'https://jakessteamer.com/images/logos/jakessteamer-company-logo-square.png',
+        type: 'website',
+        ...customMeta
+    };
 
-  return (
-    <>
-      <Head>
-        <title>{meta.title}</title>
-        <meta name="robots" content="follow, index" />
-        <meta content={meta.description} name="description" />
-        <meta
-          property="og:url"
-          content={`https://jakessteamer.com${router.asPath}`}
-        />
-        <link
-          rel="canonical"
-          href={`https://jakessteamer.com${router.asPath}`}
-        />
-        <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Jake's Steamer" />
-        <meta property="og:description" content={meta.description} />
-        <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={meta.image} />
-        {meta.date && (
-          <meta property="article:published_time" content={meta.date} />
-        )}
-        {/* prettier-ignore */}
-        <script
+    return (
+        <>
+            <Head>
+                <title>{meta.title}</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="robots" content="follow, index" />
+                <meta content={meta.description} name="description" />
+                <meta property="og:url" content={`https://jakessteamer.com${router.asPath}`} />
+                <link rel="canonical" href={`https://jakessteamer.com${router.asPath}`} />
+                <meta property="og:type" content={meta.type} />
+                <meta property="og:site_name" content="Jake's Steamer" />
+                <meta property="og:description" content={meta.description} />
+                <meta property="og:title" content={meta.title} />
+                <meta property="og:image" content={meta.image} />
+                {meta.date && <meta property="article:published_time" content={meta.date} />}
+                {/* prettier-ignore */}
+                <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(
             {
@@ -79,11 +71,11 @@ export default function Container(props) {
             }
           ) }}
         />
-      </Head>
-      <Navbar />
-      {children}
-      <FabIcon />
-      <Footer />
-    </>
-  );
+            </Head>
+            <Navbar />
+            <main>{children}</main>
+            <FabIcon />
+            <Footer />
+        </>
+    );
 }

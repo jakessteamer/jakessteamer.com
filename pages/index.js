@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Services from '@components/Services';
 import Container from '../components/Container';
 import Hero from '../components/Hero';
@@ -13,7 +14,14 @@ export default function Home() {
     return (
         <Container>
             <Hero />
-            {/* <SVGDivider /> */}
+            <div className="text-center text-4xl">
+                <h1 className="font-bold leading-tight hero-headline">Call Jake's Steamer!</h1>
+                <a
+                    className="font-bold leading-tight hero-headline brand-blue"
+                    href="tel:+14328474600">
+                    432-847-4600
+                </a>
+            </div>
             <Services />
             <ImageGallery />
             <SVGWaveDivider />
