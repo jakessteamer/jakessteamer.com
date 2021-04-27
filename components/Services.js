@@ -47,7 +47,7 @@ export default function Services() {
                                     satisfaction.
                                 </p>
 
-                                <Link href="/Carpets">
+                                <Link href="/CarpetCleaning">
                                     <a className="learn-more-btn rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
                                         Learn More
                                         <svg
@@ -112,7 +112,7 @@ export default function Services() {
                                     eliminate? Call us! We have the equipment and expertise to get
                                     out the most stubborn stains and odors.
                                 </p>
-                                <Link href="/StainOdorRemoval">
+                                <Link href="/StainAndOdorRemoval">
                                     <a className="learn-more-btn rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
                                         Learn More
                                         <svg
@@ -216,7 +216,7 @@ export default function Services() {
                                     registered biocide fog agent to destroy contaminants, a odor
                                     killer deodorizer, and anti-bacterial sealant.
                                 </p>
-                                <Link href="/Airducts" className="mt-4">
+                                <Link href="/AirDuctCleaning" className="mt-4">
                                     <a className="learn-more-btn rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
                                         Learn More
                                         <svg

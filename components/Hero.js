@@ -17,7 +17,7 @@ export default function Hero() {
                 layout="fill"
                 objectFit="cover"
                 quality={100}
-                priority
+                eager
                 alt="kid and mom on clean carpet"
             />
             {/* <div className="img-bg-overlay"></div> */}
