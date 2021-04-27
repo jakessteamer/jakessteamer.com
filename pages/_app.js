@@ -18,48 +18,6 @@ function Application({ Component, pageProps }) {
                 <meta name="apple-mobile-web-app-capable" content="yes" />
                 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
                 <meta name="format-detection" content="telephone=yes" />
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify({
-                            '@context': 'http://schema.org',
-                            '@type': 'LocalBusiness',
-                            '@id': 'https://jakessteamer.com',
-                            name: "Jake's Steamer",
-                            image:
-                                'https://www.jakessteamer.com/images/logos/jakessteamer-company-logo-square.png',
-                            telephone: '432-847-4600',
-                            address: {
-                                '@type': 'PostalAddress',
-                                streetAddress: '606 SE 4th St',
-                                addressLocality: 'Seminole',
-                                addressRegion: 'TX',
-                                postalCode: '79360',
-                                addressCountry: 'US'
-                            },
-                            openingHoursSpecification: [
-                                {
-                                    '@type': 'OpeningHoursSpecification',
-                                    dayOfWeek: [
-                                        'Monday',
-                                        'Tuesday',
-                                        'Wednesday',
-                                        'Thursday',
-                                        'Friday'
-                                    ],
-                                    opens: '08:00',
-                                    closes: '16:00'
-                                },
-                                {
-                                    '@type': 'OpeningHoursSpecification',
-                                    dayOfWeek: 'Saturday',
-                                    opens: '8:00',
-                                    closes: '12:00'
-                                }
-                            ]
-                        })
-                    }}
-                />
             </Head>
             <DefaultSeo {...SEO} />
             <Container>

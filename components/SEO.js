@@ -35,10 +35,6 @@ export const SEO = {
             sizes: '180x180'
         },
         {
-            rel: 'manifest',
-            href: '/manifest.json'
-        },
-        {
             name: 'google-site-verification',
             content: 'r76I3SQQnXCYpkUZMnW9Q3EY-9ExRHlMInOmTeAVxwg'
         }
