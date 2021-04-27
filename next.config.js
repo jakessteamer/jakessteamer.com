@@ -2,10 +2,6 @@
 /* eslint-disable no-use-before-define */
 module.exports = {
     target: 'serverless',
-    future: {
-        webpack5: true,
-        strictPostcssConfiguration: true
-    },
     async headers() {
         return [
             {
