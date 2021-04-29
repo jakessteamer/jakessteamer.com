@@ -14,7 +14,7 @@ module.exports = {
 
 // https://securityheaders.com
 const ContentSecurityPolicy = `
-  default-src 'self' 'housecallpro.com' '* housecallpro.com';
+  default-src 'self' 'https://housecallpro.com' 'https://*.housecallpro.com';
   script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.twitter.com cdn.usefathom.com https://*.housecallpro.com;
   child-src *.youtube.com *.google.com *.twitter.com https://*.housecallpro.com;
   style-src 'self' 'unsafe-inline' *.googleapis.com https://*.housecallpro.com;

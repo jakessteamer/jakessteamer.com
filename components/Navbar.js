@@ -9,13 +9,22 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function Navbar() {
-    const [active, setActive] = useState(false);
+    const router = useRouter();
 
-    const handleClick = () => {
-        setActive(!active);
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
+    const toggleNavMenu = () => {
+        setIsNavOpen(!isNavOpen);
     };
+    useEffect(() => {
+        if (isNavOpen) {
+            setIsNavOpen(!isNavOpen);
+        }
+    }, [router.asPath]);
+
     const scrollYPosition = useRef(0);
     const [goingUp, setGoingUp] = useState(false);
 
@@ -53,7 +62,7 @@ export default function Navbar() {
         <nav
             id="header"
             className={`${
-                goingUp || active
+                goingUp || isNavOpen
                     ? 'fixed w-full z-40 top-0 text-white mt-10 bg-white'
                     : 'fixed w-full z-40 top-0 text-white mt-10'
             }`}>
@@ -76,7 +85,7 @@ export default function Navbar() {
                         id="nav-toggle"
                         type="button"
                         className="flex items-center p-1 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-                        onClick={handleClick}>
+                        onClick={toggleNavMenu}>
                         <svg
                             className="h-10 w-10 brand-blue"
                             viewBox="0 0 20 20"
@@ -89,7 +98,7 @@ export default function Navbar() {
                 {/* Render Nav onClick */}
                 <div
                     className={`${
-                        active
+                        isNavOpen
                             ? 'w-full flex-grow lg:flex lg:items-center lg:w-auto mt-2 lg:mt-0 lg:bg-transparent text-black p-2 lg:p-0 z-20 bg-white'
                             : 'w-full flex-grow lg:flex lg:items-center lg:w-auto mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-2 lg:p-0 z-20 hidden'
                     } text-center w-full lg:inline-flex lg:flex-grow lg:w-auto`}
