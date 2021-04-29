@@ -60,7 +60,7 @@ export default function Navbar() {
             <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
                 <div className="pl-4 flex items-center">
                     <Link href="/">
-                        <a className="lg:pl-12">
+                        <a>
                             <Image
                                 src="/images/logos/jakessteamer-logo-transparent.png"
                                 width={182}
@@ -71,7 +71,7 @@ export default function Navbar() {
                         </a>
                     </Link>
                 </div>
-                <div className="block lg:hidden p-4">
+                <div className="block lg:hidden p-2">
                     <button
                         id="nav-toggle"
                         type="button"
@@ -90,83 +90,71 @@ export default function Navbar() {
                 <div
                     className={`${
                         active
-                            ? 'w-full flex-grow lg:flex lg:items-center lg:w-auto mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20 bg-white'
-                            : 'w-full flex-grow lg:flex lg:items-center lg:w-auto mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20 hidden'
+                            ? 'w-full flex-grow lg:flex lg:items-center lg:w-auto mt-2 lg:mt-0 lg:bg-transparent text-black p-2 lg:p-0 z-20 bg-white'
+                            : 'w-full flex-grow lg:flex lg:items-center lg:w-auto mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-2 lg:p-0 z-20 hidden'
                     } text-center w-full lg:inline-flex lg:flex-grow lg:w-auto`}
                     id="nav-content">
-                    <ul className="list-reset lg:flex justify-end flex-1 text-left text-2xl font-bold leading-none">
-                        <li className="p-2">
+                    <ul className="list-reset lg:flex justify-end flex-1 text-left text-xl font-bold leading-none">
+                        <li className="p-1">
                             <Link href="/CarpetCleaning">
-                                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
+                                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2">
                                     Carpet Cleaning
                                 </a>
                             </Link>
                         </li>
-                        <li className="p-2">
+                        <li className="p-1">
                             {/* <Link href="/#service-section">
                 <a
                   href="#service-section"
-                  className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                  className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2"
                 >
                   Services
                 </a>
               </Link> */}
-                            <Link href="/PetStainAndOdorRemoval">
+                            <Link href="/StainAndOdorRemoval">
                                 <a
                                     href="/#service-section"
-                                    className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
+                                    className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2">
                                     Pet Stain and Odor Removal
                                 </a>
                             </Link>
                         </li>
-                        <li className="p-2">
-                            {/* <Link href="/#image-gallery-section">
-                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
-                  Gallery
-                </a>
-              </Link> */}
-                            <a
-                                href="/#img-gallery-section"
-                                className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
-                                Gallery
-                            </a>
-                        </li>
-                        <li className="p-2">
+                        <li className="p-1">
                             {/* <Link href="/#testimonials-section">
-                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
+                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2">
                   Testimonials
                 </a>
               </Link> */}
-                            <Link href="TileAndGroutCleaning">
-                                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
+                            <Link href="/TileAndGroutCleaning">
+                                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2">
                                     Tile and Grout Cleaning
                                 </a>
                             </Link>
                         </li>
                         {/* <li className="mr-3">
               <Link href="#contact-section">
-                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
+                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2">
                   Contact
                 </a>
               </Link>
             </li> */}
-                        <li className="p-2">
+                        <li className="p-1">
                             <Link href="/UpholsteryCleaning">
-                                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
+                                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2">
                                     Upholstery Cleaning
                                 </a>
                             </Link>
                         </li>
-                        <li className="p-2">
+                        <li className="p-1">
                             <Link href="/AirDuctCleaning">
-                                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
+                                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2">
                                     Air Duct Cleaning
                                 </a>
                             </Link>
                         </li>
-                        <li className="p-2">
+                        <li className="p-1">
                             <Link href="/WaterDamageRestoration">
-                                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4">
+                                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2">
                                     Emergency Flood
                                 </a>
                             </Link>
