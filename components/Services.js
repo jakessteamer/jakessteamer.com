@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/no-unescaped-entities */
-import React, { useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 
@@ -80,7 +80,7 @@ export default function Services() {
                                     cleaning of all upholstered furniture and cushions of the same
                                     material.
                                 </p>
-                                <Link href="/Upholstery">
+                                <Link href="/UpholsteryCleaning">
                                     <a className="learn-more-btn rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
                                         Learn More
                                         <svg
@@ -137,7 +137,7 @@ export default function Services() {
                                     alt="content"
                                 />
                                 <h1 className="text-2xl text-gray-900 font-bold mb-4">
-                                    Tile and Wood Floor Restoration
+                                    Tile and Grout Cleaning
                                 </h1>
                                 <p className="leading-relaxed text-xl text-gray-900">
                                     There are dozens of home cleaning solutions and retail products

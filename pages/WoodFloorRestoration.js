@@ -24,7 +24,7 @@ export default function WoodFloorRestoration() {
             />
           </div>
         </div> */}
-                <div style={{ position: 'relative', width: '100%', height: '640px' }}>
+                <div style={{ position: 'relative', width: '100%', height: '320px' }}>
                     <Image
                         alt="Mountains"
                         className="rounded"

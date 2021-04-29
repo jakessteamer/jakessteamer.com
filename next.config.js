@@ -9,31 +9,15 @@ module.exports = {
                 headers: securityHeaders
             }
         ];
-    },
-    webpack: (config, { dev, isServer }) => {
-        if (isServer) {
-            require('./scripts/generate-sitemap');
-        }
-
-        // Replace React with Preact only in client production build
-        if (!dev && !isServer) {
-            Object.assign(config.resolve.alias, {
-                react: 'preact/compat',
-                'react-dom/test-utils': 'preact/test-utils',
-                'react-dom': 'preact/compat'
-            });
-        }
-
-        return config;
     }
 };
 
 // https://securityheaders.com
 const ContentSecurityPolicy = `
-  default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.twitter.com cdn.usefathom.com;
-  child-src *.youtube.com *.google.com *.twitter.com;
-  style-src 'self' 'unsafe-inline' *.googleapis.com;
+  default-src 'self' 'housecallpro.com' '* housecallpro.com';
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.twitter.com cdn.usefathom.com https://*.housecallpro.com;
+  child-src *.youtube.com *.google.com *.twitter.com https://*.housecallpro.com;
+  style-src 'self' 'unsafe-inline' *.googleapis.com https://*.housecallpro.com;
   img-src * blob: data:;
   media-src 'none';
   connect-src *;

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Image from 'next/image';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
-import SvgWaveDivider from './SVGWaveDivider';
 
 export default function ImageGallery() {
     useEffect(() => {
@@ -55,7 +54,6 @@ export default function ImageGallery() {
                     </div>
                 </div>
             </section>
-            {/* <SvgWaveDivider /> */}
         </ScrollableAnchor>
     );
 }

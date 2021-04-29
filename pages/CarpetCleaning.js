@@ -7,15 +7,15 @@ export default function CarpetCleaning() {
     return (
         <>
             <PageSeo
-                title={`${siteMetadata.author}`}
+                title={`${siteMetadata.openGraphTitle}`}
                 description={`${siteMetadata.description}`}
-                url={`${siteMetadata.siteUrl}/Carpets`}
+                url={`${siteMetadata.siteUrl}/CarpetCleaning`}
             />
             <article className="flex flex-col justify-center w-9/12 mx-auto mb-16 items-start mt-15vh">
                 <h1 className="font-bold text-3xl md:text-5xl tracking-tight my-12 text-black dark:text-white">
                     Carpet Cleaning
                 </h1>
-                <div style={{ position: 'relative', width: '100%', height: '640px' }}>
+                <div style={{ position: 'relative', width: '100%', height: '320px' }}>
                     <Image
                         alt="Mountains"
                         className="rounded"

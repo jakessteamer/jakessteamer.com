@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { PageSeo } from '../components/SEO';
 import siteMetadata from '../data/siteMetadata.json';
 
-export default function TileFloorRestoration() {
+export default function TileAndGroutCleaning() {
     return (
         <>
             <PageSeo
@@ -16,7 +16,7 @@ export default function TileFloorRestoration() {
                     Tile Floor Restoration
                 </h1>
 
-                <div style={{ position: 'relative', width: '100%', height: '640px' }}>
+                <div style={{ position: 'relative', width: '100%', height: '320px' }}>
                     <Image
                         alt="Mountains"
                         className="rounded"

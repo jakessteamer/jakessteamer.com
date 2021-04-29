@@ -15,7 +15,7 @@ export default function UpholsteryCleaning() {
                 <h1 className="font-bold text-3xl md:text-5xl tracking-tight my-12 text-black dark:text-white">
                     Upholstery Cleaning
                 </h1>
-                <div style={{ position: 'relative', width: '100%', height: '640px' }}>
+                <div style={{ position: 'relative', width: '100%', height: '320px' }}>
                     <Image
                         alt="Mountains"
                         className="rounded"

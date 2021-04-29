@@ -15,7 +15,7 @@ export default function WaterDamageRestoration() {
                 <h1 className="font-bold text-3xl md:text-5xl tracking-tight my-12 text-black dark:text-white">
                     Water Damage Restoration
                 </h1>
-                <div style={{ position: 'relative', width: '100%', height: '640px' }}>
+                <div style={{ position: 'relative', width: '100%', height: '320px' }}>
                     <Image
                         alt="Water Damage"
                         className="rounded"
