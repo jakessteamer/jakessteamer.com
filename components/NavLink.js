@@ -1,42 +1,24 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/display-name */
 /* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable jsx-a11y/anchor-has-content */
 import Link from 'next/link';
-import React from 'react';
-import { useRouter } from 'next/router';
 
-const Anchor = React.forwardRef(({ onClick, href }, ref) => {
-  return (
-    <a
-      href={href}
-      onClick={navigateToSection}
-      className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-      ref={ref}
-    >
-      Services
-    </a>
-  );
-});
+const NavLink = ({ href, ...rest }) => {
+    const isInternalLink = href && href.startsWith('/');
+    const isAnchorLink = href && href.startsWith('#');
 
-const NavLink = () => {
-  // const router = useRouter();
-  // const navigateToSection = () => {
-  //   router.push(href);
-  //   if (typeof window !== 'undefined') {
-  //     const element = document.getElementById(window.location.hash);
-  //     if (element) {
-  //       // Smooth scroll to that elment
-  //       element.scrollIntoView({
-  //         behavior: 'smooth',
-  //         block: 'start',
-  //         inline: 'nearest'
-  //       });
-  //     }
-  //   }
-  // };
-  return <Anchor />;
+    if (isInternalLink) {
+        return (
+            <Link href={href}>
+                <a {...rest} />
+            </Link>
+        );
+    }
+
+    if (isAnchorLink) {
+        return <a href={href} {...rest} />;
+    }
+
+    return <a target="_blank" rel="noopener noreferrer" href={href} {...rest} />;
 };
 
 export default NavLink;
