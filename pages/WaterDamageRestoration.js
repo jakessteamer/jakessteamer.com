@@ -7,9 +7,9 @@ export default function WaterDamageRestoration() {
     return (
         <>
             <PageSeo
-                title={`About - ${siteMetadata.author}`}
-                description={`About me - ${siteMetadata.author}`}
-                url={`${siteMetadata.siteUrl}/about`}
+                title="Water Damage Restoration"
+                description="Every so often, leaks can cause floods. It’s important to call a professional water damage restoration specialist immediately. We can help you get back on track and offer the most comprehensive cleanup services in West Texas."
+                url={`${siteMetadata.siteUrl}/WaterDamageRestoration`}
             />
             <article className="flex flex-col justify-center w-9/12 mx-auto mb-16 items-start mt-15vh">
                 <h1 className="font-bold text-3xl md:text-5xl tracking-tight my-12 text-black dark:text-white">

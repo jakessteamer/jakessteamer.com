@@ -6,9 +6,9 @@ export default function AirDuctCleaning() {
     return (
         <>
             <PageSeo
-                title={`Jake's Steamer central airduct cleaning service cleans dirty airducts. Jake's Steamer is rated affordable and the best from all customers`}
-                description={`About me - ${siteMetadata.author}`}
-                url={`${siteMetadata.siteUrl}/about`}
+                title="Jake's Steamer central air duct cleaning service cleans dirty airducts. Jake's Steamer is rated affordable and the best from all customers"
+                description="Jake's Steamer central air duct cleaning service improves the indoor air quality of your home by removing dust, allergens, and pollutants that build up in your air ducts overtime."
+                url={`${siteMetadata.siteUrl}/AirDuctCleaning`}
             />
             <article className="flex flex-col justify-center w-9/12 mx-auto mb-16 items-start mt-15vh">
                 <h1 className="font-bold text-3xl md:text-5xl tracking-tight my-12 text-black dark:text-white">

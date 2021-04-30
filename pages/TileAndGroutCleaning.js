@@ -7,9 +7,9 @@ export default function TileAndGroutCleaning() {
     return (
         <>
             <PageSeo
-                title={`About - ${siteMetadata.author}`}
-                description={`About me - ${siteMetadata.author}`}
-                url={`${siteMetadata.siteUrl}/about`}
+                title="Tile and Grout Cleaning"
+                description="Clean, seal and protect your tile and grout. For over 20 years, we have been providing the best floor cleaning services for any types of stone, ceramic, marble or other tile floors and that includes grout."
+                url={`${siteMetadata.siteUrl}/TileAndGroutCleaning`}
             />
             <article className="flex flex-col justify-center w-9/12 mx-auto mb-16 items-start mt-15vh">
                 <h1 className="font-bold text-3xl md:text-5xl tracking-tight my-12 text-black dark:text-white">

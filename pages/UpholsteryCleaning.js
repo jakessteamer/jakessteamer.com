@@ -7,9 +7,9 @@ export default function UpholsteryCleaning() {
     return (
         <>
             <PageSeo
-                title={`About - ${siteMetadata.author}`}
-                description={`About me - ${siteMetadata.author}`}
-                url={`${siteMetadata.siteUrl}/about`}
+                title="Upholstery Cleaning"
+                description="Let our professionals with many years of experience make your upholstery look and feel better by removing the dirt and stains that build up over time."
+                url={`${siteMetadata.siteUrl}/UpholsteryCleaning`}
             />
             <article className="flex flex-col justify-center w-9/12 mx-auto mb-16 items-start mt-15vh">
                 <h1 className="font-bold text-3xl md:text-5xl tracking-tight my-12 text-black dark:text-white">

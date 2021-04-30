@@ -7,7 +7,7 @@ export default function CarpetCleaning() {
     return (
         <>
             <PageSeo
-                title={`${siteMetadata.openGraphTitle}`}
+                title="Carpet Cleaning"
                 description={`${siteMetadata.description}`}
                 url={`${siteMetadata.siteUrl}/CarpetCleaning`}
             />

@@ -6,9 +6,9 @@ export default function StainAndOdorRemoval() {
     return (
         <>
             <PageSeo
-                title={`About - ${siteMetadata.author}`}
-                description={`About me - ${siteMetadata.author}`}
-                url={`${siteMetadata.siteUrl}/about`}
+                title="Stain and Odor Removal"
+                description="Jake's Steamer sanitizes and deodorizes carpets and upholstered furniture to completely eliminate stains and urine odors. Jake’s freshens the carpet by treating pet odors and restoring the original freshness and texture."
+                url={`${siteMetadata.siteUrl}/StainAndOdorRemoval`}
             />
             <div className="flex flex-col justify-center w-9/12 mx-auto mb-16 items-start mt-15vh">
                 <header>
