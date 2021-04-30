@@ -2,6 +2,9 @@
 /* eslint-disable no-use-before-define */
 module.exports = {
     target: 'serverless',
+    future: {
+        webpack5: true
+    },
     async headers() {
         return [
             {
@@ -14,13 +17,13 @@ module.exports = {
 
 // https://securityheaders.com
 const ContentSecurityPolicy = `
-  default-src 'self' 'https://housecallpro.com' 'https://*.housecallpro.com';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' *.youtube.com *.twitter.com cdn.usefathom.com https://*.housecallpro.com;
-  child-src *.youtube.com *.google.com *.twitter.com https://*.housecallpro.com;
-  style-src 'self' 'unsafe-inline' *.googleapis.com https://*.housecallpro.com;
+  default-src 'self';
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' https://housecallpro.com  https://*.housecallpro.com https://plausible.io;
+  child-src  https://*.housecallpro.com https://plausible.io;
+  style-src 'self' 'unsafe-inline' https://*.housecallpro.com https://plausible.io;
   img-src * blob: data:;
   media-src 'none';
-  connect-src *;
+  connect-src * https://plausible.io;
   font-src 'self';
 `;
 

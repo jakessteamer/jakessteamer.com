@@ -17,12 +17,12 @@ class MyDocument extends Document {
                     async
                     defer
                     data-domain="jakessteamer.com"
+                    nonce="2726c7f26c"
                     src="https://plausible.io/js/plausible.outbound-links.js"
                 />
 
                 <script
-                    async
-                    defer
+                    nonce="2726c7f26c"
                     src="https://www.housecallpro.com/assets/BookingBar.js?company=e5fb241079164c83aa85e58e9aa1b12b&path=Jakes-Steamer"
                 />
             </Html>
