@@ -6,7 +6,7 @@ export default function AirDuctCleaning() {
     return (
         <>
             <PageSeo
-                title={`About - ${siteMetadata.author}`}
+                title={`Jake's Steamer central airduct cleaning service cleans dirty airducts. Jake's Steamer is rated affordable and the best from all customers`}
                 description={`About me - ${siteMetadata.author}`}
                 url={`${siteMetadata.siteUrl}/about`}
             />

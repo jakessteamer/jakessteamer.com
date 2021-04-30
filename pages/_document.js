@@ -12,7 +12,14 @@ class MyDocument extends Document {
                     <NextScript />
                 </body>
                 <script
-                    type="text/javascript"
+                    async
+                    defer
+                    data-domain="jakessteamer.com"
+                    src="https://plausible.io/js/plausible.js"
+                />
+                <script
+                    async
+                    defer
                     src="https://www.housecallpro.com/assets/BookingBar.js?company=e5fb241079164c83aa85e58e9aa1b12b&path=Jakes-Steamer"
                 />
             </Html>
