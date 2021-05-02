@@ -1,15 +1,28 @@
 /* eslint-disable global-require */
 /* eslint-disable no-use-before-define */
+const { createSecureHeaders } = require('next-secure-headers');
+
 module.exports = {
     target: 'serverless',
     future: {
         webpack5: true
     },
+    poweredByHeader: false,
     async headers() {
         return [
             {
                 source: '/(.*)',
-                headers: securityHeaders
+                headers: createSecureHeaders({
+                    referrerPolicy: ['strict-origin-when-cross-origin', 'origin-when-cross-origin'],
+                    forceHTTPSRedirect: [
+                        true,
+                        { maxAge: 60 * 60 * 24 * 4, includeSubDomains: true }
+                    ],
+                    frameGuard: 'sameorigin',
+                    noopen: 'noopen',
+                    nosniff: 'nosniff',
+                    xssProtection: 'sanitize'
+                })
             }
         ];
     }
@@ -28,11 +41,6 @@ const ContentSecurityPolicy = `
 `;
 
 const securityHeaders = [
-    // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
-    {
-        key: 'Content-Security-Policy',
-        value: ContentSecurityPolicy.replace(/\n/g, '')
-    },
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
     {
         key: 'Referrer-Policy',
@@ -41,7 +49,7 @@ const securityHeaders = [
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
     {
         key: 'X-Frame-Options',
-        value: 'DENY'
+        value: 'SAMEORIGIN'
     },
     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
     {
