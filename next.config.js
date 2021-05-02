@@ -13,9 +13,9 @@ module.exports = {
 // https://securityheaders.com
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' https://housecallpro.com  https://*.housecallpro.com https://plausible.io;
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' https://housecallpro.com  https://*.housecallpro.com https://plausible.io https://*.netlify.app;
   child-src  https://*.housecallpro.com https://plausible.io;
-  style-src 'self' 'unsafe-inline' https://*.housecallpro.com https://plausible.io;
+  style-src 'self' 'unsafe-inline' https://*.housecallpro.com https://plausible.io https://*.netlify.app;
   img-src * blob: data:;
   media-src 'none';
   connect-src * https://plausible.io;
