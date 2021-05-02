@@ -7,25 +7,7 @@ module.exports = {
     future: {
         webpack5: true
     },
-    poweredByHeader: false,
-    async headers() {
-        return [
-            {
-                source: '/(.*)',
-                headers: createSecureHeaders({
-                    referrerPolicy: ['strict-origin-when-cross-origin', 'origin-when-cross-origin'],
-                    forceHTTPSRedirect: [
-                        true,
-                        { maxAge: 60 * 60 * 24 * 4, includeSubDomains: true }
-                    ],
-                    frameGuard: 'sameorigin',
-                    noopen: 'noopen',
-                    nosniff: 'nosniff',
-                    xssProtection: 'sanitize'
-                })
-            }
-        ];
-    }
+    poweredByHeader: false
 };
 
 // https://securityheaders.com

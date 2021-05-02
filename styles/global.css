@@ -341,3 +341,18 @@ nav ul li {
 .accessible-dark-blue {
     color: #062d55;
 }
+
+#housecall-bar {
+    background-color: white !important;
+}
+
+#housecall-button {
+    background-color: #106cd1 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 8px rgba(0, 9, 61, 0.24) !important;
+    transform: translateZ(calc(-6 * 1px)) !important;
+}
+
+body img {
+    display: none;
+}
