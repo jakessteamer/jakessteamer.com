@@ -25,53 +25,14 @@ export default function Navbar() {
         }
     }, [router.asPath]);
 
-    const scrollYPosition = useRef(0);
-    const [goingUp, setGoingUp] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const currentScrollY = window.scrollY;
-            if (scrollYPosition.current > 10) {
-                setGoingUp(false);
-            }
-            if (scrollYPosition.current < currentScrollY) {
-                setGoingUp(true);
-            }
-
-            scrollYPosition.current = currentScrollY;
-        };
-        window.addEventListener('scroll', handleScroll, { passive: true });
-
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [goingUp]);
-    const navigateToSection = () => {
-        if (typeof window !== 'undefined') {
-            const element = document.getElementById(window.location.hash);
-            if (element) {
-                // Smooth scroll to that element (Align to top)
-                element.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start',
-                    inline: 'nearest'
-                });
-            }
-        }
-    };
-
     return (
-        <nav
-            id="header"
-            className={`${
-                goingUp || isNavOpen
-                    ? 'fixed w-full z-40 top-0 text-white mt-10 bg-white'
-                    : 'fixed w-full z-40 top-0 text-white mt-10'
-            }`}>
-            <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <nav id="navbar" className="fixed w-full z-40 top-0 text-white bg-white">
+            <div className="w-full container mx-auto flex flex-wrap lg:flex-nowrap items-center justify-between mt-0 py-2">
                 <div className="pl-4 flex items-center">
                     <Link href="/">
                         <a>
                             <Image
-                                src="/images/logos/jakessteamer-logo-transparent.png"
+                                src="/images/logos/jakessteamer-nav-logo.png"
                                 width={182}
                                 height={112}
                                 alt="JAKE'S STEAMER"
@@ -80,14 +41,14 @@ export default function Navbar() {
                         </a>
                     </Link>
                 </div>
-                <div className="block lg:hidden p-2">
+                <div className="block lg:hidden p-2 mr-4">
                     <button
                         id="nav-toggle"
                         type="button"
                         className="flex items-center p-1 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                         onClick={toggleNavMenu}>
                         <svg
-                            className="h-10 w-10 brand-blue"
+                            className="h-12 w-12 brand-blue"
                             viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
                             <title>Menu</title>
@@ -167,6 +128,14 @@ export default function Navbar() {
                                     Emergency Flood
                                 </a>
                             </Link>
+                        </li>
+                        <li className="p-2">
+                            <a
+                                id="scheduling-btn"
+                                href="https://book.housecallpro.com/book/Jakes-Steamer/e5fb241079164c83aa85e58e9aa1b12b"
+                                className="inline-block bg-brand-blue text-white">
+                                Schedule Carpet Cleaning
+                            </a>
                         </li>
                     </ul>
                 </div>

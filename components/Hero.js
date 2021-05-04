@@ -27,22 +27,6 @@ export default function Hero() {
             <h2 className="z-10 text-4xl sm:text-6xl lg:text-7xl  leading-none font-extrabold tracking-tight hero-headline ">
                 The Carpet Cleaning Professionals
             </h2>
-            {/* <div className="absolute top-0 bottom-0 left-0 right-0 h-screen w-full flex flex-col justify-center">
-                <h1 className="z-10 text-4xl sm:text-6xl lg:text-7xl  leading-none font-extrabold tracking-tight hero-headline">
-                    Cleaner. Happier. Healthier.
-                </h1>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold md:font-bold z-10 hero-headline">
-                    The Carpet Cleaning Professionals
-                </h2>
-            </div> */}
-            {/* <div id="text-overlay" className="grid grid-rows-2 grid-cols-1 items-center h-screen ">
-                <h1 className="z-10 text-4xl sm:text-6xl lg:text-7xl  leading-none font-extrabold tracking-tight text-center hero-headline">
-                    Cleaner. Happier. Healthier.
-                </h1>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold md:font-bold z-10 mt-36 md:mt-48 text-center hero-headline">
-                    The Carpet Cleaning Professionals
-                </h2>
-            </div> */}
 
             <figure className="absolute left-0 bottom-0 right-0 w-full overflow-hidden">
                 <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg">
