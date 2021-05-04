@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+import Image from 'next/image';
 
 export default function Services() {
     return (
@@ -29,11 +30,17 @@ export default function Services() {
                     <div className="flex flex-wrap -m-4">
                         <article className="xl:w-1/4 md:w-1/2 p-4 ">
                             <div className="bg-bed4ff p-6 rounded-lg">
-                                <img
-                                    className="h-40 rounded w-full object-cover object-center mb-6"
-                                    src="/images/carpets/carpet-5-640x640-md.jpg"
-                                    alt="Carpet Cleaning Service"
-                                />
+                                <Link href="/CarpetCleaning">
+                                    <a href="">
+                                        <Image
+                                            height={640}
+                                            width={640}
+                                            className="w-full"
+                                            alt="Carpet Cleaning Service"
+                                            src="/images/carpets/carpet-5-640x640-md.jpg"
+                                        />
+                                    </a>
+                                </Link>
                                 <h1
                                     id="carpet-service-card"
                                     className="text-2xl text-gray-900 font-bold mb-4">
@@ -66,11 +73,17 @@ export default function Services() {
                         </article>
                         <article className="xl:w-1/4 md:w-1/2 p-4">
                             <div className="bg-bed4ff p-6 rounded-lg">
-                                <img
-                                    className="h-40 rounded w-full object-cover object-center mb-6"
-                                    src="/images/upholstery/upholstery-sp1.jpg"
-                                    alt="content"
-                                />
+                                <Link href="/UpholsteryCleaning">
+                                    <a href="">
+                                        <Image
+                                            height={199}
+                                            width={400}
+                                            className="w-full"
+                                            alt="Upholstery Cleaning Service"
+                                            src="/images/upholstery/upholstery-sp1.jpg"
+                                        />
+                                    </a>
+                                </Link>
                                 <h1 className="text-2xl text-gray-900 font-bold mb-4">
                                     Upholstery
                                 </h1>
@@ -99,11 +112,17 @@ export default function Services() {
                         </article>
                         <article className="xl:w-1/4 md:w-1/2 p-4">
                             <div className="bg-bed4ff p-6 rounded-lg">
-                                <img
-                                    className="h-40 rounded w-full object-cover object-center mb-6"
-                                    src="/images/pet-stain.jpg"
-                                    alt="content"
-                                />
+                                <Link href="/StainAndOdorRemoval">
+                                    <a href="">
+                                        <Image
+                                            height={267}
+                                            width={400}
+                                            alt="Pet Stain and Odor Removal Cleaning Service"
+                                            src="/images/pet-stain.jpg"
+                                        />
+                                    </a>
+                                </Link>
+
                                 <h1 className="text-2xl text-gray-900 font-bold mb-4">
                                     Pet Stain and Odor Removal
                                 </h1>
@@ -131,11 +150,16 @@ export default function Services() {
                         </article>
                         <article className="xl:w-1/4 md:w-1/2 p-4">
                             <div className="bg-bed4ff p-6 rounded-lg">
-                                <img
-                                    className="h-40 rounded w-full object-cover object-center mb-6"
-                                    src="/images/tile/tile-3-640x480-md.jpg"
-                                    alt="content"
-                                />
+                                <Link href="/TileAndGroutCleaning">
+                                    <a href="">
+                                        <Image
+                                            height={480}
+                                            width={640}
+                                            alt="Tile and Grout Cleaning Service"
+                                            src="/images/tile/tile-3-640x480-md.jpg"
+                                        />
+                                    </a>
+                                </Link>
                                 <h1 className="text-2xl text-gray-900 font-bold mb-4">
                                     Tile and Grout Cleaning
                                 </h1>
@@ -166,11 +190,16 @@ export default function Services() {
                         </article>
                         <article className="xl:w-1/4 md:w-1/2 p-4">
                             <div className="bg-bed4ff p-6 rounded-lg">
-                                <img
-                                    className="h-40 rounded w-full object-cover object-center mb-6"
-                                    src="/images/water-damage-restoration/water-damage-restoration-600x600.jpg"
-                                    alt="content"
-                                />
+                                <Link href="/WaterDamageRestoration">
+                                    <a href="">
+                                        <Image
+                                            height={600}
+                                            width={600}
+                                            alt="Water Damage Restoration Fixing and Cleaning Service"
+                                            src="/images/water-damage-restoration/water-damage-restoration-600x600.jpg"
+                                        />
+                                    </a>
+                                </Link>
                                 <h1 className="text-2xl text-gray-900 font-bold mb-4">
                                     Water Damage Restoration
                                 </h1>
@@ -202,11 +231,16 @@ export default function Services() {
                         </article>
                         <article className="xl:w-1/4 md:w-1/2 p-4">
                             <div className="bg-bed4ff p-6 rounded-lg">
-                                <img
-                                    className="h-40 rounded w-full object-cover object-center mb-6"
-                                    src="/images/airducts/air-ducts.jpg"
-                                    alt="content"
-                                />
+                                <Link href="/AirDuctCleaning">
+                                    <a href="">
+                                        <Image
+                                            height={324}
+                                            width={504}
+                                            alt="Air Duct Cleaning Service"
+                                            src="/images/airducts/air-ducts.jpg"
+                                        />
+                                    </a>
+                                </Link>
                                 <h1 className="text-2xl text-gray-900 font-bold mb-4">
                                     Air Duct Cleaning
                                 </h1>
