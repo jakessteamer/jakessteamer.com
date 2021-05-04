@@ -22,6 +22,10 @@
     box-shadow: 0 5px 20px -10px #000;
 }
 
+#navbar > div {
+    height: 100%;
+}
+
 #scheduling-btn {
     background-color: #106cd1;
     border: 2px solid #fff;
@@ -154,75 +158,6 @@ nav ul li {
     background-repeat: no-repeat;
 }
 
-.fab-wrapper {
-    position: fixed;
-    bottom: 3rem;
-    right: 3rem;
-    z-index: 100;
-}
-
-.fab {
-    background-color: transparent;
-    bottom: -1rem;
-    right: -1rem;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 32px;
-    transition: height 300ms;
-    transition-timing-function: ease;
-    position: absolute;
-    text-align: center;
-    overflow: hidden;
-    border-bottom-right-radius: 6px;
-    box-shadow: 0px 5px 20px #81a4f1;
-}
-
-.mainop {
-    margin: auto;
-    width: 64px;
-    height: 64px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transition: transform 300ms;
-    background-color: #f44336;
-    border-radius: 32px;
-    z-index: 6;
-    border-bottom-right-radius: 6px;
-    background-color: #126ee2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-}
-
-.mainop:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    z-index: 1;
-    border: 1px solid #0c50a7;
-}
-
-.arrow {
-    color: var(--black);
-    font-size: 2em;
-    margin-bottom: 2em;
-}
-.arrow a {
-    color: var(--black);
-}
-.bounce {
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 5s infinite;
-}
-
 @keyframes bounce {
     0%,
     20%,
@@ -239,47 +174,50 @@ nav ul li {
     }
 }
 
-.faphonealt-icon {
-    color: black;
-}
-
-/* FabIcon Refactor */
-
-.mdc-position {
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    z-index: 100;
-}
-
-.arrow-position {
-    position: fixed;
-    bottom: 1rem;
-    right: 1.78rem;
-    z-index: 100;
-}
-
-.mdc-fab,
-[role='button'] {
-    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14),
-        0 1px 18px 0 rgba(0, 0, 0, 0.12);
-    display: inline-flex;
-    position: relative;
+.fabWrap {
     align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    width: 56px;
-    height: 56px;
-    padding: 0;
-    border: none;
-    fill: currentColor;
-    text-decoration: none;
-    cursor: pointer;
-    user-select: none;
-    background-color: #126ee2;
-    color: black;
+    bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 24px;
+    z-index: 100;
+}
+
+.fabIcon::before {
+    background-image: url('/images/fab-phone.png');
+    background-size: cover;
+    content: '';
+    height: 80%;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.fabIcon {
+    align-items: center;
+    background-color: #106cd1;
+    border: 0;
     border-radius: 50%;
-    border: 1px solid #0c50a7;
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
+        0 1px 10px 0 rgb(0 0 0 / 12%);
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    height: 56px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-indent: -9999px;
+    text-overflow: initial;
+    text-transform: uppercase;
+    width: 56px;
+}
+
+.fabIconArrow {
+    color: var(--black);
+    font-size: 2em;
+    animation: bounce 5s infinite;
 }
 
 .heading-underline {

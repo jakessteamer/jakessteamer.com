@@ -27,15 +27,15 @@ export default function Navbar() {
 
     return (
         <nav id="navbar" className="fixed w-full z-40 top-0 text-white bg-white">
-            <div className="w-full container mx-auto flex flex-wrap lg:flex-nowrap items-center justify-between mt-0 py-2">
+            <div className="w-full container mx-auto flex flex-wrap lg:flex-nowrap items-center justify-between mt-0">
                 <div className="pl-4 flex items-center">
                     <Link href="/">
                         <a>
                             <Image
-                                src="/images/logos/jakessteamer-nav-logo.png"
+                                src="/images/logos/jakessteamer-company-logo-cropped.png"
                                 width={182}
                                 height={112}
-                                alt="JAKE'S STEAMER"
+                                alt="JAKE'S STEAMER Company Logo"
                                 className="logo"
                             />
                         </a>
