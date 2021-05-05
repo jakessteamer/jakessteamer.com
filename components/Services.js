@@ -36,7 +36,7 @@ export default function Services() {
                                             height={640}
                                             width={640}
                                             alt="Carpet Cleaning Service"
-                                            src="/images/carpets/carpet-5-640x640-webp.webp"
+                                            src="/images/carpets/carpet-5-640x640-md.jpg"
                                         />
                                     </a>
                                 </Link>
@@ -78,7 +78,7 @@ export default function Services() {
                                             height={640}
                                             width={640}
                                             alt="Upholstery Cleaning Service"
-                                            src="/images/upholstery/couch-upholstery-square.webp"
+                                            src="/images/upholstery/couch-upholstery-square.jpg"
                                         />
                                     </a>
                                 </Link>
@@ -116,7 +116,7 @@ export default function Services() {
                                             height={600}
                                             width={900}
                                             alt="Pet Stain and Odor Removal Cleaning Service"
-                                            src="/images/pet-stain-and-odor-removal/pet-stain-and-odor-removal-service-2-original.webp"
+                                            src="/images/pet-stain-and-odor-removal/pet-stain-and-odor-removal-service-2-jpg.jpg"
                                         />
                                     </a>
                                 </Link>
@@ -154,7 +154,7 @@ export default function Services() {
                                             height={480}
                                             width={640}
                                             alt="Tile and Grout Cleaning Service"
-                                            src="/images/tile/tile-3-640x480-md-webp.webp"
+                                            src="/images/tile/tile-3-640x480-md.jpg"
                                         />
                                     </a>
                                 </Link>
@@ -194,7 +194,7 @@ export default function Services() {
                                             height={600}
                                             width={600}
                                             alt="Water Damage Restoration Fixing and Cleaning Service"
-                                            src="/images/water-damage-restoration/water-damage-restoration-600x600-webp.webp"
+                                            src="/images/water-damage-restoration/water-damage-restoration-600x600.jpg"
                                         />
                                     </a>
                                 </Link>
@@ -235,7 +235,7 @@ export default function Services() {
                                             height={415}
                                             width={453}
                                             alt="Air Duct Cleaning Service"
-                                            src="/images/airducts/toddler-staring-into-air-ducts.webp"
+                                            src="/images/airducts/toddler-staring-into-air-ducts-jpg.jpg"
                                         />
                                     </a>
                                 </Link>

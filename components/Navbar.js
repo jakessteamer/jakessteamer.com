@@ -28,7 +28,17 @@ export default function Navbar() {
     }, [router.asPath]);
 
     return (
-        <nav id="navbar" className="fixed w-full z-40 top-0 text-white bg-white">
+        <nav
+            id="navbar"
+            className="fixed w-full z-40 top-0 text-white bg-white flex flex-col flex-wrap">
+            <div id="housecall-bar">
+                <a
+                    id="housecall-button"
+                    target="_top"
+                    href="https://book.housecallpro.com/book/Jakes-Steamer/e5fb241079164c83aa85e58e9aa1b12b">
+                    BOOK ONLINE
+                </a>
+            </div>
             <div className="w-full  mx-auto flex flex-wrap lg:flex-nowrap items-center justify-between mt-0">
                 <div className="pl-4  flex items-center">
                     <Link href="/">
