@@ -29,8 +29,8 @@ export default function Navbar() {
 
     return (
         <nav id="navbar" className="fixed w-full z-40 top-0 text-white bg-white">
-            <div className="w-full container mx-auto flex flex-wrap lg:flex-nowrap items-center justify-between mt-0">
-                <div className="pl-4 flex items-center">
+            <div className="w-full  mx-auto flex flex-wrap lg:flex-nowrap items-center justify-between mt-0">
+                <div className="pl-4  flex items-center">
                     <Link href="/">
                         <a>
                             <Image
@@ -62,27 +62,19 @@ export default function Navbar() {
                 <div
                     className={`${
                         isNavOpen
-                            ? 'w-full flex-grow lg:flex lg:items-center lg:w-auto mt-2 lg:mt-0 lg:bg-transparent text-black p-2 lg:p-0 z-20 bg-white'
+                            ? 'w-full flex-grow lg:flex lg:items-center lg:w-auto mt-2 lg:mt-0 lg:bg-transparent text-black p-2 lg:p-0 z-20 bg-white h-screen'
                             : 'w-full flex-grow lg:flex lg:items-center lg:w-auto mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-2 lg:p-0 z-20 hidden'
                     } text-center w-full lg:inline-flex lg:flex-grow lg:w-auto`}
                     id="nav-content">
-                    <ul className="list-reset lg:flex justify-end flex-1 text-left text-xl font-bold leading-none">
-                        <li className="p-1">
+                    <ul className="list-reset lg:flex justify-end flex-1 text-left text-xl font-bold leading-none align-baseline">
+                        <li className="p-3 ">
                             <Link href="/CarpetCleaning">
                                 <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2">
                                     Carpet Cleaning
                                 </a>
                             </Link>
                         </li>
-                        <li className="p-1">
-                            {/* <Link href="/#service-section">
-                <a
-                  href="#service-section"
-                  className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2"
-                >
-                  Services
-                </a>
-              </Link> */}
+                        <li className="p-3">
                             <Link href="/StainAndOdorRemoval">
                                 <a
                                     href="/#service-section"
@@ -91,51 +83,39 @@ export default function Navbar() {
                                 </a>
                             </Link>
                         </li>
-                        <li className="p-1">
-                            {/* <Link href="/#testimonials-section">
-                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2">
-                  Testimonials
-                </a>
-              </Link> */}
+                        <li className="p-3">
                             <Link href="/TileAndGroutCleaning">
                                 <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2">
                                     Tile and Grout Cleaning
                                 </a>
                             </Link>
                         </li>
-                        {/* <li className="mr-3">
-              <Link href="#contact-section">
-                <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2">
-                  Contact
-                </a>
-              </Link>
-            </li> */}
-                        <li className="p-1">
+                        <li className="p-3">
                             <Link href="/UpholsteryCleaning">
                                 <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2">
                                     Upholstery Cleaning
                                 </a>
                             </Link>
                         </li>
-                        <li className="p-1">
+                        <li className="p-3">
                             <Link href="/AirDuctCleaning">
                                 <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2">
                                     Air Duct Cleaning
                                 </a>
                             </Link>
                         </li>
-                        <li className="p-1">
+                        <li className="p-3">
                             <Link href="/WaterDamageRestoration">
                                 <a className="inline-block brand-blue no-underline hover:text-gray-800 hover:text-underline py-2 px-2">
                                     Emergency Flood
                                 </a>
                             </Link>
                         </li>
-                        <li className="p-2 inline-block bg-brand-blue text-white">
+                        <li className="p-2">
                             <a
                                 id="scheduling-btn"
                                 href="https://book.housecallpro.com/book/Jakes-Steamer/e5fb241079164c83aa85e58e9aa1b12b"
-                                className="transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110"
+                                className=""
                                 onClick={() => {
                                     plausible('scheduleAppointment');
                                 }}>
