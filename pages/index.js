@@ -4,7 +4,6 @@ import { PageSeo } from '../components/SEO';
 import siteMetadata from '../data/siteMetadata.json';
 import Services from '../components/Services';
 import Hero from '../components/Hero';
-
 import ImageGallery from '../components/ImageGallery';
 import Testimonials from '../components/Testimonials';
 import CTA from '../components/CTA';

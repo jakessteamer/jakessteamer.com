@@ -9,9 +9,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePlausible } from 'next-plausible';
 import { useRouter } from 'next/router';
 
 export default function Navbar() {
+    const plausible = usePlausible();
     const router = useRouter();
 
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -129,11 +131,14 @@ export default function Navbar() {
                                 </a>
                             </Link>
                         </li>
-                        <li className="p-2">
+                        <li className="p-2 inline-block bg-brand-blue text-white">
                             <a
                                 id="scheduling-btn"
                                 href="https://book.housecallpro.com/book/Jakes-Steamer/e5fb241079164c83aa85e58e9aa1b12b"
-                                className="inline-block bg-brand-blue text-white">
+                                className="transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110"
+                                onClick={() => {
+                                    plausible('scheduleAppointment');
+                                }}>
                                 Schedule Carpet Cleaning
                             </a>
                         </li>

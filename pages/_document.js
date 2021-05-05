@@ -12,17 +12,6 @@ class MyDocument extends Document {
                 <body className="leading-normal tracking-normal text-white">
                     <Main />
                     <NextScript />
-                    <script
-                        async
-                        defer
-                        data-domain="jakessteamer.com"
-                        src="https://plausible.io/js/plausible.outbound-links.js"
-                    />
-                    {/*
-                    <script
-                        src="https://www.housecallpro.com/assets/BookingBar.js?company=e5fb241079164c83aa85e58e9aa1b12b&path=Jakes-Steamer"
-                        defer
-                    /> */}
                 </body>
             </Html>
         );

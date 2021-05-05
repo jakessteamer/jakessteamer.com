@@ -15,7 +15,7 @@ export default function ImageGallery() {
                 <div className="app">
                     <div className="hs">
                         <Image
-                            className="item shadow-lg rounded-lg"
+                            className="item overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
                             src="/images/carpets/clean-carpet-before-after.jpg"
                             width={206}
                             height={206}

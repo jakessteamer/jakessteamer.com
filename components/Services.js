@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Link from 'next/link';
-import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
+import ScrollableAnchor from 'react-scrollable-anchor';
 import Image from 'next/image';
 
 export default function Services() {
@@ -35,9 +35,8 @@ export default function Services() {
                                         <Image
                                             height={640}
                                             width={640}
-                                            className="w-full"
                                             alt="Carpet Cleaning Service"
-                                            src="/images/carpets/carpet-5-640x640-md.jpg"
+                                            src="/images/carpets/carpet-5-640x640-webp.webp"
                                         />
                                     </a>
                                 </Link>
@@ -76,11 +75,10 @@ export default function Services() {
                                 <Link href="/UpholsteryCleaning">
                                     <a href="">
                                         <Image
-                                            height={199}
-                                            width={400}
-                                            className="w-full"
+                                            height={640}
+                                            width={640}
                                             alt="Upholstery Cleaning Service"
-                                            src="/images/upholstery/upholstery-sp1.jpg"
+                                            src="/images/upholstery/couch-upholstery-square.webp"
                                         />
                                     </a>
                                 </Link>
@@ -115,10 +113,10 @@ export default function Services() {
                                 <Link href="/StainAndOdorRemoval">
                                     <a href="">
                                         <Image
-                                            height={267}
-                                            width={400}
+                                            height={600}
+                                            width={900}
                                             alt="Pet Stain and Odor Removal Cleaning Service"
-                                            src="/images/pet-stain.jpg"
+                                            src="/images/pet-stain-and-odor-removal/pet-stain-and-odor-removal-service-2-original.webp"
                                         />
                                     </a>
                                 </Link>
@@ -156,7 +154,7 @@ export default function Services() {
                                             height={480}
                                             width={640}
                                             alt="Tile and Grout Cleaning Service"
-                                            src="/images/tile/tile-3-640x480-md.jpg"
+                                            src="/images/tile/tile-3-640x480-md-webp.webp"
                                         />
                                     </a>
                                 </Link>
@@ -196,7 +194,7 @@ export default function Services() {
                                             height={600}
                                             width={600}
                                             alt="Water Damage Restoration Fixing and Cleaning Service"
-                                            src="/images/water-damage-restoration/water-damage-restoration-600x600.jpg"
+                                            src="/images/water-damage-restoration/water-damage-restoration-600x600-webp.webp"
                                         />
                                     </a>
                                 </Link>
@@ -234,10 +232,10 @@ export default function Services() {
                                 <Link href="/AirDuctCleaning">
                                     <a href="">
                                         <Image
-                                            height={324}
-                                            width={504}
+                                            height={415}
+                                            width={453}
                                             alt="Air Duct Cleaning Service"
-                                            src="/images/airducts/air-ducts.jpg"
+                                            src="/images/airducts/toddler-staring-into-air-ducts.webp"
                                         />
                                     </a>
                                 </Link>

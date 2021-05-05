@@ -13,7 +13,7 @@ export default function Hero() {
         <section className="flex flex-col justify-evenly  text-center gap-y-52 h-screen w-full">
             <Image
                 className="opacity-95"
-                src="/images/kid-and-mom-on-carpet-high-def.jpg"
+                src="/images/kid-and-mom-on-carpet-high-def-webp.webp"
                 layout="fill"
                 objectFit="cover"
                 quality={100}
