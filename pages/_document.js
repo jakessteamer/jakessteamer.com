@@ -12,6 +12,7 @@ class MyDocument extends Document {
                 <body className="leading-normal tracking-normal text-white">
                     <Main />
                     <NextScript />
+
                 </body>
             </Html>
         );

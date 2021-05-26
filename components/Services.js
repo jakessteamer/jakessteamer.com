@@ -72,7 +72,7 @@ export default function Services() {
                         </article>
                         <article className="xl:w-1/4 md:w-1/2 p-4">
                             <div className="bg-bed4ff p-6 rounded-lg">
-                                <Link href="/UpholsteryCleaning">
+                                <Link href="/CarpetCleaning">
                                     <a href="">
                                         <Image
                                             height={640}
@@ -91,7 +91,7 @@ export default function Services() {
                                     cleaning of all upholstered furniture and cushions of the same
                                     material.
                                 </p>
-                                <Link href="/UpholsteryCleaning">
+                                <Link href="/CarpetCleaning">
                                     <a className="learn-more-btn rounded-lg pl-5 mr-12  inline-flex items-center mt-4 text-xl">
                                         Learn More
                                         <svg

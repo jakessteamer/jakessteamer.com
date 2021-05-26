@@ -12,7 +12,7 @@ export default function CarpetCleaning() {
                 url={`${siteMetadata.siteUrl}/CarpetCleaning`}
             />
             <article className="flex flex-col justify-center w-9/12 mx-auto mb-16 items-start mt-15vh">
-                <h1 className="font-bold text-3xl md:text-5xl tracking-tight my-12 text-black dark:text-white">
+                <h1 className="font-bold text-3xl md:text-5xl tracking-tight my-12 text-black ">
                     Carpet Cleaning
                 </h1>
                 <div style={{ position: 'relative', width: '100%', height: '320px' }}>
@@ -25,18 +25,16 @@ export default function CarpetCleaning() {
                     />
                 </div>
                 <div className="prose dark:prose-dark max-w-none w-full mt-12">
-                    <p>
-                        The first important professional method to clean your carpet is Steam
-                        cleaning. Here we are using the steam of detergent solution to clean the
-                        carpets. To employ Steam cleaning method we need to have a truck mount unit
-                        that has rotary brushes which apply hot steam in to the carpet and remove
-                        dust and soil. The success of steam cleaning rely on the technicians
-                        experience and skill with the quality of truck mount machine.The machine
-                        should keep the detergent solution in a proper temperature to get steam
-                        continuously and the pressure of steam spraying should be controllable at
-                        any time. When the hot steam applied on the carpet the soil and dust
-                        particles on the carpet will be removed. It is very easy to clean the
-                        removed soil particle from the carpet.
+                    <p className="mb-4">
+                        For best results you should have a professional steam clean your carpets. We
+                        have a truck mount unit that has rotary brushes which apply hot steam in to
+                        the carpet, detergent, and remove dust and soil. The success of steam
+                        cleaning rely on the technicians experience and skill with the quality of
+                        truck mount machine.The machine should keep the detergent solution in a
+                        proper temperature to get steam continuously and the pressure of steam
+                        spraying should be controllable at any time. When the hot steam applied on
+                        the carpet the soil and dust particles on the carpet will be removed. It is
+                        very easy to clean the removed soil particle from the carpet.
                     </p>
                     <p>
                         Although regular vacuuming can remove dry soil and debris from your

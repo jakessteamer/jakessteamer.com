@@ -8,12 +8,12 @@ export default function Footer() {
                         <h3 className="text-xl text-white-800 font-bold leading-none mb-3">
                             Service Areas:
                         </h3>
-                        <p className="leading-relaxed text-xl">Gaines County</p>
-                        <p className="leading-relaxed text-xl">Andrews County</p>
-                        <p className="leading-relaxed text-xl">Midland County</p>
-                        <p className="leading-relaxed text-xl">Yoakum County</p>
-                        <p className="leading-relaxed text-xl">Dawson County</p>
-                        <p className="leading-relaxed text-xl">Terry County</p>
+                        <p className="leading-relaxed text-xl text-white">Gaines County</p>
+                        <p className="leading-relaxed text-xl text-white">Andrews County</p>
+                        <p className="leading-relaxed text-xl text-white">Midland County</p>
+                        <p className="leading-relaxed text-xl text-white">Yoakum County</p>
+                        <p className="leading-relaxed text-xl text-white">Dawson County</p>
+                        <p className="leading-relaxed text-xl text-white">Terry County</p>
                     </div>
                     <div className="flex-1">
                         <div className="flex flex-col contact-info">
@@ -52,11 +52,11 @@ export default function Footer() {
                             <h3 className="uppercase text-xl text-white-800 font-bold leading-none mb-3">
                                 Hours:
                             </h3>
-                            <p className="leading-relaxed text-xl">Sunday: Closed</p>
-                            <p className="leading-relaxed text-xl">
+                            <p className="leading-relaxed text-xl text-white">Sunday: Closed</p>
+                            <p className="leading-relaxed text-xl text-white">
                                 Monday - Friday: 8:00AM-6:00PM
                             </p>
-                            <p className="leading-relaxed text-xl">
+                            <p className="leading-relaxed text-xl text-white">
                                 Saturday: Saturday 8:00AM-12:00AM
                             </p>
                         </div>

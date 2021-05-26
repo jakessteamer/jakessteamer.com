@@ -7,6 +7,9 @@
     --black: #1f2937;
     --gutter: 20px;
 }
+p {
+  color: #000;
+}
 
 #navbar {
     box-shadow: 0 5px 20px -10px #000;
@@ -255,7 +258,7 @@ nav ul li {
     color: #062d55;
 }
 
-#housecall-bar {
+/* #housecall-bar {
     background-color: white;
     height: 50px;
     text-align: center;
@@ -277,8 +280,8 @@ nav ul li {
     border-radius: 12px !important;
     box-shadow: 0 4px 8px rgba(0, 9, 61, 0.24) !important;
     transform: translateZ(calc(-6 * 1px)) !important;
-}
+} */
 
-body img {
+/* body img {
     display: none;
-}
+} */

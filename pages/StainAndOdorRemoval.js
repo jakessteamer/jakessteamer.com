@@ -27,7 +27,7 @@ export default function StainAndOdorRemoval() {
                     />
                 </div>
                 <main className="prose dark:prose-dark max-w-none w-full mt-12">
-                    <p>
+                    <p className="mb-4">
                         For many dog and cat owners, pet odor removal from carpets is an unfortunate
                         fact of life. Puppies and kittens have a tendency to mess up flooring quite
                         a bit before they are properly trained, and by the time they’re going
@@ -36,19 +36,22 @@ export default function StainAndOdorRemoval() {
                         animals leave behind. In some cases, a professional may be needed to handle
                         a particularly difficult and soiled situation.
                     </p>
-                    <p>
+                    <p className="mb-4">
                         The first thing to do when attempting pet odor removal is to locate the
                         problem area on the carpet. This is often easier said than done, as dark
                         flooring can make the area practically invisible. If finding the spot is too
                         hard to do with the naked eye, illuminate the area with a black light. This
                         type of bulb will highlight areas where Fluffy or Spot have been doing their
                         business and will make give a starting spot when it comes to tackling the
-                        problem. Another way to track down soiled spots is to watch how other
-                        animals track through the home. If there are multiple dogs or cats in the
-                        house, they will stop and thoroughly investigate and sniff any area where
-                        other animals have evacuated. Animals have a tendency to use the bathroom
-                        where they detect the scent of urine or feces, so the problem could snowball
-                        and training the pup or kitten will be that much more difficult.
+                        problem.
+                    </p>
+                    <p className="mb-4">
+                        Another way to track down soiled spots is to watch how other animals track
+                        through the home. If there are multiple dogs or cats in the house, they will
+                        stop and thoroughly investigate and sniff any area where other animals have
+                        evacuated. Animals have a tendency to use the bathroom where they detect the
+                        scent of urine or feces, so the problem could snowball and training the pup
+                        or kitten will be that much more difficult.
                     </p>
                     <p>
                         Pet odor removal must also be done immediately because if the soiled patch
