@@ -1,14 +1,14 @@
 /* eslint-disable react/no-danger */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/prop-types */
-import React from 'react';
-import '../styles/global.css';
-import Head from 'next/head';
-import { DefaultSeo } from 'next-seo';
-import PlausibleProvider from 'next-plausible';
-import { SEO } from '../components/SEO';
+import React from "react";
+import "../styles/global.css";
+import Head from "next/head";
+import { DefaultSeo } from "next-seo";
+import PlausibleProvider from "next-plausible";
+import { SEO } from "../components/SEO";
 
-import Container from '../components/Container';
+import Layout from "../components/Layout";
 
 function Application({ Component, pageProps }) {
     return (
@@ -22,9 +22,9 @@ function Application({ Component, pageProps }) {
             </Head>
             <DefaultSeo {...SEO} />
             <PlausibleProvider domain="jakessteamer.com">
-                <Container>
+                <Layout>
                     <Component {...pageProps} />
-                </Container>
+                </Layout>
             </PlausibleProvider>
         </>
     );

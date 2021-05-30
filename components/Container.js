@@ -5,6 +5,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Fab from './Fab';
+// import ReviewsSidebar from './ReviewsSidebar';
 
 export default function Container({ children }) {
     return (

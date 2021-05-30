@@ -8,7 +8,7 @@
     --gutter: 20px;
 }
 p {
-  color: #000;
+    color: #000;
 }
 
 #navbar {
@@ -256,6 +256,11 @@ nav ul li {
 }
 .accessible-dark-blue {
     color: #062d55;
+}
+
+.iframe-container {
+    position: relative;
+    height: 80vh;
 }
 
 /* #housecall-bar {

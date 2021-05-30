@@ -19,6 +19,16 @@
     },
     "plugins": ["react"],
     "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto",
+                "singleQuote": false,
+                "printWidth": 120,
+                "semi": true,
+                "trailingComma": "es5"
+            }
+        ],
         "react/react-in-jsx-scope": "off",
         "jsx-a11y/anchor-is-valid": [
             "error",
