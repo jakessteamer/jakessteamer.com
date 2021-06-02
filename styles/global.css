@@ -384,11 +384,11 @@ nav ul li {
 
 .fabWrap {
     align-items: center;
-    bottom: 0.5rem;
+    bottom: 3rem;
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 0.5rem;
+    right: 1rem;
     z-index: 100;
 }
 
@@ -483,6 +483,11 @@ nav ul li {
     background-color: var(--royal-blue);
     padding: 0px 0px 0px 0px;
     border-radius: 5px 0px 0px 5px;
+}
+#reviewsBtnTab {
+    border-color: var(--black);
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
+        0 1px 10px 0 rgb(0 0 0 / 12%);
 }
 .scheduleNowBtn {
     background-color: var(--royal-blue);

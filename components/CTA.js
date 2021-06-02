@@ -1,17 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import React from "react";
 
 export default function CTA() {
     return (
-        <section className="mx-auto text-center py-6 bg-brand-blue">
-            <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+        <section className="mx-auto text-center py-6 bg-white text-white">
+            <h1 className="w-full my-2 text-5xl banner-headline leading-tight font-bold text-center">
                 Call Jake's for Your Mistakes!
             </h1>
             <div className="w-full mb-4">
                 <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t" />
             </div>
-            <h2 className="my-4 font-bold leading-tight text-5xl">
-                <a className="" href="tel:+14328474600">
+            <h2 className="my-4 font-bold leading-tight text-4xl">
+                <a className="banner-headline leading-tight font-bold text-center" href="tel:+14328474600">
                     432-847-4600
                 </a>
             </h2>

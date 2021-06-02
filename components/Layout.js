@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/tabindex-no-positive */
 /* eslint-disable react/button-has-type */
 import React from "react";
 import Reviews from "./Reviews";
@@ -19,6 +20,7 @@ export default function Layout({ children }) {
 
             <button
                 tabIndex="1"
+                id="reviewsBtnTab"
                 className={`${isClosed ? "" : "hidden"} reviewsBtn`}
                 aria-label="Open menu"
                 title="Open menu"

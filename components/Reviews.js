@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/tabindex-no-positive */
 /* eslint-disable react/button-has-type */
-import React, { useState } from "react";
+import React from "react";
 import Iframe from "react-iframe";
 
 // const defaultLoadingMSG = "Loading...";
@@ -20,7 +21,7 @@ export default function Reviews({ isClosed, setClosed }) {
             const { signal } = controller;
             const response = await fetch("https://pro.housecallpro.com/alpha/organization/reviews/settings", {
                 method: "GET",
-                headers: { Authorization: `Token e5fb241079164c83aa85e58e9aa1b12b` },
+                headers: { Authorization: `Token ${process.env.COMPANY_ID}` },
                 signal,
             });
 
