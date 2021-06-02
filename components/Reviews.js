@@ -1,6 +1,16 @@
 /* eslint-disable react/button-has-type */
-import React from "react";
+import React, { useState } from "react";
 import Iframe from "react-iframe";
+
+// const defaultLoadingMSG = "Loading...";
+// const Loader = ({ message }) => {
+//     return (
+//         <div className="loader-container">
+//             <div className="loader" />
+//             <span className="loading-text">{message || "Loading..."}</span>
+//         </div>
+//     );
+// };
 
 export default function Reviews({ isClosed, setClosed }) {
     const [state, setState] = React.useState(null);
@@ -9,6 +19,7 @@ export default function Reviews({ isClosed, setClosed }) {
             const response = await fetch("https://pro.housecallpro.com/alpha/organization/reviews/settings", {
                 method: "GET",
                 headers: { Authorization: `Token e5fb241079164c83aa85e58e9aa1b12b` },
+                signal: abortController.signal,
             });
 
             if (!response.ok) {
@@ -23,19 +34,25 @@ export default function Reviews({ isClosed, setClosed }) {
         }
     };
     React.useEffect(() => {
+        const abortController = new AbortController();
         fetchReviews();
+        return () => {
+            abortController.abort();
+        };
     }, []);
     return (
         <aside
             aria-hidden={isClosed}
-            className={`${isClosed ? "hidden" : "w-screen"} absolute right-0 bg-white min-h-screen flex flex-col z-50`}>
+            id="reviewsPanel"
+            className={`${isClosed ? "hidden" : "w-screen"} absolute right-0 bg-white flex flex-col z-50`}>
             <button
                 tabIndex="1"
-                className="w-10 p-1"
+                className="w-10 ml-auto pr-4"
                 aria-label="Close menu"
                 title="Close menu"
                 onClick={() => setClosed(true)}>
                 <svg
+                    className="h-10 w-10"
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -45,7 +62,6 @@ export default function Reviews({ isClosed, setClosed }) {
                     <path d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
-
             <div className="iframe-container">
                 <Iframe
                     height="100%"

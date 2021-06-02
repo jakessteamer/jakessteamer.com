@@ -11,7 +11,244 @@ p {
     color: #000;
 }
 
-#navbar {
+#app {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        'nav'
+        'main'
+        'footer';
+}
+#app > nav {
+    grid-area: nav;
+    height: 6rem;
+    box-shadow: 0 5px 20px -10px #000;
+}
+
+#app > main {
+    grid-area: main;
+}
+
+#app > footer {
+    grid-area: footer;
+}
+#homepage-banner {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 70vh;
+}
+@media (min-width: 768px) {
+    #homepage-banner {
+        height: 100vh;
+    }
+}
+#navMenu {
+    color: var(--royal-blue);
+    text-shadow: 0.125em 0.125em 0.125em rgb(0 0 0 / 10%);
+}
+
+#headline {
+    grid-area: 2 / 1 / 4 / 3;
+}
+#subheadline {
+    grid-area: 5 / 1 / 6 / 6;
+}
+#subheadline-text {
+    color: var(--royal-blue);
+    text-shadow: 0.125em 0.125em 0.125em rgb(0 0 0 / 10%);
+}
+.homepage-banner-headline {
+    font-weight: 800;
+    font-size: 1.875rem;
+    margin-top: 0;
+    line-height: 2.25rem;
+    letter-spacing: -0.025em;
+    color: var(--royal-blue);
+    text-shadow: 0.125em 0.125em 0.125em rgb(0 0 0 / 10%);
+}
+#homepage-banner-cta {
+    font-weight: 800;
+    font-size: 1.875rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.025em;
+    color: var(--royal-blue);
+    text-shadow: 0.125em 0.125em 0.125em rgb(0 0 0 / 10%);
+    /* height: 10vh; */
+}
+
+.custom-shape-divider-bottom-1622501268 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1622501268 svg {
+    position: relative;
+    display: block;
+    width: calc(124% + 1.3px);
+    height: 72px;
+}
+
+.custom-shape-divider-bottom-1622501268 .shape-fill {
+    fill: #ffffff;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1622501268 svg {
+        width: calc(150% + 1.3px);
+        height: 50px;
+    }
+}
+
+.imageContainer {
+    grid-area: 1 / 1 / 6 / 6;
+    position: relative;
+    /* width: 100%; */
+}
+.gallery-img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.custom-shape-divider-bottom-1622523047 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1622523047 svg {
+    position: relative;
+    display: block;
+    width: calc(205% + 1.3px);
+    height: 238px;
+}
+
+.custom-shape-divider-bottom-1622523047 .shape-fill {
+    fill: #ffffff;
+}
+/* Testimonials */
+
+/* .imageContainer > div {
+    position: unset !important;
+}
+.image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+} */
+/* #homepage-banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+} */
+
+/* .homepage-banner-img-container {
+    grid-area: 1 / 1 / 4 / 2;
+    height: 100vh;
+}
+
+.homepage-banner-img-overlay {
+    grid-area: 1 / 1 / 4 / 2;
+    background: rgba(0, 0, 0, 0.025);
+}
+
+.homepage-banner-text-container {
+    grid-area: 1 / 1 / 4 / 2;
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.homepage-banner-img {
+    min-width: 350px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+/* .homepage-banner-text {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+} */
+
+.banner-headline {
+    color: var(--royal-blue);
+    text-shadow: 0.125em 0.125em 0.125em rgb(0 0 0 / 10%);
+}
+/* .homepage-banner-subheadline {
+    margin-bottom: -23rem;
+} */
+
+.hero-svg-waves {
+    fill: var(--royal-blue);
+}
+
+#reviewsPanel {
+    margin-top: 6rem;
+}
+
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    margin-top: 16px;
+    border-top: 10px solid #106cd1;
+    border-right: 10px solid rgba(136, 136, 136, 0.2);
+    border-bottom: 10px solid rgba(136, 136, 136, 0.2);
+    border-left: 10px solid rgba(136, 136, 136, 0.2);
+    animation: spinner 0.9s linear infinite;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.loading-text {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    color: #1f2937;
+}
+
+/* #navbar {
     box-shadow: 0 5px 20px -10px #000;
 }
 
@@ -63,7 +300,7 @@ nav ul li {
 .custom-shape-divider-bottom-1612037810 .shape-fill {
     fill: #ffffff;
 }
-
+*/
 .custom-shape-divider-bottom-1612146550 {
     position: absolute;
     bottom: -1px;
@@ -84,28 +321,6 @@ nav ul li {
 
 .custom-shape-divider-bottom-1612146550 .shape-fill {
     fill: #106cd1;
-}
-
-/* SVG Divider */
-.custom-shape-divider-bottom-1612154150 {
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1612154150 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 69px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1612154150 .shape-fill {
-    fill: #ffffff;
 }
 
 .testimonial {
@@ -151,7 +366,6 @@ nav ul li {
     background-position: center;
     background-repeat: no-repeat;
 }
-
 @keyframes bounce {
     0%,
     20%,
@@ -170,11 +384,11 @@ nav ul li {
 
 .fabWrap {
     align-items: center;
-    bottom: 24px;
+    bottom: 0.5rem;
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 24px;
+    right: 0.5rem;
     z-index: 100;
 }
 
@@ -261,6 +475,20 @@ nav ul li {
 .iframe-container {
     position: relative;
     height: 80vh;
+}
+.reviewsBtn {
+    position: fixed;
+    right: 0;
+    top: calc(50vh - 5.2rem);
+    background-color: var(--royal-blue);
+    padding: 0px 0px 0px 0px;
+    border-radius: 5px 0px 0px 5px;
+}
+.scheduleNowBtn {
+    background-color: var(--royal-blue);
+    color: white;
+    /* padding: 0.5rem;
+    border-radius: 5px 5px 5px 5px; */
 }
 
 /* #housecall-bar {

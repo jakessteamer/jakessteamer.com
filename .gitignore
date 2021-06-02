@@ -33,7 +33,7 @@ yarn-error.log*
 
 # vercel
 .vercel
-utils/components/
-
+/components/prototypes/
+utils/
 # Local Netlify folder
 .netlify

@@ -5,7 +5,6 @@ import React from "react";
 import "../styles/global.css";
 import Head from "next/head";
 import { DefaultSeo } from "next-seo";
-import PlausibleProvider from "next-plausible";
 import { SEO } from "../components/SEO";
 
 import Layout from "../components/Layout";
@@ -21,11 +20,9 @@ function Application({ Component, pageProps }) {
                 <meta name="format-detection" content="telephone=yes" />
             </Head>
             <DefaultSeo {...SEO} />
-            <PlausibleProvider domain="jakessteamer.com">
-                <Layout>
-                    <Component {...pageProps} />
-                </Layout>
-            </PlausibleProvider>
+            <Layout>
+                <Component {...pageProps} />
+            </Layout>
         </>
     );
 }
