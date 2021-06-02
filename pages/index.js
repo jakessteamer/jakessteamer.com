@@ -5,7 +5,7 @@ import ImageGallery from "../components/ImageGallery";
 import HomepageBanner from "../components/HomepageBanner";
 import { PageSeo } from "../components/SEO";
 import siteMetadata from "../data/siteMetadata.json";
-import Testimonials from "../utils/Testimonials";
+import Testimonials from "../components/Testimonials";
 import CTA from "../components/CTA";
 import AboutUs from "../components/AboutUs";
 import SVGWaveDivider from "../components/SVGWaveDivider";
