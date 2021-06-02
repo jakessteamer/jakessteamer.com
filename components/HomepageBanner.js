@@ -5,8 +5,24 @@ export default function HomeHero() {
     return (
         <>
             <section id="homepage-banner">
-                <div className="imageContainer">
-                    <Image
+                <div className="imageContainer inset-0 w-full h-full">
+                    <img
+                        alt="kid and mom on clean carpet"
+                        sizes="100vw"
+                        src="/images/kid-and-mom-on-carpet-high-def.jpg"
+                        decoding="async"
+                        className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                    />
+
+                    {/* <div className="imgWrap">
+                        <img
+                            alt="kid and mom on clean carpet"
+                            sizes="100vw"
+                            src="/images/kid-and-mom-on-carpet-high-def.jpg"
+                            decoding="async"
+                        />
+                    </div> */}
+                    {/* <Image
                         className="image opacity-95"
                         src="/images/kid-and-mom-on-carpet-high-def.jpg"
                         layout="fill"
@@ -14,7 +30,7 @@ export default function HomeHero() {
                         quality={100}
                         priority
                         alt="kid and mom on clean carpet"
-                    />
+                    /> */}
                 </div>
 
                 <section id="headline" className="relative flex self-end">
