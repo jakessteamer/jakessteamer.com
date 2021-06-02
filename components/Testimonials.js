@@ -14,10 +14,10 @@ export default function Testimonials() {
                 <div className="relative w-full py-2 md:py-24 bg-brand-blue md:w-1/2 flex flex-col item-center justify-center">
                     <div className="absolute top-0 left-0 z-10 grid-indigo w-16 h-16 md:w-40 md:h-40 md:ml-20 md:mt-24" />
 
-                    <div className="relative py-2 px-6 md:py-6 md:px-1 md:w-64 md:mx-auto mb-0 z-20 sm:text-xl text-3xl font-bold title-font text-gray-900">
-                        <span className="block">What Our</span>
-                        <span className="block">Customers</span>
-                        <span className="block">Are Saying!</span>
+                    <div className="relative py-2 px-6 md:py-6 md:px-1 md:w-64 md:mx-auto mb-0 z-20 font-bold title-font text-gray-900">
+                        <span className="block sm:text-2xl md:text-3xl lg:text-5xl ">What Our</span>
+                        <span className="block sm:text-2xl md:text-3xl lg:text-5xl ">Customers</span>
+                        <span className="block sm:text-2xl md:text-3xl lg:text-5xl ">Are Saying!</span>
                     </div>
                 </div>
                 {/* <!-- Testimonials --> */}

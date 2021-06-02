@@ -1,11 +1,12 @@
 import React from "react";
-import Image from "next/image";
 
 export default function ServiceCards() {
     return (
-        <section id="#services-section" className="text-gray-600 body-font">
+        <section
+            id="#services-section"
+            className="container px-4 lg:px-12 pt-3 lg:pt-12 mx-auto text-gray-600 body-font">
             {/* <!-- Service Cards --> */}
-            <div className="flex flex-wrap w-full md:w-1/3 lg:w-1/4 ">
+            <div className="flex flex-wrap justify-center">
                 {/* <!--Card 1--> */}
                 <article className="max-w-xs rounded overflow-hidden shadow-lg m-8">
                     <a href="/CarpetCleaning">
