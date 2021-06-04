@@ -2,16 +2,16 @@
 /* eslint-disable no-use-before-define */
 
 module.exports = {
-    target: 'serverless',
+    target: "serverless",
     strictPostcssConfiguration: true,
     future: {
-        webpack5: true
+        webpack5: true,
     },
     poweredByHeader: false,
     webpack: (config, { dev, isServer }) => {
         if (isServer) {
-            require('./scripts/generate-sitemap');
+            require("./scripts/generate-sitemap");
         }
         return config;
-    }
+    },
 };

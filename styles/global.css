@@ -488,6 +488,9 @@ nav ul li {
 .border-brand-blue {
     border-color: var(--royal-blue);
 }
+.outline-brand-blue {
+    outline: 2px solid black;
+}
 .bg-brand-blue {
     background-color: var(--royal-blue);
 }
@@ -503,10 +506,16 @@ nav ul li {
 .accessible-dark-blue {
     color: #062d55;
 }
-
+.inset-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 .iframe-container {
     position: relative;
-    height: 80vh;
+    z-index: 40;
+    height: 100vh;
+    /* height: 80vh; */
 }
 .reviewsBtn {
     position: fixed;
@@ -527,7 +536,35 @@ nav ul li {
     /* padding: 0.5rem;
     border-radius: 5px 5px 5px 5px; */
 }
-
+/* Loading Spinner */
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loader {
+    margin-top: 16px;
+    border-top: 10px solid #58b647;
+    border-right: 10px solid rgba(136, 136, 136, 0.2);
+    border-bottom: 10px solid rgba(136, 136, 136, 0.2);
+    border-left: 10px solid rgba(136, 136, 136, 0.2);
+    animation: spinner 0.9s linear infinite;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    z-index: 50;
+}
+.loading-text {
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    color: #888;
+}
 /* #housecall-bar {
     background-color: white;
     height: 50px;
