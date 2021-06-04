@@ -84,7 +84,13 @@ export default function Layout({ children }) {
 
             {/* {isClosed ? true : <Reviews isClosed={isClosed} setClosed={setClosed} />} */}
             {modalOpen ? (
-                <Modal modalOpen={modalOpen} setModalOpen={setModalOpen} companyID={companyID} loading={loading} />
+                <Modal
+                    modalOpen={modalOpen}
+                    setModalOpen={setModalOpen}
+                    companyID={companyID}
+                    loading={loading}
+                    key={loading}
+                />
             ) : null}
         </div>
     );

@@ -4,7 +4,7 @@ export default function LoadingSpinner() {
     return (
         <div className="loader-container">
             <div className="loader" />
-            <span className="loading-text">"Loading ..."</span>
+            <span className="loading-text">Loading ...</span>
         </div>
     );
 }

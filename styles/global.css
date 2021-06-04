@@ -547,7 +547,7 @@ nav ul li {
 }
 .loader {
     margin-top: 16px;
-    border-top: 10px solid #58b647;
+    border-top: 10px solid var(--royal-blue);
     border-right: 10px solid rgba(136, 136, 136, 0.2);
     border-bottom: 10px solid rgba(136, 136, 136, 0.2);
     border-left: 10px solid rgba(136, 136, 136, 0.2);
@@ -563,7 +563,13 @@ nav ul li {
     font-weight: normal;
     font-size: 16px;
     line-height: 130%;
-    color: #888;
+    color: var(--royal-blue);
+}
+.h-90 {
+    height: 90%;
+}
+.modal-close-btn {
+    height: 10%;
 }
 /* #housecall-bar {
     background-color: white;
