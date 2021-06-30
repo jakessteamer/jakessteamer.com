@@ -4,17 +4,16 @@ import Image from "next/image";
 export default function HomeHero() {
     return (
         <>
-            <section id="homepage-banner">
-                <div className="imageContainer inset-0 w-full h-full">
-                    <img
-                        alt="kid and mom on clean carpet"
-                        sizes="100vw"
-                        src="/images/kid-and-mom-on-carpet-high-def.jpg"
-                        decoding="async"
-                        className="absolute inset-0 w-full h-full object-cover rounded-lg"
-                    />
+            <section id="homepage-banner" className="relative ">
+                <img
+                    alt="kid and mom on clean carpet"
+                    sizes="100vw"
+                    src="/images/kid-and-mom-on-carpet-high-def.jpg"
+                    decoding="async"
+                    className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                />
 
-                    {/* <div className="imgWrap">
+                {/* <div className="imgWrap">
                         <img
                             alt="kid and mom on clean carpet"
                             sizes="100vw"
@@ -22,7 +21,7 @@ export default function HomeHero() {
                             decoding="async"
                         />
                     </div> */}
-                    {/* <Image
+                {/* <Image
                         className="image opacity-95"
                         src="/images/kid-and-mom-on-carpet-high-def.jpg"
                         layout="fill"
@@ -31,7 +30,6 @@ export default function HomeHero() {
                         priority
                         alt="kid and mom on clean carpet"
                     /> */}
-                </div>
 
                 <section id="headline" className="relative flex self-end">
                     {/* <p className=" text-5xl sm:text-6l leading-none font-extrabold tracking-tight text-gray-900 mt-10 mb-8 sm:mt-14 sm:mb-10">

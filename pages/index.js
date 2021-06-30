@@ -2,7 +2,8 @@
 import { LocalBusinessJsonLd } from "next-seo";
 import ServiceCards from "../components/ServiceCards";
 import ImageGallery from "../components/ImageGallery";
-import HomepageBanner from "../components/HomepageBanner";
+// import HomepageBanner from "../components/HomepageBanner";
+import HomeHero from "../components/Homepage/HomeHero";
 import { PageSeo } from "../components/SEO";
 import siteMetadata from "../data/siteMetadata.json";
 import Testimonials from "../components/Testimonials";
@@ -67,7 +68,7 @@ export default function Index() {
                     },
                 ]}
             />
-            <HomepageBanner />
+            <HomeHero />
             <ServiceCards />
             <ImageGallery />
             <SVGWaveDivider />

@@ -1,11 +1,13 @@
 /* eslint-disable jsx-a11y/tabindex-no-positive */
 /* eslint-disable react/button-has-type */
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import PlausibleAnalytics from "next-plausible";
 import Reviews from "./Reviews";
-import Nav from "./Nav";
+import Navbar from "./Navbar";
 import Fab from "./Fab";
 import Footer from "./Footer";
 import Modal from "./Modal";
+
 // const Reviews = dynamic(() => import(/* webpackChunkName: 'reviews' */ "../components/Reviews"), {
 //     ssr: true,
 // });
@@ -17,6 +19,7 @@ export default function Layout({ children }) {
     const [alreadyFetchedReviews, setAlreadyFetchedReviews] = useState(false);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(null);
+
     let controller;
     const fetchReviews = async () => {
         try {
@@ -44,24 +47,23 @@ export default function Layout({ children }) {
             controller.abort();
         }
     };
-    const clicker = () => {
-        console.log("fetching");
-        setAlreadyFetchedReviews(true);
-    };
     const handleModalClick = () => {
         if (!modalOpen) {
             setModalOpen(true);
         }
         if (!alreadyFetchedReviews) {
             fetchReviews();
-            // clicker();
         }
     };
+
     return (
-        <div id="app">
-            <Nav />
-            <main className="flex flex-col">{children}</main>
-            <Footer />
+        <PlausibleAnalytics domain="jakessteamer.com">
+            <Navbar />
+            <main className="flex flex-col flex-nowrap">
+                {children}
+                <Footer />
+            </main>
+
             <Fab />
 
             <button
@@ -92,6 +94,6 @@ export default function Layout({ children }) {
                     key={loading}
                 />
             ) : null}
-        </div>
+        </PlausibleAnalytics>
     );
 }

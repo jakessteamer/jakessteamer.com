@@ -5,6 +5,7 @@ import React from "react";
 import "../styles/global.css";
 import Head from "next/head";
 import { DefaultSeo } from "next-seo";
+import { ThemeProvider } from "next-themes";
 import { SEO } from "../components/SEO";
 import { Store } from "../context/AppState";
 import Layout from "../components/Layout";
@@ -20,11 +21,13 @@ function Application({ Component, pageProps }) {
                 <meta name="format-detection" content="telephone=yes" />
             </Head>
             <DefaultSeo {...SEO} />
-            <Store>
-                <Layout>
-                    <Component {...pageProps} />
-                </Layout>
-            </Store>
+            <ThemeProvider attribute="class">
+                <Store>
+                    <Layout>
+                        <Component {...pageProps} />
+                    </Layout>
+                </Store>
+            </ThemeProvider>
         </>
     );
 }
