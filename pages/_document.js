@@ -5,17 +5,17 @@ import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
-    render() {
-        return (
-            <Html lang="en">
-                <Head />
-                <body className="font-sans antialiased tracking-tight lightTheme dark:darkTheme">
-                    <Main />
-                    <NextScript />
-                </body>
-            </Html>
-        );
-    }
+  render() {
+    return (
+      <Html lang="en">
+        <Head />
+        <body className="font-sans antialiased tracking-tight">
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
 }
 
 export default MyDocument;

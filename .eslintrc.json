@@ -1,52 +1,56 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "node": true
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": ["plugin:react/recommended", "airbnb", "plugin:prettier/recommended"],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    "settings": {
-        "react": {
-            "version": "detect"
-        }
-    },
-    "plugins": ["react"],
-    "rules": {
-        "prettier/prettier": [
-            "error",
-            {
-                "endOfLine": "auto",
-                "singleQuote": false,
-                "printWidth": 120,
-                "semi": true,
-                "trailingComma": "es5",
-                "jsxBracketSameLine": true
-            }
-        ],
-        "react/react-in-jsx-scope": "off",
-        "jsx-a11y/anchor-is-valid": [
-            "error",
-            {
-                "components": ["Link"],
-                "specialLink": ["hrefLeft", "hrefRight"],
-                "aspects": ["invalidHref", "preferButton"]
-            }
-        ],
-        "react/display-name": 1,
-        "react/jsx-filename-extension": [
-            1,
-            {
-                "extensions": [".js", ".jsx"]
-            }
-        ],
-        "jsx-a11y/label-has-for": ["off"],
-        "react/prop-types": "off"
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
     }
+  },
+  "plugins": ["react"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto",
+        "singleQuote": false,
+        "printWidth": 80,
+        "semi": true,
+        "trailingComma": "es5",
+        "jsxBracketSameLine": true
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ],
+    "react/display-name": 1,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "jsx-a11y/label-has-for": ["off"],
+    "react/prop-types": "off"
+  }
 }
