@@ -2,15 +2,11 @@
 /* eslint-disable react/button-has-type */
 import React, { useState, useEffect } from "react";
 import PlausibleAnalytics from "next-plausible";
-import Reviews from "./Reviews";
 import Navbar from "./Navbar";
 import Fab from "./Fab";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import Modal from "./Modal";
-
-// const Reviews = dynamic(() => import(/* webpackChunkName: 'reviews' */ "../components/Reviews"), {
-//     ssr: true,
-// });
+import Footer from "./Homepage/Footer";
 
 export default function Layout({ children }) {
   const [isClosed, setClosed] = useState(true);

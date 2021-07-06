@@ -1,10 +1,6 @@
-import React, { useEffect } from "react";
-import ScrollableAnchor, { configureAnchors } from "react-scrollable-anchor";
+import React from "react";
 
 export default function Testimonials() {
-  useEffect(() => {
-    configureAnchors({ offset: -134 });
-  });
   return (
     <div
       id="testimonials-section"

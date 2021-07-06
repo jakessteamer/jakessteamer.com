@@ -4,7 +4,6 @@ import { useTheme } from "next-themes";
 
 export default function ThemeSwitchBtn() {
   const { resolvedTheme, setTheme } = useTheme();
-
   return (
     <button
       type="button"
@@ -13,7 +12,8 @@ export default function ThemeSwitchBtn() {
         "flex justify-center p-2 rounded-md",
         "transition duration-150 ease-in-out",
         "focus:outline-none",
-        "bg-blue-900 dark:bg-white-accent"
+        "bg-blue-900 dark:bg-white-accent",
+        "border-blue-500 border-solid border-2"
       )}
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
       <svg

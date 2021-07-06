@@ -5,24 +5,27 @@ const AppContext = createContext();
 export function Store({ children }) {
   const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
   const [navbarColor, setNavbarColor] = useState(false);
-  const [UUID, setUUID] = useState(null);
+
   const [theme, setTheme] = useState(null);
+
   const State = {
-    companyID: null,
-    setCompanyID: (id) => {
-      setUUID(id);
-    },
     isNavMenuOpen,
     toggleNavMenu: () => {
       setIsNavMenuOpen(!isNavMenuOpen);
     },
     navbarColor,
-    changeNavbarColor: (belowFold) => {
-      setNavbarColor(belowFold);
+    changeNavbarColor: (whenNotIntersecting) => {
+      setNavbarColor(whenNotIntersecting);
     },
     theme,
     changeTheme: (color) => {
       setTheme(color);
+    },
+    isLightTheme: (str) => {
+      return str === "light";
+    },
+    isDarkTheme: (str) => {
+      return str === "dark";
     },
   };
 

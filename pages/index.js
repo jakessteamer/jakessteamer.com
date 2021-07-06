@@ -1,14 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import { LocalBusinessJsonLd } from "next-seo";
-import ImageGallery from "../components/ImageGallery";
-// import HomepageBanner from "../components/HomepageBanner";
+import ImageGallery from "../components/Homepage/ImageGallery";
 import HomeHero from "../components/Homepage/HomeHero";
 import { PageSeo } from "../components/SEO";
 import siteMetadata from "../data/siteMetadata.json";
-import Testimonials from "../components/Testimonials";
-import CTA from "../components/CTA";
-import AboutUs from "../components/AboutUs";
-import SVGWaveDivider from "../components/SVGWaveDivider";
+import Testimonials from "../components/Homepage/Testimonials";
+import SVGWaveDivider from "../components/Homepage/SVGWaveDivider";
 import Services from "../components/Homepage/Services";
 
 export default function Index() {

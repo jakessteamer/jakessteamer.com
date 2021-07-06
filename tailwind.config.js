@@ -1,14 +1,6 @@
 const colors = require("tailwindcss/colors");
 const defaultTheme = require("tailwindcss/defaultTheme");
 const { spacing, fontFamily } = require("tailwindcss/defaultTheme");
-//             lightTheme: {
-//  white/primary: "var(--surface2-light)",
-//  whiteBase: "var(--surface2-light)",
-//  whiteAccent: "var(--surface2-light)",
-//  grey/accent: "var(--surface1-light)",}
-//             darkTheme: {
-//  white/primary: "var(--surface2-dark)",
-//  grey/accent: "var(--surface1-dark)",}
 
 module.exports = {
   purge: ["./components/**/*.js", "./pages/**/*.js"],
