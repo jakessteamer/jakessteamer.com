@@ -1,6 +1,3 @@
-import clsx from "clsx";
-import React from "react";
-
 export default function ServiceCard({ imgSrc, title, desc, href, alt }) {
   return (
     <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/3 p-4">

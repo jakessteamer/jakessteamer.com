@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function ImageGallery() {
   return (
     <div id="image-gallery-section" className="theme-surface-inverse pt-24">

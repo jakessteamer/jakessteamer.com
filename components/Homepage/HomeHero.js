@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import { useAppContext } from "../../context/AppState";
 

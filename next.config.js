@@ -6,6 +6,9 @@ module.exports = {
   future: {
     strictPostcssConfiguration: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   webpack: (config, { dev, isServer }) => {
     if (isServer) {
       require("./scripts/generate-sitemap");
