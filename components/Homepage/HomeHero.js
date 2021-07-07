@@ -89,7 +89,7 @@ export default function HomeHero() {
               offer
             </p>
             <h2 className="text-lg theme-text inline-flex">
-              <strong>free</strong>&nbsp;in-home evaluations
+              <strong>&nbsp;free</strong>&nbsp;in-home evaluations
             </h2>
             <p className="text-lg theme-text inline-flex pb-4">
               &nbsp;and peace of mind.
