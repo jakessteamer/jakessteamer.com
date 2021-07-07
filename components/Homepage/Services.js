@@ -103,7 +103,7 @@ export default function Services() {
       all upholstered furniture and cushions of the same material.
     "
             href="/UpholsteryCleaning"
-            tags={["velvet", "leather"]}
+            tags={["velvet", "leather", "pillows"]}
           />
         </div>
       </div>
