@@ -28,7 +28,7 @@ export default function Footer() {
                 </a>
                 <a
                   href="https://www.facebook.com/jakessteamer01/"
-                  className="text-blue-500">
+                  className="text-blue-500 text-sm md:text-lg">
                   Follow Us On Facebook
                 </a>
               </div>
@@ -38,57 +38,62 @@ export default function Footer() {
           <div className="mt-6 flex-grow">
             <div className="flex flex-col lg:flex-row">
               <div className="flex-grow">
-                <p className="text-gray-700 uppercase dark:text-white-accent">
+                <p className="text-gray-700 uppercase md:text-lg dark:text-white-accent">
                   Contact
                 </p>
-                <p className="block mt-2 text-sm text-blue-900 dark:text-blue-500 hover:underline">
+                <div className="h-1 w-1/2 bg-blue-500 rounded h-underline mb-4" />
+                <p className="block mt-2 text-sm md:text-lg text-blue-900 dark:text-blue-500 hover:underline">
                   606 SE 4th St, Seminole, TX 79360
                 </p>
                 <a
                   href="tel:+14328474600"
-                  className="block mt-2 text-sm text-blue-900 dark:text-blue-500 hover:underline">
+                  className="block mt-2 text-sm md:text-lg text-blue-900 dark:text-blue-500 hover:underline">
                   432-847-4600
                 </a>
                 <a
                   href="mailto:jakessteamer@gmail.com"
-                  className="block mt-2 text-sm text-blue-900 dark:text-blue-500 hover:underline">
+                  className="block mt-2 text-sm md:text-lg text-blue-900 dark:text-blue-500 hover:underline">
                   jakessteamer@gmail.com
                 </a>
               </div>
               <div className="flex-grow">
-                <p className="text-gray-700 uppercase dark:text-white-accent">
+                <p className="text-gray-700 uppercase md:text-lg dark:text-white-accent">
                   Service Areas:
                 </p>
-                <p className="block mt-2 text-sm text-blue-900 dark:text-blue-500 hover:underline">
+                <div className="h-1 w-1/2 bg-blue-500 rounded h-underline mb-4" />
+
+                <p className="block mt-2 text-sm md:text-lg text-blue-900 dark:text-blue-500 hover:underline">
                   Gaines County
                 </p>
-                <p className="block mt-2 text-sm text-blue-900 dark:text-blue-500 hover:underline">
+                <p className="block mt-2 text-sm md:text-lg text-blue-900 dark:text-blue-500 hover:underline">
                   Andrews County
                 </p>
-                <p className="block mt-2 text-sm text-blue-900 dark:text-blue-500 hover:underline">
+                <p className="block mt-2 text-sm md:text-lg text-blue-900 dark:text-blue-500 hover:underline">
                   Midland County
                 </p>
-                <p className="block mt-2 text-sm text-blue-900 dark:text-blue-500 hover:underline">
+                <p className="block mt-2 text-sm md:text-lg text-blue-900 dark:text-blue-500 hover:underline">
                   Yoakum County
                 </p>
-                <p className="block mt-2 text-sm text-blue-900 dark:text-blue-500 hover:underline">
+                <p className="block mt-2 text-sm md:text-lg text-blue-900 dark:text-blue-500 hover:underline">
                   Dawson County
                 </p>
-                <p className="block mt-2 text-sm text-blue-900 dark:text-blue-500 hover:underline">
+                <p className="block mt-2 text-sm md:text-lg text-blue-900 dark:text-blue-500 hover:underline">
                   Terry County
                 </p>
               </div>
               <div className="flex-grow">
-                <p className="text-gray-700 uppercase dark:text-white-accent">
+                <p className="text-gray-700 uppercase md:text-lg dark:text-white-accent">
                   Hours:
                 </p>
-                <p className="block mt-2 text-sm text-blue-900 dark:text-blue-500 hover:underline">
+                <div className="h-1 w-1/2 bg-blue-500 rounded h-underline mb-4" />
+
+                <p className="block mt-2 text-sm md:text-lg text-blue-900 dark:text-blue-500 hover:underline">
                   Sunday: Closed
                 </p>
-                <p className="block mt-2 text-sm text-blue-900 dark:text-blue-500 hover:underline">
+                <p className="block mt-2 text-sm md:text-lg text-blue-900 dark:text-blue-500 hover:underline">
                   Monday - Friday: 8:00AM-6:00PM
                 </p>
-                <p className="block mt-2 text-sm text-blue-900 dark:text-blue-500 hover:underline">
+                <p className="block mt-2 text-sm md:text-lg text-blue-900 dark:text-blue-500 hover:underline">
                   Saturday: Saturday 8:00AM-12:00AM
                 </p>
               </div>

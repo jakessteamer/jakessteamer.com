@@ -13,7 +13,7 @@ export default function ThemeSwitchBtn() {
         "transition duration-150 ease-in-out",
         "focus:outline-none",
         "bg-blue-900 dark:bg-white-accent",
-        "border-blue-500 border-solid border-2"
+        "border-gray-200 border-solid border-2"
       )}
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
       <svg

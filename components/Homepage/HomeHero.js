@@ -78,21 +78,39 @@ export default function HomeHero() {
             </p>
             <hr className="h-1 w-1/2 bg-blue-500 rounded h-underline" />
           </div>
-          <p className=" lg:w-1/2 w-full prose text-lg theme-text">
-            We are committed to making sure that your home is as healthy and
-            clean as possible. Your home or office is where you live and work,
-            where your kids play, where your pets nap, which is why we take
-            every single client interaction as if it is the single most
-            important job we have ever done.
-            <b className="text-textLight text-xl pl-1">
-              Questions? Quote? Call Jake's Steamer!
-            </b>
-          </p>
-          {/* <p className=" lg:w-1/2 w-full prose text-lg  ">
+          <div id="service__section--text" className=" lg:w-1/2 w-full">
+            <p className="text-lg theme-text pb-4">
+              Overtime your carpets collect dirt, spills, and other contaminants
+              giving your carpet a darker overtone and a nice smell to go along
+              with it.
+            </p>
+            <p className="text-lg theme-text inline-flex">
+              Call Jake's Steamer for all your carpet and flooring needs. We
+              offer
+            </p>
+            <h2 className="text-lg theme-text inline-flex">
+              <strong>free</strong>&nbsp;in-home evaluations
+            </h2>
+            <p className="text-lg theme-text inline-flex pb-4">
+              &nbsp;and peace of mind.
+            </p>
+            <p className="text-blue-500 mb-8">
+              FAMILY + LOCALLY OWNED | LICENSED + CERTIFIED + INSURED
+            </p>
+          </div>
+          {/* { <p className=" lg:w-1/2 w-full text-lg  ">
+          We are committed to making sure that your home is as healthy and
+              clean as possible. Your home or office is where you live and work,
+              where your kids play, where your pets nap, which is why we take
+              every single client interaction as if it is the single most
+              important job we have ever done.
                         To get your carpet truly clean, you need a professional deep cleaning service. That’s where we
                         where Jake's Steamer comes in. We can remove stains and smells without damaging your carpet. In
                         just a few hours your carpets will be clean and dry.
-                    </p> */}
+                    </p>
+                    <b className="text-textLight text-xl pl-1">
+                    Questions? Quote? Call Jake's Steamer!
+                  </b> */}
         </div>
       </div>
     </>

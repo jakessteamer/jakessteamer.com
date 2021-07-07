@@ -41,74 +41,51 @@ export default function CarpetCleaning() {
           />
         </div>
         <div className="max-w-none w-full mt-12">
-          <p className="mb-4 theme-text">
-            For best results you should have a professional steam clean your
-            carpets. We have a truck mount unit that has rotary brushes which
-            apply hot steam in to the carpet, detergent, and remove dust and
-            soil. The success of steam cleaning rely on the technicians
-            experience and skill with the quality of truck mount machine.The
-            machine should keep the detergent solution in a proper temperature
-            to get steam continuously and the pressure of steam spraying should
-            be controllable at any time. When the hot steam applied on the
-            carpet the soil and dust particles on the carpet will be removed. It
-            is very easy to clean the removed soil particle from the carpet.
-          </p>
           <p className="theme-text">
-            Although regular vacuuming can remove dry soil and debris from your
-            carpeting, it leaves behind oily soils and particles that are
-            produced from cooking vapors, pets, and dirt tracked in from outside
-            the home. These oily contaminants that are left behind can cause
-            your carpet to dull and fade. As the contaminants build up they
-            become more difficult to remove. Regular deep cleaning of the carpet
-            can prevent the excessive build up of contaminants and keep your
-            carpets looking fresh and clean. Regular cleaning of your carpets
-            also helps improve the air quality in your home by removing pet
-            hair, dust mites, and other allergens that thrive deep in the
-            carpet.
+            Five signs that scream aloud it’s time for rug cleaning
           </p>
-          <p className="theme-text">
-            WHAT CAN YOU DO TO PREPARE FOR YOUR CARPET CLEANING:
-          </p>
-          <p className="theme-text">
-            Move small items and breakables from the area to be cleaned. Get
-            ready to be amazed by the Rotovac.
-          </p>
-          <p className="theme-text">
-            WHAT YOU CAN EXPECT YOUR CLEANING TECHNICIAN TO DO:
-          </p>
-          <p className="theme-text">
-            <b>Pre-inspection:</b> We will evaluate your carpet’s needs. Every
-            carpet must be treated differently. We will decide what will be the
-            best method for cleaning your carpet. You will know up front what we
-            can and can’t do. This way there are no surprises.
-          </p>
-          <p className="theme-text">
-            <b>Moving Furniture:</b> When necessary we will move and replace
-            small furniture in its original position.
-          </p>
-          <p className="theme-text">
-            <b>Pre-treatment:</b> We treat spots and stains as necessary and
-            apply a cleaning solution to the entire carpet.
-          </p>
-          <p className="theme-text">
-            <b>Cleaning:</b> We use our state-of-the-art Rotovac equipment for a
-            fast and thorough deep cleaning of your carpet.
-          </p>
-          <p className="theme-text">
-            <b>Post-inspection:</b> Once the project is completed, we re-inspect
-            the carpet with you to ensure that all the work was done to your
-            satisfaction.
-          </p>
-          <p className="theme-text">
-            <b>Protect & Groom:</b> When necessary we will place blocks or foil
-            under furniture legs to protect them during the drying process and
-            groom the carpet for a clean inviting look.
-          </p>
-          <p className="theme-text">
-            <b>What you should do after the carpet cleaning:</b> To decrease
-            drying time try to keep the room temperature about 72 degrees and
-            use fans to circulate the air around the cleaned carpet.
-          </p>
+          <dl>
+            <dt className="text-blue-500">Visible Stains</dt>
+
+            <dd className="theme-text">
+              The first sign is visible stains. A visible stain on the rugs can
+              ruin its overall appearance. If you’ve just noticed a stain on
+              your rug, no doubt this is the right time to treat it. For this,
+              you can call an expert as they have years of experience in the rug
+              cleaning field and are equipped with the right tools to treat the
+              stain.
+            </dd>
+
+            <dt className="theme-text">Allergies</dt>
+
+            <dd className="theme-text">
+              Are you experiencing any allergies? It is a warning sign that your
+              rugs are not clean and full of pet dander, dead bugs, skins, and
+              other particles that get trapped in them and result in causing
+              irritation, allergies, or itching. Get the rug cleaned immediately
+              by rug cleaning NY professionals.
+            </dd>
+
+            <dt className="text-blue-500">Noticeable odors</dt>
+
+            <dd className="theme-text">
+              An unpleasant smell or odor can disturb the entire aura of your
+              home. If you’re experiencing the same unusual smell in your room
+              or home, there is a high chance that it is coming from your rugs.
+              By the time you notice such an odor, we suggest you get the rugs
+              cleaned by professionals or clean them by yourself to eliminate
+              this bad smell from your rugs.
+            </dd>
+
+            <dt className="text-blue-500">Dull Look</dt>
+
+            <dd className="theme-text">
+              If your rugs have lost their brand-new look and don’t appear to be
+              wow, no doubt, it’s time to clean it. When you or an expert clean
+              the rugs with a cleaning solution, they will bring back their
+              amazing look and shine.
+            </dd>
+          </dl>
         </div>
       </section>
     </>

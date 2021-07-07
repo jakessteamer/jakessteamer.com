@@ -8,6 +8,7 @@ export default function Footer() {
             <p className="text-xl text-white font-bold leading-none mb-3">
               Service Areas:
             </p>
+            <div className="h-1 w-1/2 bg-blue-500 rounded h-underline mb-8" />
             <p className="leading-relaxed text-xl text-white">Gaines County</p>
             <p className="leading-relaxed text-xl text-white">Andrews County</p>
             <p className="leading-relaxed text-xl text-white">Midland County</p>

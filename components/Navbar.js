@@ -20,6 +20,8 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
+      role="navigation"
+      aria-label="Main Navigation"
       className={clsx(
         "fixed w-full top-0 inset-x-0 bottom-auto z-50 text-blue-900 dark:text-white-accent",
         { FadeBgWhite: whenNavbarBelowHero },

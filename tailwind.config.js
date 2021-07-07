@@ -42,6 +42,7 @@ module.exports = {
         800: "#002a66",
         900: "#001533",
       },
+      cyan: "#04F9F2",
     },
     extend: {
       fontFamily: {
