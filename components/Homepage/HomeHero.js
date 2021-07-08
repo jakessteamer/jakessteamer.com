@@ -48,9 +48,9 @@ export default function HomeHero() {
             <span className="font-bold uppercase lg:text-2xl text-blue-900">
               Jake's Steamer
             </span>
-            <p className="text-blue-900 text-lg lg:text-xl">
+            <h1 className="text-blue-900 text-lg lg:text-xl">
               The Carpet Cleaning Professionals
-            </p>
+            </h1>
           </div>
         </div>
       </section>

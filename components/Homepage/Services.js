@@ -45,7 +45,7 @@ export default function Services() {
              protected.
            "
             href="/WaterDamageRestoration"
-            tags={["Water Removal", "mold removal"]}
+            tags={["Water Removal", "mold removal", "24/7"]}
           />
         </div>
       </div>

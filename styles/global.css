@@ -106,6 +106,10 @@
   html {
     text-rendering: geometricPrecision;
   }
+
+  p {
+    @apply text-blue-900 dark:text-white-accent;
+  }
 }
 
 @layer utilities {
@@ -198,10 +202,6 @@ html {
   width: 100vw;
   max-width: 100%;
   overflow-x: hidden;
-}
-
-p {
-  color: #000;
 }
 
 /* classname="bold tracking-tight" */
@@ -619,4 +619,35 @@ p {
   display: block;
   width: calc(133% + 1.3px);
   height: 44px;
+}
+
+.image__container {
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+}
+
+.fig {
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.c-article__image {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0px;
 }
