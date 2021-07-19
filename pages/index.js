@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { LocalBusinessJsonLd } from "next-seo";
+import Hero from "@components/Homepage/Hero";
 import ImageGallery from "../components/Homepage/ImageGallery";
-import HomeHero from "../components/Homepage/HomeHero";
+// import HomeHero from "../components/Homepage/HomeHero";
 import { PageSeo } from "../components/SEO";
 import siteMetadata from "../data/siteMetadata.json";
 import Testimonials from "../components/Homepage/Testimonials";
@@ -65,7 +66,8 @@ export default function Index() {
           },
         ]}
       />
-      <HomeHero />
+      {/* <HomeHero /> */}
+      <Hero />
       <Services />
       <SVGWaveDivider />
       <Testimonials />

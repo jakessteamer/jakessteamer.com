@@ -27,14 +27,14 @@ export default function Testimonials() {
           <div className="w-full px-8 py-4 mt-6 md:mt-0">
             <div className="testimonial p-6 border-blue-500 border-2 border-solid flex">
               <div>
-                <p className="text-blue-900">
+                <p className="text-white dark:text-blue-900">
                   &quot;Very good customer service. Very thorough made sure all
                   air vents were cleaned. Whatever mess was made from air vents
                   was cleaned up. Very professional and knowledgeable in all
                   areas. Will recommend to anyone I know. My a/c is running
                   better then before.&quot;
                 </p>
-                <div className="text-blue-900 font-bold uppercase mt-6">
+                <div className="text-white dark:text-blue-900 font-bold uppercase mt-6">
                   - Juanita D
                 </div>
               </div>
@@ -44,13 +44,13 @@ export default function Testimonials() {
           <div className="w-full px-8 py-4 mt-6 md:mt-0">
             <div className="testimonial p-6 border-blue-500 border-2 border-solid flex">
               <div>
-                <p className="text-blue-900">
+                <p className="text-white dark:text-blue-900">
                   &quot;I will be using Jake’s Steamer again! He was prompt, on
                   time arrival and did a great job. Hard to find people here
                   that really care about doing a quality job for a fair
                   rate.&quot;
                 </p>
-                <div className="text-blue-900 font-bold uppercase mt-6">
+                <div className="text-white dark:text-blue-900 font-bold uppercase mt-6">
                   - Sallie K.
                 </div>
               </div>
@@ -60,14 +60,14 @@ export default function Testimonials() {
           <div className="w-full px-8 py-4 mt-6 md:mt-0">
             <div className="testimonial p-6 border-blue-500 border-2 border-solid flex">
               <div>
-                <p className="text-gray-800">
+                <p className="text-white dark:text-blue-900">
                   &quot;If you need a carpet clean in the middle of the night,
                   this gentleman is the guy to call. He provides awesome
                   customer service and my carpets smell so much better. He
                   didn’t mind explaining the process and giving us pointers. We
                   will definitely use him in the future.&quot;
                 </p>
-                <div className="text-gray-900 font-bold uppercase mt-6">
+                <div className="text-white dark:text-blue-900 font-bold uppercase mt-6">
                   - Reyna S.
                 </div>
               </div>

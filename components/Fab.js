@@ -8,7 +8,7 @@ export default function Fab() {
     <div className="fabWrap md:hidden">
       <div className="fabIconArrow" aria-hidden="true">
         <svg
-          className="theme-text"
+          className="theme-text bounce-animation"
           stroke="currentColor"
           fill="currentColor"
           strokeWidth="0"

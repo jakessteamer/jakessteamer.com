@@ -29,27 +29,42 @@ export default function HomeHero() {
             sizes="100vw"
             src="/images/kid-and-mom-on-carpet-high-def.jpg"
             decoding="async"
-            className="absolute inset-0 w-full h-full object-cover opacity-90"
+            className="absolute inset-0 w-full h-full object-cover "
           />
         </div>
-        <div
-          id="home-hero-content"
-          className="row-start-1 row-end-1 col-start-1 col-end-1 z-30 relative grid grid-cols-12 grid-rows-6 ">
-          <div className="col-start-2 col-end-11 row-start-3 row-end-4 ">
-            {/* <span className="font-bold uppercase tracking-widest">Jake's Steamer</span> */}
-            <p className="text-3xl lg:text-5xl my-7  font-bold text-blue-500">
+        <div className="row-start-1 row-end-1 col-start-1 col-end-1 grid grid-rows-2">
+          <div className="home-hero-img-overlay row-start-2" />
+        </div>
+        <div className="relative row-start-1 row-end-1 col-start-1 col-end-1 grid grid-rows-3">
+          <div className="row-start-2 row-end-3 absolute container mx-auto bottom-0 left-0 right-0">
+            <p className="header-home__title theme-blue">
               Cleaner.
               <br />
               Happier.
               <br />
               Healthier.
             </p>
-            {/* <p className="font-bold mb-1">Jake's Steamer</p> */}
-            <span className="font-bold uppercase lg:text-2xl text-blue-900">
-              Jake's Steamer
-            </span>
-            <h1 className="text-blue-900 text-lg lg:text-xl">
-              The Carpet Cleaning Professionals
+          </div>
+        </div>
+        {/*
+        <div
+          id="home-hero-content"
+          className="row-start-1 row-end-1 col-start-1 col-end-1 z-30 relative grid grid-cols-12 grid-rows-6 ">
+          <div className="col-start-2 col-end-11 row-start-3 row-end-4 ">
+            <p className="text-3xl lg:text-5xl my-7 font-bold theme-blue">
+              Cleaner.
+              <br />
+              Happier.
+              <br />
+              Healthier.
+            </p>
+          </div>
+        </div> */}
+        <div className="relative row-start-1 row-end-1 col-start-1 col-end-1 grid grid-rows-2">
+          <div className="absolute container mx-auto bottom-0 left-0 right-0 mb-12 md:mb-20">
+            <h1 className="prose sm:prose-lg">
+              Call Jake's Steamer for a free consultation. We'll make your home
+              or business cleaner, happier, healthier.
             </h1>
           </div>
         </div>
@@ -62,7 +77,7 @@ export default function HomeHero() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1200 120"
             preserveAspectRatio="none"
-            className="text-white-accent dark:text-blue-900">
+            className="text-white dark:text-blue-900">
             <path
               d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
               fill="currentColor"
@@ -70,47 +85,45 @@ export default function HomeHero() {
           </svg>
         </div>
       </div>
-      <div className="container px-4 lg:px-12 pt-3 lg:pt-12 mx-auto theme-surface">
+      <div className="container px-4 lg:px-12 pt-3 lg:pt-12 mx-auto theme-surface ">
         <div className="flex flex-wrap w-full mb-20">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <p className="sm:text-3xl text-3xl lg:text-4xl font-bold title-font mb-2 theme-text">
+            <p className="sm:text-3xl text-3xl lg:text-4xl font-bold title-font mb-2 content-title">
               Services
             </p>
-            <hr className="h-1 w-1/2 bg-blue-500 rounded h-underline" />
+            <hr className="h-1 w-1/2 bg-blue-900 rounded h-underline" />
           </div>
-          <div id="service__section--text" className=" lg:w-1/2 w-full">
-            <p className="text-lg theme-text pb-4">
-              Overtime your carpets collect dirt, spills, and other contaminants
-              giving your carpet a darker overtone and a nice smell to go along
-              with it.
+          <div
+            id="service__section--text"
+            className=" lg:w-1/2 w-full prose-lg">
+            <p>
+              Your carpet acts as an air filter by trapping dust mites, pollen,
+              mold spores, pet dander, cockroach allergens, and other pollutants
+              brought in from the outside. However, your carpet has a limit to
+              how much it can hold before releasing pollutants back into the
+              air.
             </p>
-            <p className="text-lg theme-text inline-flex">
-              Call Jake's Steamer for all your carpet and flooring needs. We
-              offer
+            <p>
+              steam cleaning uses pressurized hot water to penetrate and loosen
+              dirt unreachable by a vaccuming. The heat kills bacteria, mold,
+              mildew, and allergens. The water, stains, and odors are extracted
+              by a powerful suction vacuum. Your carpets are left sanitized and
+              dry in a few hours.
             </p>
-            <h2 className="text-lg theme-text inline-flex">
-              <strong>&nbsp;free</strong>&nbsp;in-home evaluations
-            </h2>
-            <p className="text-lg theme-text inline-flex pb-4">
-              &nbsp;and peace of mind.
+
+            <p>
+              Steam cleaning can improve the air you breathe, remove stains,
+              odors, restore color, and keep your carpets looking good.
             </p>
-            <p className="text-blue-500 mb-8">
-              FAMILY + LOCALLY OWNED | LICENSED + CERTIFIED + INSURED
+            <p>
+              Call Jake's Steamer for a free consultation. We'll make your home
+              or business cleaner, happier, healthier.
+            </p>
+
+            <p className="font-bold theme-blue my-8">
+              Licensed + Certified + Insured | Family + Locally Owned
             </p>
           </div>
-          {/* { <p className=" lg:w-1/2 w-full text-lg  ">
-          We are committed to making sure that your home is as healthy and
-              clean as possible. Your home or office is where you live and work,
-              where your kids play, where your pets nap, which is why we take
-              every single client interaction as if it is the single most
-              important job we have ever done.
-                        To get your carpet truly clean, you need a professional deep cleaning service. That’s where we
-                        where Jake's Steamer comes in. We can remove stains and smells without damaging your carpet. In
-                        just a few hours your carpets will be clean and dry.
-                    </p>
-                    <b className="text-textLight text-xl pl-1">
-                    Questions? Quote? Call Jake's Steamer!
-                  </b> */}
         </div>
       </div>
     </>

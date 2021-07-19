@@ -19,7 +19,7 @@ export default function DropdownMenu() {
       id="DropdownMenu"
       className={clsx(
         "flex-col hidden overscroll-contain px-4",
-        "text-blue-900 dark:text-white-accent bg-white-accent dark:bg-blue-900",
+        "prose-lg text-blue-900 dark:text-white bg-white dark:bg-blue-900",
         { showNavDropdownMenu: isNavMenuOpen }
       )}>
       <div

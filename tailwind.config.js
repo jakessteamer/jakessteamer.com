@@ -11,15 +11,8 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       black: colors.black,
-      white: {
-        DEFAULT: "#ffffff",
-        accent: "#FCFCFD",
-      },
+      white: "#fcfcfd",
       gray: {
-        1: "var(--text1-dark)",
-        2: "var(--text2-dark)",
-        3: "var(--text2-light)",
-        4: "var(--text1-light)",
         50: "#F9FAFB",
         100: "#F3F4F6",
         200: "#E5E7EB",
@@ -32,22 +25,38 @@ module.exports = {
         900: "#111827",
       },
       blue: {
+        50: "#10e108ff",
         100: "#f0f6ff",
         200: "#b3d2ff",
         300: "#7ab2ff",
         400: "#3d8eff",
         500: "#006aff",
         600: "#0055cc",
-        700: "#004099",
-        800: "#002a66",
-        900: "#001533",
+        700: "#003e94",
+        800: "#002861",
+        900: "#001129",
       },
       cyan: "#04F9F2",
+      indigo: colors.indigo,
     },
     extend: {
       fontFamily: {
         sans: ["Inter", ...fontFamily.sans],
       },
+      spacing: {
+        "8%": "8%",
+        18: "4.5rem",
+      },
+      zIndex: {
+        60: "60",
+      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme("colors.blue.900"),
+          },
+        },
+      }),
     },
   },
   variants: {
@@ -56,5 +65,7 @@ module.exports = {
   plugins: [
     require("@tailwindcss/line-clamp"),
     require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/typography"),
+    require("postcss-easing-gradients"),
   ],
 };

@@ -2,10 +2,10 @@ export default function ImageGallery() {
   return (
     <div id="image-gallery-section" className="theme-surface-inverse pt-24">
       <div className="flex flex-col items-center">
-        <p className="title-font sm:text-4xl text-3xl lg:text-5xl mb-4 font-bold text-blue-500">
+        <p className="title-font sm:text-4xl text-3xl lg:text-5xl mb-4 font-bold theme-blue">
           Image Gallery
         </p>
-        <div className="h-1 w-1/2 bg-brand-blue rounded h-underline mb-8" />
+        <div className="h-1 w-1/2 theme-surface rounded h-underline mb-8" />
       </div>
       <div
         id="image-gallery-section__container"

@@ -13,27 +13,25 @@ export default function ServiceCard(props) {
 
       <div className=" relative px-4 -mt-16  ">
         <div className="theme-surface-inverse p-6 rounded-lg shadow-lg">
-          {tags
+          {/* {tags
             ? tags.map((tag) => (
                 <span
                   key={tag}
-                  className="inline-block mx-1 px-2 py-1 leading-none bg-cyan text-blue-900 rounded-full font-semibold uppercase tracking-wide text-xs">
+                  className="inline-block mx-1 px-2 py-1 leading-none bg-cyan text-gray-700 rounded-full font-semibold  tracking-wide text-xs">
                   {tag}
                 </span>
               ))
-            : ""}
+            : ""} */}
           <a href={href}>
-            <h2 className="mt-1 text-xl font-semibold uppercase leading-tight text-blue-500">
-              {title}
-            </h2>
+            <h2 className="mt-1 prose-xl font-bold  theme-blue">{title}</h2>
           </a>
 
-          <p className="mt-1 theme-text-inverse">{desc}</p>
-          <div className="c-card__btn mt-4 flex items-center">
+          <p className="mt-1 prose text-white dark:text-blue-900">{desc}</p>
+          <div className="c-card__btn mt-4 flex items-center text-base font-medium leading-6">
             <a
-              className="w-full sm:w-auto px-5 py-2  mb-4  text-sm     font-medium  focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-900 focus:outline-none transition-colors duration-200 rounded-full block  bg-blue-500 text-white-accent "
+              className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
               href={href}>
-              Learn More
+              Learn More →
             </a>
           </div>
         </div>

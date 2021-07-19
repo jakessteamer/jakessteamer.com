@@ -50,7 +50,7 @@ export default function DesktopNavLinks() {
           href="https://book.housecallpro.com/book/Jakes-Steamer/e5fb241079164c83aa85e58e9aa1b12b"
           rel="noopener noreferrer nofollow"
           target="_blank"
-          className="flex items-center justify-center h-12 px-4 text-sm font-bold text-center rounded-md lg:h-10 scheduling-btn bg-blue-500 text-white-accent tracking-wide">
+          className="flex items-center justify-center h-12 px-4 text-sm font-bold text-center rounded-md lg:h-10 scheduling-btn bg-blue-500 text-white tracking-wide">
           Schedule <span className="lg:hidden xl:inline">&nbsp;Now!</span>
         </a>
       </div>

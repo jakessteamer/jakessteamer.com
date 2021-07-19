@@ -3,6 +3,47 @@ import ServiceCard from "@components/ServiceCard";
 export default function Services() {
   return (
     <>
+      <div className="container px-4 lg:px-12 pt-3 lg:pt-12 mx-auto theme-surface ">
+        <div className="flex flex-wrap w-full mb-20">
+          <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
+            <p className="sm:text-3xl text-3xl lg:text-4xl font-bold title-font mb-2 content-title">
+              Services
+            </p>
+            <hr className="h-1 w-1/2 bg-blue-900 rounded h-underline" />
+          </div>
+          <div
+            id="service__section--text"
+            className=" lg:w-1/2 w-full prose-lg">
+            <p>
+              Your carpet acts as an air filter by trapping dust mites, pollen,
+              mold spores, pet dander, cockroach allergens, and other pollutants
+              brought in from the outside. However, your carpet has a limit to
+              how much it can hold before releasing pollutants back into the
+              air.
+            </p>
+            <p>
+              steam cleaning uses pressurized hot water to penetrate and loosen
+              dirt unreachable by a vaccuming. The heat kills bacteria, mold,
+              mildew, and allergens. The water, stains, and odors are extracted
+              by a powerful suction vacuum. Your carpets are left sanitized and
+              dry in a few hours.
+            </p>
+
+            <p>
+              Steam cleaning can improve indoor air quality, remove stains,
+              odors, restore color, and keep your carpets looking good.
+            </p>
+            <p>
+              Call Jake's Steamer for a free consultation. We'll make your home
+              or business cleaner, happier, healthier.
+            </p>
+
+            <p className="font-bold theme-blue my-8">
+              Licensed + Certified + Insured | Family + Locally Owned
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="container mx-auto">
         <div className="flex flex-wrap px-4">
           <ServiceCard
@@ -36,13 +77,7 @@ export default function Services() {
             alt="Jake's Steamer Water Damage Restoration Service Card"
             title="Emergency Flood"
             desc="
-             From leaking faucets to broken water heaters to flooding, water
-             damage is one of the most common and potentially destructive
-             problems you can face as a homeowner. In water damage situations
-             it is important to act immediately. We have the tools to extract
-             all the water and dry the area. We finish the process with
-             sanitizing and deodorizing leaving your property clean and
-             protected.
+            Many building materials act like sponges, soaking up enough water in minutes to take weeks to dry out. If moisture is not removed as soon as possible wood warps, buckles, cups, and splits.  Sheetrock and gypsum board sag and crumble. Bacteria and mold growth thrive is moist environments causing smelly odors and material decay.
            "
             href="/WaterDamageRestoration"
             tags={["Water Removal", "mold removal", "24/7"]}
@@ -54,7 +89,7 @@ export default function Services() {
 
       <div className="container mx-auto flex px-5 py-24 lg:flex-row flex-col items-center ">
         <div className="lg:flex-grow lg:w-1/2 flex flex-col lg:items-start lg:text-left mb-16 md:mb-0 items-center text-center mr-4">
-          <p className="title-font sm:text-4xl text-3xl mb-4 font-medium text-blue-500">
+          <p className="title-font sm:text-4xl text-3xl mb-4 font-medium theme-blue">
             Certified, Licensed,
             <br className="hidden lg:inline-block" />
             and Insured
@@ -66,7 +101,7 @@ export default function Services() {
           </p>
         </div>
         <img
-          className="lg:w-1/2 dark:bg-gradient-to-r dark:from-blue-900 dark:to-white-accent bg-gradient-to-l from-white-accent to-blue-900   object-cover object-center rounded-lg xl:ml-auto"
+          className="lg:w-1/2 dark:bg-gradient-to-r dark:from-blue-900 dark:to-white bg-gradient-to-l from-white to-blue-900   object-cover object-center rounded-lg xl:ml-auto"
           alt="hero"
           src="/images/iicrc-certification.png"
         />
@@ -76,10 +111,9 @@ export default function Services() {
           <ServiceCard
             imgSrc="/images/tile/tile-3-640x480-md.jpg"
             alt="Jake's Steamer Tile Cleaning Service Card"
-            title="Tile & Grout Cleaning"
+            title="Tile & Grout Cleaning & Sealing"
             desc="
-             Our grout cleaning services can help restore your grout to its sparkling clean condition, making your home safer and more beautiful.
-        "
+            If you see that your tile starting to appear stained, old or aged it’s time to call in a professional. When not properly maintained, your tile and grout become breeding grounds for mold and mildew. Grout should be cleaned and resealed regularly to prevent dirt, water and grime from becoming trapped in your grout’s porous surface."
             href="/TileAndGroutCleaning"
             tags={["Vinyl", "Mexican Salito", "Terrazzo"]}
           />
@@ -88,7 +122,7 @@ export default function Services() {
             alt="Jake's Steamer Pet Stain and Odor Removal Service Card"
             title="Pet Stain and Odor Removal"
             desc="
-      Our pets love to leave us presents from time to time.
+            Pet stains don’t just smell and look bad, they can cause illness and irritation. Pet urine contains ammonia, especially cat pee has a high level, which can make the lungs feel like they are burning. Urine also contains proteins which can become a feeding ground for terrible bacterias which could make you and your family sick.
     "
             href="/StainAndOdorRemoval"
             tags={["stains", "smells", "odors"]}

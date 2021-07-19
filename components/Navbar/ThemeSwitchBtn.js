@@ -12,7 +12,7 @@ export default function ThemeSwitchBtn() {
         "flex justify-center p-2 rounded-md",
         "transition duration-150 ease-in-out",
         "focus:outline-none",
-        "bg-blue-900 dark:bg-white-accent",
+        "bg-blue-900 dark:bg-white",
         "border-gray-200 border-solid border-2"
       )}
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
@@ -21,7 +21,7 @@ export default function ThemeSwitchBtn() {
         viewBox="0 0 24 24"
         fill="currentColor"
         stroke="currentColor"
-        className="w-4 h-4 text-white-accent dark:text-blue-900">
+        className="w-4 h-4 text-white dark:text-blue-900">
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
