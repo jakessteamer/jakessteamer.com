@@ -51,10 +51,7 @@ export default function Services() {
             alt="Carpet cleaning service card"
             title="Carpet & Area Rug Cleaning"
             desc="
-          We specialize in carpet cleaning. Over the last 15+ years we have
-          removed countless stains and brought back life into many carpets.
-          Our customers trust us with their homes and businesses and in
-          return we have guarenteed piece of mind and 100% satisfaction.
+            Carpets trap a multitude of dust particles, dirt, and bacteria between the fibers. While vacuuming helps remove some of this debris, it alone cannot get rid of it all. To remove embedded dirt, stains, odors, kill germs you have to steam clean your carpets.
         "
             href="/CarpetCleaning"
             tags={["stains", "smells", "odors"]}
@@ -64,10 +61,7 @@ export default function Services() {
             alt="Jake's Steamer Air Duct Cleaning Service"
             title="Air Duct Cleaning"
             desc="
-          Air duct cleaning can drasticially improve indoor air quality by
-          removing bacteria, mold, and mildew spores. We use an EPA
-          registered biocide fog agent to destroy contaminants, a odor
-          killer deodorizer, and anti-bacterial sealant.
+            Similar to dust collecting on the surfaces inside your home dust collects inside air duct surfaces creating a thick fuzzy coating. Air duct cleaning is designed to remove dust and other airborne particles from your heating, ventilation, and air conditioning (HVAC) system. You will be able to breathe easier knowing that there is less airborne dust, pollen, mold and other allergens floating through your home.
         "
             href="/AirDuctCleaning"
             tags={["clean air"]}
@@ -130,7 +124,7 @@ export default function Services() {
           <ServiceCard
             imgSrc="/images/upholstery/couch-upholstery-square.jpg"
             alt="Jake's Steamer Upholstery Cleaning Service Card"
-            title="Upholstery Cleaning"
+            title="Furniture Cleaning"
             desc="
       We provide quality upholstery steam cleaning service for all types
       of upholstery fabric. The standard service includes cleaning of
