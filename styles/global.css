@@ -11,6 +11,10 @@
     --light-theme-bg: "#fcfcfd";
     /* hsla(215, 100%, 8%) */
     --dark-theme-bg: "#001129";
+    /* HSL 238, 87, 73 */
+    --dark-theme-moon: "#8083F6";
+    /* HSL 28, 39, 59 */
+    --light-theme-sun: "#BF936D";
 
     /* Remove Blue Highlighting onClick */
     user-select: none;
@@ -68,7 +72,7 @@
   }
 
   p {
-    @apply text-gray-900 dark:text-gray-300;
+    @apply text-blue-900 dark:text-blue-100;
   }
 }
 

@@ -1,5 +1,7 @@
 import React from "react";
+import clsx from "clsx";
 import { useAppContext } from "../../context/AppState";
+import ThemeSwitchBtn from "./ThemeSwitchBtn";
 
 export default function MobileNavLinks() {
   const { isNavMenuOpen, toggleNavMenu } = useAppContext();
@@ -35,10 +37,11 @@ export default function MobileNavLinks() {
           className="flex items-center justify-center h-10 px-4 text-sm font-bold text-center rounded-md scheduling-btn bg-blue-500 text-white tracking-wide">
           Schedule <span className=" xl:inline">&nbsp;Now!</span>
         </a> */}
-        <div id="mobile-navlinks__menu" className="relative flex-none py-3 ">
+        <ThemeSwitchBtn />
+        <div id="mobile-navlinks__menu" className="relative flex-none py-2 ">
           <button
             type="button"
-            className="text-blue-900 w-10 h-10 relative focus:outline-none bg-white rounded-md xl:hidden "
+            className="text-blue-900 w-12 h-12 relative focus:outline-none bg-white rounded-md xl:hidden "
             onClick={toggleNavMenu}>
             <span className="sr-only">Open main menu</span>
             <div className="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">

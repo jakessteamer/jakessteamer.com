@@ -161,7 +161,7 @@ export default function Topbar() {
           {/* <div className="text-xs font-medium text-white">
             Carpets & Area Rugs | Water Damage | Air Ducts | Upholstery & More
           </div> */}
-          <div className="text-xs font-medium text-white">
+          <div className="text-xs lg:text-lg font-medium text-white">
             Contact us for a free estimate
           </div>
           <span

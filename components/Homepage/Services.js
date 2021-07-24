@@ -13,15 +13,15 @@ export default function Services() {
           </div>
           <div
             id="service__section--text"
-            className=" lg:w-1/2 w-full prose-lg">
-            <p>
+            className=" lg:w-1/2 w-full prose-lg ">
+            <p className="dark:text-blue-100">
               Your carpet acts as an air filter by trapping dust mites, pollen,
               mold spores, pet dander, cockroach allergens, and other pollutants
               brought in from the outside. However, your carpet has a limit to
               how much it can hold before releasing pollutants back into the
               air.
             </p>
-            <p>
+            <p className="text-blue-900 dark:text-blue-100">
               steam cleaning uses pressurized hot water to penetrate and loosen
               dirt unreachable by a vaccuming. The heat kills bacteria, mold,
               mildew, and allergens. The water, stains, and odors are extracted
@@ -51,7 +51,7 @@ export default function Services() {
             alt="Carpet cleaning service card"
             title="Carpet & Area Rug Cleaning"
             desc="
-            Carpets trap a multitude of dust particles, dirt, and bacteria between the fibers. While vacuuming helps remove some of this debris, it alone cannot get rid of it all. To remove embedded dirt, stains, odors, kill germs you have to steam clean your carpets.
+            Carpets trap a multitude of dust particles, dirt, and bacteria between the fibers. While vacuuming helps remove some of this debris, vacuuming alone cannot get rid of it all. To remove embedded dirt, stains, odors, kill germs you have to steam clean your carpets.
         "
             href="/CarpetCleaning"
             tags={["stains", "smells", "odors"]}
@@ -126,9 +126,7 @@ export default function Services() {
             alt="Jake's Steamer Upholstery Cleaning Service Card"
             title="Furniture Cleaning"
             desc="
-      We provide quality upholstery steam cleaning service for all types
-      of upholstery fabric. The standard service includes cleaning of
-      all upholstered furniture and cushions of the same material.
+            No matter how often you vacuum, the surface of your furniture still accumulates dirt, stains, and odors. The result is furniture that is uninviting. Steam cleaning can revitalize your furniture by breaking down and pulling out embedded dirt and stains while neutralizing bad odors. We clean all kinds of fabrics including sofas, love seats, dining chairs, curtains, and mattresses.
     "
             href="/UpholsteryCleaning"
             tags={["velvet", "leather", "pillows"]}

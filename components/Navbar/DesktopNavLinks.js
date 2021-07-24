@@ -6,38 +6,44 @@ export default function DesktopNavLinks() {
     <div className="hidden  xl:flex xl:flex-row xl:items-center xl:justify-between xl:flex-1 ">
       {/* Navlinks Desktop Menu Links Container space-y-3 lg:space-y-0 lg:flex-row lg:space-x-6 xl:space-x-8 lg:items-center */}
       <div className="flex flex-col lg:flex-row lg:items-center ">
-        <a href="/" className="text-lg text-blue px-4 py-5">
+        <a href="/" className="text-lg text-blue-900 px-4 py-5">
           Home
         </a>
-        <a href="/CarpetCleaning" className="text-lg text-blue px-4 py-5">
+        <a href="/CarpetCleaning" className="text-lg text-blue-900 px-4 py-5">
           <span className="2xl:hidden">Carpets</span>
           <span className="hidden 2xl:inline">Carpet&nbsp;Cleaning</span>
         </a>
-        <a href="/AirDuctCleaning" className="text-lg text-blue px-4 py-5">
+        <a href="/AirDuctCleaning" className="text-lg text-blue-900 px-4 py-5">
           <span className="2xl:hidden">Air&nbsp;Ducts</span>
           <span className="hidden 2xl:inline">Air&nbsp;Duct&nbsp;Cleaning</span>
         </a>
 
         <a
           href="/WaterDamageRestoration"
-          className="text-lg text-blue px-4 py-5">
+          className="text-lg text-blue-900 px-4 py-5">
           Emergency&nbsp;Flood
         </a>
 
-        <a href="/StainAndOdorRemoval" className="text-lg text-blue px-4 py-5">
+        <a
+          href="/StainAndOdorRemoval"
+          className="text-lg text-blue-900 px-4 py-5">
           <span className="2xl:hidden">Stain&nbsp;and&nbsp;Odor</span>
           <span className="hidden 2xl:inline">
             Pet&nbsp;Stain&nbsp;and&nbsp;Odor&nbsp;Removal
           </span>
         </a>
 
-        <a href="/TileAndGroutCleaning" className="text-lg text-blue px-4 py-5">
+        <a
+          href="/TileAndGroutCleaning"
+          className="text-lg text-blue-900 px-4 py-5">
           <span className="2xl:hidden">Tile&nbsp;and&nbsp;Grout</span>
           <span className="hidden 2xl:inline">
             Tile&nbsp;and&nbsp;Grout&nbsp;Cleaning
           </span>
         </a>
-        <a href="/UpholsteryCleaning" className="text-lg text-blue px-4 py-5">
+        <a
+          href="/UpholsteryCleaning"
+          className="text-lg text-blue-900 px-4 py-5">
           <span className="2xl:hidden">Upholstery</span>
           <span className="hidden 2xl:inline">Upholstery&nbsp;Cleaning</span>
         </a>
