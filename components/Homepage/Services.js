@@ -107,7 +107,8 @@ export default function Services() {
             alt="Jake's Steamer Tile Cleaning Service Card"
             title="Tile & Grout Cleaning & Sealing"
             desc="
-            If you see that your tile starting to appear stained, old or aged it’s time to call in a professional. When not properly maintained, your tile and grout become breeding grounds for mold and mildew. Grout should be cleaned and resealed regularly to prevent dirt, water and grime from becoming trapped in your grout’s porous surface."
+            Grout is a mixture of sand, cement and water, once it’s installed and dried it has no protection from stains, spills and dirt. Grout between the tiles is actually very porous, it will absorb liquids and dirt, which will stain the grout. As the grout in your home becomes dirty over time, it will start changing color, making the tile floors look bad and unsanitary. We can deep clean your floor. Once the surface is completely clean we will apply our grout sealant to protect your floors from future spills and grime.
+            "
             href="/TileAndGroutCleaning"
             tags={["Vinyl", "Mexican Salito", "Terrazzo"]}
           />

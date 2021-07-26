@@ -17,19 +17,28 @@ export default function TileAndGroutCleaning() {
         </div>
         <h1 className="content-title">How To Clean Tile and Grout</h1>
         <p>
-          Tile and grout are notoriously difficult to clean. Every homeowner
-          (and business owner!) knows that regular mopping, home tile cleaners
-          and home grout cleaning methods just don't do the trick, especially if
-          you're trying to eliminate stubborn dirt that has settled on tile
-          surfaces or deep into grout lines. Call Jake’s Steamer and we'll come
-          to the rescue!
+          Tile and grout look great in homes but are prone to gathering
+          contaminants and mold. In your bathroom, due to high moisture, it is
+          an easy place for mold and mildew to grow. Kitchens tend to build up
+          grease and food on the floor and this gets pressed into your grout. In
+          places like entryways, mud and dirt tend to discolor grout.
         </p>
+        <h2 className="content-title">Tile and Grout Cleaning Process</h2>
         <p>
+          We first apply a non-toxic cleaner to your tile and grout to break up
+          any dirt or grease stuck in the grout. We then deep clean your tile
+          and grout with high-speed machine that scrubs and extracts the dirt
+          from your tile and grout. For particularly stubborn areas, vapor steam
+          cleaning may be used. Once the surface is completely clean we will
+          apply our grout sealant to protect your floors from future spills and
+          grime.
+        </p>
+        {/* <p>
           Professional Tile Cleaning and Grout Cleaning process will keep your
           tile surfaces, grout lines and countertops clean and fresh. We can
           boldly go where bottled cleaners and household mops have never gone
           before!
-        </p>
+        </p> */}
 
         <p>
           What makes tile cleaning and grout cleaning so difficult? Dirt and
