@@ -68,42 +68,70 @@ export default function CarpetCleaning() {
           Move small items and breakables from the area to be cleaned. Get ready
           to be amazed by the Rotovac.
         </p>
-        <h2 className="content-title">
-          WHAT YOU CAN EXPECT YOUR CLEANING TECHNICIAN TO DO:
-        </h2>
+        <h2 className="content-title">Carpet Cleaning Process</h2>
         <p>
-          <strong className="content-title">Pre-inspection:</strong> We will
-          evaluate your carpet’s needs. Every carpet must be treated
+          We will evaluate your carpet’s needs. Every carpet must be treated
           differently. We will decide what will be the best method for cleaning
           your carpet. You will know up front what we can and can’t do. This way
           there are no surprises.
         </p>
-        <p>
-          <strong className="content-title">Moving Furniture:</strong> When
-          necessary we will move and replace small furniture in its original
-          position.
-        </p>
-        <p>
-          <strong className="content-title">Pre-treatment:</strong> We treat
-          spots and stains as necessary and apply a cleaning solution to the
-          entire carpet.
-        </p>
-        <p>
-          <strong className="content-title">Cleaning:</strong> We use our
-          state-of-the-art Rotovac equipment for a fast and thorough deep
-          cleaning of your carpet.
-        </p>
-        <p>
-          <strong className="content-title">Post-inspection:</strong> Once the
-          project is completed, we re-inspect the carpet with you to ensure that
-          all the work was done to your satisfaction.
-        </p>
-        <p>
-          <strong className="content-title">Protect & Groom:</strong> When
-          necessary we will place blocks or foil under furniture legs to protect
-          them during the drying process and groom the carpet for a clean
-          inviting look.
-        </p>
+        <ol>
+          <li>
+            <strong className="content-title">PRE-INSPECTION</strong> Our
+            technician will walk through your home with you to visually inspect
+            the carpet. He will identify potential permanent stains and give you
+            an evaluation of expected results.
+          </li>
+          <li>
+            <strong className="content-title">PRE-VACUUM</strong> Dry soil is
+            removed by a thorough vacuuming. Removing dry soil is one of the
+            most important steps in cleaning.
+          </li>
+          <li>
+            <strong className="content-title">PRE-SPRAY</strong> A
+            preconditioning agent is applied to break down traffic area soil and
+            general spots for more thorough cleaning.
+          </li>
+          <li>
+            <strong className="content-title">PRE-SPOT</strong> Difficult spots
+            are pre-treated with special solutions to increase chances of
+            removal.
+          </li>
+          <li>
+            <strong className="content-title">SOIL EXTRACTION AND RINSE</strong>{" "}
+            The carpet is then thoroughly rinsed with a powerful extraction
+            cleaning system without over wetting the carpet or leaving a sticky
+            residue behind.
+          </li>
+          <li>
+            <strong className="content-title">NEUTRALIZER</strong> Every carpet
+            that we cleaned is pH balanced so that there is no sticky residue
+            left behind. This also leaves your carpet soft and fresh.
+          </li>
+          <li>
+            <strong className="content-title">POST SPOT</strong> Any spots or
+            stains still remaining will get extra treatment with our many
+            specialty spotting solutions. * For longer carpet life and fewer
+            permanent stain, be sure to have professional carpet protector
+            applied to your carpet.
+          </li>
+          <li>
+            <strong className="content-title">POST GROOM</strong> Some fibers
+            require post cleaning groom to assure there is no fiber distortion.
+            It also helps the fiber dry faster.
+          </li>
+          <li>
+            <strong className="content-title">SPEED DRY</strong> High velocity
+            air movers are placed on the carpet immediately after cleaning to
+            promote faster drying.
+          </li>
+          <li>
+            <strong className="content-title">POST CLEANING INSPECTION</strong>{" "}
+            Our technician will walk through your home with you to point out the
+            cleaning results to make sure that you are completely thrilled with
+            the job.
+          </li>
+        </ol>
         <p>
           <strong className="content-title">
             What you should do after the carpet cleaning:
