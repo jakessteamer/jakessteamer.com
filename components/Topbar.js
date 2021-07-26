@@ -157,11 +157,11 @@ export default function Topbar() {
             </linearGradient>
           </defs>
         </svg>
-        <div className="relative flex justify-center items-center">
+        <div className="relative flex justify-center items-center h-14 -mt-2">
           {/* <div className="text-xs font-medium text-white">
             Carpets & Area Rugs | Water Damage | Air Ducts | Upholstery & More
           </div> */}
-          <div className="text-xs lg:text-lg font-medium text-white">
+          <div className="lg:text-lg font-medium text-white">
             Contact us for a free estimate
           </div>
           <span
@@ -170,8 +170,9 @@ export default function Topbar() {
           />
           <div className="ml-6 sm:ml-0">
             <a
-              className="whitespace-nowrap inline-flex rounded-md bg-white py-2 px-3 text-xs font-semibold uppercase text-blue-500 hover:bg-opacity-90"
+              className="whitespace-nowrap inline-flex rounded-md bg-white py-2 px-3 text-xs lg:text-base font-semibold uppercase text-blue-500 hover:bg-opacity-90"
               target="_top"
+              rel="noopener noreferrer nofollow"
               href="https://book.housecallpro.com/book/Jakes-Steamer/e5fb241079164c83aa85e58e9aa1b12b">
               Schedule Now →
             </a>

@@ -62,7 +62,7 @@ export default function HomeHero() {
         </div> */}
         <div className="relative row-start-1 row-end-1 col-start-1 col-end-1 grid grid-rows-2">
           <div className="absolute container mx-auto bottom-0 left-0 right-0 mb-12 md:mb-20">
-            <h1 className="prose sm:prose-lg">
+            <h1 className="prose sm:prose-lg dark:text-blue-900">
               Call Jake's Steamer for a free consultation. We'll make your home
               or business cleaner, happier, healthier.
             </h1>

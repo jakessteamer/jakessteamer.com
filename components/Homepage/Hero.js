@@ -42,7 +42,7 @@ export default function Hero() {
               <br />
               Healthier.
             </p>
-            <p className="header-home__byline prose-lg text-blue-900 dark:text-white font-medium">
+            <p className="header-home__byline prose-lg text-blue-900 font-medium">
               Call Jake's Steamer for a free consultation. We'll make your home
               or business cleaner, happier, healthier.
             </p>

@@ -46,7 +46,7 @@ class MyDocument extends Document {
           name="msapplication-config"
         />
         <Head />
-        <body className="font-sans antialiased">
+        <body className="font-sans antialiased text-blue-900 dark:text-blue-100">
           <Main />
           <NextScript />
         </body>

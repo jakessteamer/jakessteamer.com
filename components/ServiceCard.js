@@ -27,7 +27,7 @@ export default function ServiceCard(props) {
           </a>
 
           <p className="mt-1 prose text-white dark:text-blue-900">{desc}</p>
-          <div className="c-card__btn mt-4 flex items-center text-base font-medium leading-6">
+          <div className="c-card__btn mt-4 flex items-center text-xl font-medium leading-6 ">
             <a
               className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
               href={href}>

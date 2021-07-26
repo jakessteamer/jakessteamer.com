@@ -52,9 +52,6 @@ export default function DropdownMenu() {
       </div>
       <div className="flex flex-col lg:flex-row lg:items-center px-4">
         {/* Mobile Theme Button */}
-        <div>
-          <ThemeSwitchBtn />
-        </div>
       </div>
     </div>
   );

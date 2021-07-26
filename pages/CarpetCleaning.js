@@ -27,130 +27,113 @@ export default function CarpetCleaning() {
         description={`${siteMetadata.description}`}
         url={`${siteMetadata.siteUrl}/CarpetCleaning`}
       />
-      <article className="flex flex-col max-w-7xl mx-6 mx-auto prose">
-        <header ref={elementRef}>
-          <h1 className="md:text-5xl text-3xl font-bold tracking-tight text-blue-500 dark:text-white-accent">
-            Home and Commericial Carpet Cleaning Services
-          </h1>
-        </header>
-
-        <div className="max-w-none w-full mt-12 prose">
-          <p>
-            Carpets enhance the beauty and comfort of your place, but did you
-            know carpets are a filter for your health?
-          </p>
-          <p>
-            Carpets may trap pollutants like dust mites, pet dander, cockroach
-            allergens, particle pollution, lead, mold spores, pesticides, dirt
-            and dust. Toxic gases in the air can stick to small particles that
-            settle into carpets. These pollutants may become airborne during
-            renovations, vacuuming or even daily activities like walking on the
-            carpet. In the home, children are more likely to be exposed to
-            pollution in carpets. They spend time playing on the floor and place
-            their hands in their mouths.<sup>1</sup>
-          </p>
-          <p>
-            It is recommended to clean carpets every 6-12 months depending how
-            dirty they get from pets, accidents, and everyday life.
-          </p>
-          {/* On-site Consultation */}
-          <p>Our Carpet Cleaning Process</p>
-          <p className="font-bold">Pre-Inspection</p>
-          <p className="theme-text">
-            The first step in the process is meeting with you to get to know
-            exactly how you would like your floors cleaned. You'll get to know
-            the wear age, expected fiber life, and cleaning schedules to extend
-            the life of your carpets. We'll then create and explain a solution
-            that achieves your cleaning goals while protecting your home.
-          </p>
-          {/* <!-- Preparation and Pre-treatment--> */}
-          <h2 className="text-xl font-bold">Preparation and Pretreatment</h2>
-          <p className="theme-text">
-            Preparation starts with moving furniture if necessary and vacumming
-            to remove loose debris. Before steam cleaning your carpets we
-            perform a pre-spot and pre-spray.
-          </p>
-          <p className="font-bold">Pre-Spot</p>
-          <p>
-            There is not a generic carpet cleaning product for all carpets. The
-            problem with applying the wrong type of cleaning product to your
-            carpet is it can result in the color to fade (bleaching). Pre-spot
-            checking is a test to make sure your carpet maintains original color
-            before steam cleaning.
-          </p>
-          <p className="font-bold">Pre-Spray</p>
-          <p>
-            Stains are sprayed with a safe stain remover which breaks the stain
-            up and makes it easy to be removed from the carpet.
-          </p>
-          <p className="font-bold">Why</p>
-          {/* <p className="theme-text">
-            Jake's Steamer's technicians are certified by the Institute of
-            Inspection Cleaning and Restoration Certification (IICRC) and
-            therefore trained in the chemistry and application of cleaning
-            solutions.
-          </p> */}
-          <p className="font-bold">What Certified Professionals Think About:</p>
-          <ul>
-            <li>
-              How the PH of cleaning solutions affects different stains and
-              materials
-            </li>
-            <li>Soil suspension</li>
-            <li>Spotting techniques</li>
-            <li>Pet urine neutralization</li>
-            <li>Fiber identification</li>
-            <li>Use of personal protective equipment</li>
-            <li>Carpet construction</li>
-          </ul>
-          {/* <!-- Steaming Cleaning --> */}
-          <p className="text-xl font-bold">
-            Steaming Cleaning (Hot Water Extraction Carpet Cleaning)
-          </p>
-          <p>
-            Hot water extraction is the use of detergent and pressurized hot
-            water to stains from your carpet. Pressure and temperature are what
-            allow stains to be easily removed without the having to use a lot of
-            cleaning detergent. The water, dirt, and stains are then extracted
-            using a strong suction vaccum.
-          </p>
-          <div>
-            <p>Additional benefits of steam cleaning are:</p>
-            <ul>
-              <li>
-                <p>
-                  Deep Clean Carpets: The pressurized hot water (180-220
-                  degrees) loosens dirt and microbes from the carpet fibers.
-                </p>
-              </li>
-
-              <li>
-                <p>
-                  Residue-Free Carpets: The minimal amount of detergent and
-                  water is used and then suctioned out. Carpets are family, pet,
-                  and most importantly baby safe.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Fast Drying Carpets: The minimal amount of cleaning water is
-                  used and then suctioned out. Carpets are dry in 1-2 hours.
-                </p>
-              </li>
-              <li>
-                <p>Restore Carpet Color</p>
-              </li>
-              <li>
-                <p>Remove Odors</p>
-              </li>
-            </ul>
-          </div>
+      <article className="relative max-w-3xl mx-auto px-6 prose lg:prose-lg theme-text">
+        <div className="aspect-w-16 aspect-h-9 my-12">
+          <img src="/images/carpets/area-rug-1.jpg" alt="" />
         </div>
-        <References
-          sources={[
-            "1. Controlling Pollutants and Sources In Schools. U.S. Environmental Protection Agency (EPA). https://www.epa.gov/iaq-schools/controlling-pollutants-and-sources-indoor-air-quality-design-tools-schools.",
-          ]}
-        />
+        <h1 className="content-title">How to Clean Your Carpets</h1>
+        <p className="">
+          For best results you should have a professional steam clean your
+          carpets. We have a truck mount unit that has rotary brushes which
+          apply hot steam in to the carpet, detergent, and remove dust and soil.
+          The success of steam cleaning rely on the technicians experience and
+          skill with the quality of truck mount machine.
+        </p>
+        <p>
+          The machine should keep the detergent solution in a proper temperature
+          to get steam continuously and the pressure of steam spraying should be
+          controllable at any time. When the hot steam applied on the carpet the
+          soil and dust particles on the carpet will be removed. It is very easy
+          to clean the removed soil particle from the carpet.
+        </p>
+        <p>
+          Although regular vacuuming can remove dry soil and debris from your
+          carpeting, it leaves behind oily soils and particles that are produced
+          from cooking vapors, pets, and dirt tracked in from outside the home.
+          These oily contaminants that are left behind can cause your carpet to
+          dull and fade.
+        </p>
+        <p>
+          As the contaminants build up they become more difficult to remove.
+          Regular deep cleaning of the carpet can prevent the excessive build up
+          of contaminants and keep your carpets looking fresh and clean. Regular
+          cleaning of your carpets also helps improve the air quality in your
+          home by removing pet hair, dust mites, and other allergens that thrive
+          deep in the carpet.
+        </p>
+        <h2 className="content-title">
+          WHAT CAN YOU DO TO PREPARE FOR YOUR CARPET CLEANING:
+        </h2>
+        <p>
+          Move small items and breakables from the area to be cleaned. Get ready
+          to be amazed by the Rotovac.
+        </p>
+        <h2 className="content-title">
+          WHAT YOU CAN EXPECT YOUR CLEANING TECHNICIAN TO DO:
+        </h2>
+        <p>
+          <strong className="content-title">Pre-inspection:</strong> We will
+          evaluate your carpet’s needs. Every carpet must be treated
+          differently. We will decide what will be the best method for cleaning
+          your carpet. You will know up front what we can and can’t do. This way
+          there are no surprises.
+        </p>
+        <p>
+          <strong className="content-title">Moving Furniture:</strong> When
+          necessary we will move and replace small furniture in its original
+          position.
+        </p>
+        <p>
+          <strong className="content-title">Pre-treatment:</strong> We treat
+          spots and stains as necessary and apply a cleaning solution to the
+          entire carpet.
+        </p>
+        <p>
+          <strong className="content-title">Cleaning:</strong> We use our
+          state-of-the-art Rotovac equipment for a fast and thorough deep
+          cleaning of your carpet.
+        </p>
+        <p>
+          <strong className="content-title">Post-inspection:</strong> Once the
+          project is completed, we re-inspect the carpet with you to ensure that
+          all the work was done to your satisfaction.
+        </p>
+        <p>
+          <strong className="content-title">Protect & Groom:</strong> When
+          necessary we will place blocks or foil under furniture legs to protect
+          them during the drying process and groom the carpet for a clean
+          inviting look.
+        </p>
+        <p>
+          <strong className="content-title">
+            What you should do after the carpet cleaning:
+          </strong>{" "}
+          To decrease drying time try to keep the room temperature about 72
+          degrees and use fans to circulate the air around the cleaned carpet.
+        </p>
+
+        <footer>
+          <h2 className="content-title">References</h2>
+          <ul className="reference-list">
+            <li className="reference">
+              <a
+                href="https://www.epa.gov/iaq-schools/controlling-pollutants-and-sources-indoor-air-quality-design-tools-schools#Carpet"
+                rel="nofollow">
+                Controlling Pollutants and Sources: Indoor Air Quality Design
+                Tools for Schools. US EPA
+                https://www.epa.gov/iaq-schools/controlling-pollutants-and-sources-indoor-air-quality-design-tools-schools
+                (2014).
+              </a>
+            </li>
+            <li className="reference">
+              <a
+                href="https://www.epa.gov/indoor-air-quality-iaq/building-air-quality-guide-building-owners-and-facility-managers-printable"
+                rel="nofollow">
+                Indoor Air Quality Tools for Schools.
+              </a>
+            </li>
+          </ul>
+        </footer>
       </article>
     </>
   );

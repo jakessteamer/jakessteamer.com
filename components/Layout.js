@@ -60,7 +60,7 @@ export default function Layout({ children }) {
     <PlausibleAnalytics domain="jakessteamer.com">
       <Topbar />
       <Navbar />
-      <main className="flex flex-col flex-nowrap">
+      <main className="flex flex-col flex-nowrap mt-32">
         {children}
         <Footer />
       </main>

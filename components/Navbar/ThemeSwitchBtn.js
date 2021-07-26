@@ -4,6 +4,7 @@ import { useTheme } from "next-themes";
 
 export default function ThemeSwitchBtn() {
   const { resolvedTheme, setTheme } = useTheme();
+
   return (
     // <button
     //   type="button"
@@ -33,7 +34,7 @@ export default function ThemeSwitchBtn() {
     <button
       type="button"
       aria-label="Color Mode"
-      className="flex justify-center p-2 text-gray-500 transition duration-150 ease-in-out bg-gray-100 border border-transparent rounded-md lg:bg-white lg:dark:bg-gray-900 dark:text-gray-200 dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-gray-700 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 active:bg-gray-50"
+      className="flex justify-center items-center transition duration-150 ease-in-out border border-transparent rounded-md  dark:text-blue-200 dark:bg-blue-800 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 dark:focus:bg-blue-700 active:bg-gray-50 w-10 h-10"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
       {resolvedTheme === "dark" ? (
         <svg
