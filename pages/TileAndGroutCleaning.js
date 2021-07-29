@@ -101,8 +101,8 @@ export default function TileAndGroutCleaning() {
           <div className="relative rounded-lg flex flex-col md:flex-row items-center md:shadow-xl md:h-88 mx-2">
             <div className="z-0 order-1 md:order-2 relative w-full md:w-1/2 h-80 md:h-full overflow-hidden rounded-lg md:rounded-none md:rounded-r-lg ">
               <div className="absolute inset-0 w-full h-full object-fill object-center bg-blue-400 bg-white bg-opacity-30 bg-cover bg-bottom tile-cleaning-cta-bg-img" />
-              <div className="md:hidden absolute inset-0 h-full p-6 pb-6 flex flex-col-reverse justify-start items-start bg-gradient-to-b from-transparent via-transparent to-gray-900">
-                <h2 className="w-full font-bold text-2xl  content-title leading-tight mb-2">
+              <div className="md:hidden absolute bottom-0 md:inset-0 md:h-full p-6 pb-6 flex md:flex-col-reverse md:justify-start items-start cta-card--gradient ">
+                <h2 className="w-full cta-card-title">
                   Jake's Steamer Cleans Floors, Showers, Countertops, & More
                 </h2>
               </div>
@@ -132,9 +132,7 @@ export default function TileAndGroutCleaning() {
                   <ul className="prose-list-override">
                     <li className=" prose-list-item-override">Travertine</li>
                     <li className=" prose-list-item-override">Saltillo</li>
-                    <li className=" prose-list-item-override">
-                      Other Tile and Grout Surfaces
-                    </li>
+                    <li className=" prose-list-item-override">Vinyl & More</li>
                   </ul>
                 </div>
               </div>

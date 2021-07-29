@@ -18,21 +18,6 @@ export default function Hero() {
   return (
     <>
       <section className="hero__section relative" ref={elementRef}>
-        {/* <div className="hero-content-container relative w-full linear-gradient-bg  ">
-          <div className="hero-content flex flex-col gap-y-4 pl-4 absolute bottom-14 md:bottom-20">
-            <p className="header-home__title theme-blue">
-              Cleaner.
-              <br />
-              Happier.
-              <br />
-              Healthier.
-            </p>
-            <p className="header-home__byline ">
-              Call Jake's Steamer for a free consultation. We'll make your home
-              or business cleaner, happier, healthier.
-            </p>
-          </div>
-        </div> */}
         <div className="hero-content absolute bottom-0  w-full linear-gradient-bg">
           <div className="flex flex-col px-4 md:px-16  gap-y-12 md:gap-y-20 pb-7% md:pb-14%">
             <p className="text-5xl md:text-6xl lg:text-7xl font-bold  theme-blue">

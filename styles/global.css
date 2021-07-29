@@ -846,3 +846,23 @@ html {
   top: auto !important;
   left: auto !important;
 } */
+
+/* bg-gradient-to-b from-transparent via-transparent to-gray-900 */
+.cta-card--gradient {
+  position: absolute;
+  padding-top: 100px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
+/* prose white-text */
+.cta-card-title {
+  color: #fcfcfd !important;
+  font-size: 1.5rem !important;
+  line-height: 1.25 !important;
+  font-weight: 700 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.white-text {
+  color: #fcfcfd !important;
+}
