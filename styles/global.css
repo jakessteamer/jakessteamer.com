@@ -77,6 +77,9 @@
   .min-w-screen {
     min-width: 100vw;
   }
+  .max-w-960 {
+    max-width: 960px;
+  }
   .BgGray200 {
     background-color: theme("colors.gray.200");
   }
@@ -87,7 +90,7 @@
     @apply text-blue-900 bg-white dark:bg-blue-900 dark:text-white;
   }
   .theme-text {
-    @apply dark:text-white text-blue-900;
+    @apply dark:text-gray-300 text-blue-900;
   }
   .theme-text-inverse {
     @apply text-white dark:text-blue-900;
@@ -141,6 +144,9 @@
 /* Component Surface Style */
 .theme-text--switch {
   @apply text-white dark:dark:text-blue-900;
+}
+.text-blue {
+  color: theme("colors.blue.500") !important;
 }
 
 html {
@@ -778,3 +784,65 @@ html {
   margin-left: 20px;
   transition: margin-left 0.2s ease-in, background-color 0.2s ease-in;
 }
+
+.ig-style--gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 372px));
+  gap: 1rem;
+  margin: auto;
+  place-content: center;
+}
+
+@screen lg {
+  .ig-style--gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 300px));
+    gap: 1rem;
+    margin: auto;
+    place-content: center;
+  }
+}
+
+.h2-prose-override {
+  margin-top: 0.75em !important;
+  /* margin-bottom: 0.75em !important; */
+  color: theme("colors.blue.500") !important;
+}
+/* .override {
+  margin-bottom: 0.5em !important;
+} */
+.tile-and-grout-services-list {
+  color: theme("colors.blue.900");
+}
+.prose-list-override {
+  margin-top: 0 !important;
+}
+.prose-list-override li {
+  margin: 0 !important;
+}
+.quick-read-highlights {
+  @apply text-blue-900 dark:text-blue-500 !important;
+}
+.tile-cleaning-cta-bg-img {
+  background-image: url("/images/jakes-steamer-van-right-aligned.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+/* .prose-list-override {
+  margin: auto !important;
+}
+.prose-list-item-override {
+  padding-left: 0;
+  position: static !important;
+  margin: auto !important;
+  color: theme("colors.blue.900");
+}
+
+.prose-list-override > li::before {
+  width: auto !important;
+  height: auto !important;
+  top: auto !important;
+  left: auto !important;
+} */

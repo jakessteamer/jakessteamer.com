@@ -15,6 +15,11 @@ export default function UpholsteryCleaning() {
         <div className="aspect-w-16 aspect-h-9 my-12">
           <img src="/images/upholstery/upholstery-sp1.jpg" alt="" />
         </div>
+        {/* WHY ARE YOU TALKING TO ME [EDUCATION ] */}
+        {/* HOW DO YOU DO THE THINGS */}
+        {/* PROVE IT */}
+
+        {/* WHAT WILL WE GIVE ME */}
         <h1 className="content-title">How To Clean Upholstery</h1>
         <p>
           Since your upholstered furniture generally cost money, they can be

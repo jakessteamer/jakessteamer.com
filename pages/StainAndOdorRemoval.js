@@ -13,6 +13,11 @@ export default function StainAndOdorRemoval() {
         <div className="aspect-w-16 aspect-h-9 my-12">
           <img src="/images/stain-and-odor-removal.jpg" alt="" />
         </div>
+        {/* WHY ARE YOU TALKING TO ME [EDUCATION ] */}
+        {/* HOW DO YOU DO THE THINGS */}
+        {/* PROVE IT */}
+
+        {/* WHAT WILL WE GIVE ME */}
         <h1 className="content-title">Stain and Odor Removal</h1>
         <p>
           For many dog and cat owners, pet odor removal from carpets is an

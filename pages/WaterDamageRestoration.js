@@ -18,6 +18,11 @@ export default function WaterDamageRestoration() {
             alt=""
           />
         </div>
+        {/* WHY ARE YOU TALKING TO ME [EDUCATION ] */}
+        {/* HOW DO YOU DO THE THINGS */}
+        {/* PROVE IT */}
+
+        {/* WHAT WILL WE GIVE ME */}
         <h1 className="content-title">
           WATERPROOFING | 24/7 WATER DAMAGE EXPERTS
         </h1>

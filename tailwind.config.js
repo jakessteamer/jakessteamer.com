@@ -39,6 +39,7 @@ module.exports = {
       cyan: "#04F9F2",
       indigo: colors.indigo,
     },
+
     extend: {
       fontFamily: {
         sans: ["Inter", ...fontFamily.sans],
@@ -46,10 +47,12 @@ module.exports = {
       spacing: {
         "8%": "8%",
         18: "4.5rem",
+        88: "22rem",
       },
       zIndex: {
         60: "60",
       },
+
       typography: (theme) => ({
         DEFAULT: {
           css: {
