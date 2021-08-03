@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { FAQPageJsonLd } from "next-seo";
 import { PageSeo } from "../components/SEO";
 import siteMetadata from "../data/siteMetadata.json";
 
@@ -11,31 +12,47 @@ export default function TileAndGroutCleaning() {
         description="Clean, seal and protect your tile and grout. For over 20 years, we have been providing the best floor cleaning services for any types of stone, ceramic, marble or other tile floors and that includes grout."
         url={`${siteMetadata.siteUrl}/TileAndGroutCleaning`}
       />
+      <FAQPageJsonLd
+        mainEntity={[
+          {
+            questionName: "How Long does it take to clean tile and grout?",
+            acceptedAnswerText: "3-5 business days.",
+          },
+          {
+            questionName: "Where can I find information about product recalls?",
+            acceptedAnswerText: "Read more on under information.",
+          },
+        ]}
+      />
       <article className="relative max-w-960 mx-auto prose lg:prose-lg theme-text">
         <div className="aspect-w-16 aspect-h-9 my-12">
           <img src="/images/tile/tile-cleaning.jpg" alt="" />
         </div>
         <h1 className="content-title px-5">Tile and Grout Cleaning</h1>
-        <p className="px-5">
-          Grout is a mixture of sand, cement and water, once it’s installed and
-          dried it has no protection from stains, spills and dirt. Grout between
-          the tiles is actually very porous, it will absorb liquids and dirt,
-          which will stain the grout permanently if not stain resistant sealant
-          is not applied. As the grout in your home becomes dirty over time, it
-          will start changing color, making the tile floors look bad and
-          unsanitary.
-        </p>
 
         <p className="px-5">
-          What makes tile cleaning and grout cleaning so difficult? Home
-          cleaning methods such as a tooth brush and a regular cleaning solution
-          does not compare to using a high speed machine that uses pressurized
-          hot water to throughly scrubs and extracts dirt from tile. With our
-          truck mounted system we can achieve{" "}
-          <strong className="quick-read-highlights">
-            hundreds of multi-directional cleaning passes
-          </strong>{" "}
-          per minute leaving your tile and grout like new!
+          We can boldly go where bottled cleaners and household mops have never
+          gone before! What makes tile cleaning and grout cleaning so difficult?
+          Dirt and contaminants build up over time, making your tiles look dull,
+          and causing grout to darken and appear discolored. Home cleaning
+          methods simply can't get at the built-up, ground-in dirt that has
+          settled in hard-to-reach places. Dirt trapped in the pores of tile and
+          grout is especially difficult to remove with traditional cleaning
+          solutions.
+        </p>
+        <p className="px-5 text-2xl font-bold">
+          Thankfully, Jake’s Steamer powerful truck-mounted cleaning system
+          safely cleans floors, showers, and countertops by quickly removing
+          dirt and contaminants.
+        </p>
+        <p className="px-5">
+          Our Tile Cleaning and Grout Cleaning process uses heat, a specialized
+          cleaning solution, and vacuum power to remove the dirt that homeowners
+          can't. We complete the job with a high-pressure rinse. After cleaning
+          your tile and grout, our professional technicians will apply a
+          penetrating sealer to protect grout against mildew and staining for up
+          to two years. Jake’s Steamer tile cleaning service will safely get all
+          tiled surfaces sparkling again!
         </p>
 
         <section className="ig-style--gallery">
@@ -171,7 +188,7 @@ export default function TileAndGroutCleaning() {
               <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-blue mb-4">
                 Frequently Asked Question
               </h1>
-              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-300">
+              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-black">
                 The most common questions about how our business works and what
                 can do for you.
               </p>
@@ -180,70 +197,59 @@ export default function TileAndGroutCleaning() {
               <div className="w-full lg:w-1/2 px-4 py-2">
                 <details className="mb-4">
                   <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                    How Long is this site live?
+                    How long does it take to clean tile and grout?
                   </summary>
 
-                  <span className="theme-text">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
-                  </span>
+                  <span className="theme-text">Generally 4-6 hours</span>
                 </details>
                 <details className="mb-4">
                   <summary className="font-semibold bg-gray-200 rounded-md py-2 px-4">
-                    Can I install/upload anything I want on there?
+                    How do you clean tile and grout?{" "}
                   </summary>
 
                   <span className="theme-text">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    First, we spray down the solution, we then manually scrub
+                    the grout with our special brushes that get deep into the
+                    grout lines in the worst areas, then we let the chemicals
+                    dwell some time. After the dirt is loose and is ready to be
+                    picked up, we use our truck-mounted system called “steam
+                    cleaner” that rinses the tile surfaces with hot, pressurized
+                    water that is contained under vacuum pressure.
                   </span>
                 </details>
                 <details className="mb-4">
                   <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                    How can I migrate to another site?
+                    Can I use vinegar to clean tile surfaces?{" "}
                   </summary>
 
                   <span className="theme-text">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    Yes and no. Vinegar contains acid, which will erode the
+                    grout slowly if not neutralized. To neutralize the acid, use
+                    baking soda mixed with water and mop over the area that was
+                    cleaned with vinegar.
                   </span>
                 </details>
               </div>
               <div className="w-full lg:w-1/2 px-4 py-2">
                 <details className="mb-4">
                   <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                    Can I change the domain you give me?
+                    Can I use bleach to clean the grout?
                   </summary>
 
                   <span className="theme-text px-4 py-2">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    No. Bleach is a chemical that is too harsh for the grout; it
+                    erodes the grout and can cause discoloration.
                   </span>
                 </details>
                 <details className="mb-4">
                   <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                    How many sites I can create at once?
+                    How soon can we start walking on the floors that have been
+                    deep cleaned?{" "}
                   </summary>
 
                   <span className="theme-text px-4 py-2">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
-                  </span>
-                </details>
-                <details className="mb-4">
-                  <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                    How can I communicate with you?
-                  </summary>
-
-                  <span className="theme-text px-4 py-2">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    About 30 minutes after we rinse the tile floors with our
+                    truck-mounted system.
                   </span>
                 </details>
               </div>

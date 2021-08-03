@@ -20,13 +20,22 @@ export default function Hero() {
       <section className="hero__section relative" ref={elementRef}>
         <div className="hero-content absolute bottom-0  w-full linear-gradient-bg">
           <div className="flex flex-col px-4 md:px-16  gap-y-12 md:gap-y-20 pb-7% md:pb-14%">
-            <p className="text-5xl md:text-6xl lg:text-7xl font-bold  theme-blue">
-              Cleaner.
-              <br />
-              Happier.
-              <br />
-              Healthier.
-            </p>
+            <div className="flex flex-col gap-y-8">
+              <div className="">
+                <img
+                  src="/images/logos/jakes-steamer-carpet-cleaning-company-footer-logo-cropped.png"
+                  alt=""
+                />
+              </div>
+              {/* text-5xl md:text-6xl lg:text-5xl */}
+              <p className="text-4xl xl:text-5xl font-bold  theme-blue">
+                Cleaner.
+                <br />
+                Happier.
+                <br />
+                Healthier.
+              </p>
+            </div>
             <p className="header-home__byline prose-lg text-blue-900 font-medium">
               Call Jake's Steamer for a free consultation. We'll make your home
               or business cleaner, happier, healthier.

@@ -15,23 +15,30 @@ export default function Services() {
             id="service__section--text"
             className=" lg:w-1/2 w-full prose-lg ">
             <p className="dark:text-blue-100">
-              Your carpet acts as an air filter by trapping dust mites, pollen,
-              mold spores, pet dander, cockroach allergens, and other pollutants
-              brought in from the outside. However, your carpet has a limit to
-              how much it can hold before releasing pollutants back into the
-              air.
+              Your carpets become an air filter by trapping dust mites, pollen,
+              mold spores, pet dander, allergens, and other pollutants brought
+              in from the outside.
             </p>
-            <p className="text-blue-900 dark:text-blue-100">
-              steam cleaning uses pressurized hot water to penetrate and loosen
-              dirt unreachable by a vaccuming. The heat kills bacteria, mold,
-              mildew, and allergens. The water, stains, and odors are extracted
-              by a powerful suction vacuum. Your carpets are left sanitized and
-              dry in a few hours.
+            {/* <p className="text-blue-900 dark:text-blue-100">
+              Steam cleaning uses hot water to loosen and extract dirt
+              unreachable by a vaccuming. The heat kills bacteria, mold, mildew,
+              and allergens. The water, stains, and odors are extracted by a
+              powerful suction vacuum. Your carpets are left sanitized and dry
+              in a few hours.
+            </p> */}
+            <p className="theme-text">
+              In your home or business, we use{" "}
+              <strong>Hot Water Extraction</strong> (HWE), the only carpet
+              cleaning method recommended by Shaw, Mohawk, and other carpet
+              manufacturers. Our <strong>truck-mounted</strong> unit allows us
+              to extract all the way down to the backing, providing the{" "}
+              <strong>deepest clean</strong> possible and the shortest dry time.
+              Backed by our <strong>100% satisfaction guarentee</strong>.
             </p>
-
             <p>
               Steam cleaning can improve indoor air quality, remove stains,
-              odors, restore color, and keep your carpets looking good.
+              odors, restore color, and keep your carpets looking absolutely
+              beautiful!!
             </p>
             <p>
               Call Jake's Steamer for a free consultation. We'll make your home
@@ -41,6 +48,21 @@ export default function Services() {
             <p className="font-bold theme-blue my-8">
               Licensed + Certified + Insured | Family + Locally Owned
             </p>
+            <div className="flex">
+              <a
+                href="https://www.facebook.com/jakessteamer01/"
+                className="mx-2 text-blue-500 dark:text-white-accent hover:text-blue-900 dark:hover:text-blue-500"
+                aria-label="Facebook">
+                <svg className="w-10 h-10 fill-current" viewBox="0 0 512 512">
+                  <path d="M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z" />
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/jakessteamer01/"
+                className="text-blue-500 text-sm md:text-lg">
+                Follow Us On Facebook
+              </a>
+            </div>
           </div>
         </div>
       </div>

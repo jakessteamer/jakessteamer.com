@@ -28,14 +28,16 @@ export default function Testimonials() {
             <div className="testimonial p-6 border-blue-500 border-2 border-solid flex">
               <div>
                 <p className="text-white dark:text-blue-900">
-                  &quot;Very good customer service. Very thorough made sure all
-                  air vents were cleaned. Whatever mess was made from air vents
-                  was cleaned up. Very professional and knowledgeable in all
-                  areas. Will recommend to anyone I know. My a/c is running
-                  better then before.&quot;
+                  &quot;Jake has been my go to guy for cleaning carpets and
+                  tile. He has cleaned two houses for me and both times he
+                  arrived on time, was very professional and saved me money by
+                  leaving the carpet and tile looking like new. I am very
+                  selective with whom I do business with and he has always met
+                  the mark. Jake is a Christian and a hard working business
+                  person. America needs more business people like him.&quot;
                 </p>
                 <div className="text-white dark:text-blue-900 font-bold uppercase mt-6">
-                  - Juanita D
+                  - Peter Zubia
                 </div>
               </div>
             </div>
