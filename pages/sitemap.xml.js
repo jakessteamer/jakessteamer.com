@@ -8,25 +8,13 @@ export const getServerSideProps = async ({ res }) => {
     development: "http://localhost:5000",
     production: "https://mydomain.com",
   }[process.env.NODE_ENV];
-
-  // const staticPages = fs
-  // .readdirSync({
-  //   development: 'pages',
-  //   production: './',
-  // }[process.env.NODE_ENV])
-  // .filter((staticPage) => {
-  //   return ![
-  //     "_app.js",
-  //     "_document.js",
-  //     "_error.js",
-  //     "sitemap.xml.js",
-  //   ].includes(staticPage);
-  // })
-  // .map((staticPagePath) => {
-  //   return `${baseUrl}/${staticPagePath}`;
-  // });
   const staticPages = fs
-    .readdirSync("serverless/pages")
+    .readdirSync(
+      {
+        development: "pages",
+        production: "./",
+      }[process.env.NODE_ENV]
+    )
     .filter((staticPage) => {
       return ![
         "_app.js",
