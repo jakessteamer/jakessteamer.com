@@ -93,7 +93,7 @@ export default function Services() {
             alt="Jake's Steamer Water Damage Restoration Service Card"
             title="Emergency Flood"
             desc="
-            Many building materials act like sponges, soaking up enough water in minutes to take weeks to dry out. If moisture is not removed as soon as possible wood warps, buckles, cups, and splits.  Sheetrock and gypsum board sag and crumble. Bacteria and mold growth thrive is moist environments causing smelly odors and material decay.
+            Manybuilding materials act like sponges, soaking up enough water in minutes to take weeks to dry out. If moisture is not removed as soon as possible wood warps, buckles, cups, and splits.  Sheetrock and gypsum board sag and crumble. Bacteria and mold growth thrive is moist environments causing smelly odors and material decay.
            "
             href="/WaterDamageRestoration"
             tags={["Water Removal", "mold removal", "24/7"]}

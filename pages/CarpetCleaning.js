@@ -55,7 +55,7 @@ export default function CarpetCleaning() {
           <img src="/images/carpets/baby-hands-on-carpet.jpg" alt="" />
         </div>
         {/* WHY ARE YOU TALKING TO ME [EDUCATING THEM ABOUT THE PROBLEM ] */}
-        <h1 className="article-section-heading">Carpet Cleaning</h1>
+        <h1 className="content-title">Carpet Cleaning</h1>
 
         {/* HOW DO YOU DO THE THINGS */}
         {/* PROVE IT */}

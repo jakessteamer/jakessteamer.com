@@ -19,27 +19,29 @@ export default function Hero() {
     <>
       <section className="hero__section relative" ref={elementRef}>
         <div className="hero-content absolute bottom-0  w-full linear-gradient-bg">
-          <div className="flex flex-col px-4 md:px-16  gap-y-12 md:gap-y-20 pb-7% md:pb-14%">
+          <div className="flex flex-col px-4 md:px-16  gap-y-36 md:gap-y-20 xl:gap-y-10 pb-7% md:pb-14%">
             <div className="flex flex-col gap-y-8">
               <div className="">
-                <img
-                  src="/images/logos/jakes-steamer-carpet-cleaning-company-footer-logo-cropped.png"
-                  alt=""
-                />
+                <img src="/images/logos/jakessteamer-logo-sm.png" alt="" />
               </div>
               {/* text-5xl md:text-6xl lg:text-5xl */}
-              <p className="text-4xl xl:text-5xl font-bold  theme-blue">
+              {/* <p className="text-4xl xl:text-5xl font-bold  theme-blue">
                 Cleaner.
                 <br />
                 Happier.
                 <br />
                 Healthier.
-              </p>
+              </p> */}
             </div>
-            <p className="header-home__byline prose-lg text-blue-900 font-medium">
-              Call Jake's Steamer for a free consultation. We'll make your home
-              or business cleaner, happier, healthier.
-            </p>
+            <div>
+              <p className="header-home__byline prose-xl text-blue-900 font-bold">
+                Call Jake's Steamer for a free consultation. We'll make your
+                home or business
+              </p>
+              <span className="text-blue-500 prose-2xl lg:text-4xl font-bold lg:font-extrabold">
+                Cleaner. Happier. Healthier.
+              </span>
+            </div>
           </div>
         </div>
       </section>
