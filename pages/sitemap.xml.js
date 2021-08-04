@@ -13,8 +13,10 @@ export const getServerSideProps = async ({ res }) => {
   //   const pages = await globby(["pages/*.js", "!pages/_*.js", "!pages/api"]);
   //   return pages;
   // };
-  const pages = await globby(["pages/*.js", "!pages/_*.js", "!pages/api"]);
-
+  if (process.env.NODE_ENV === "development") {
+    const pages = await globby(["pages/*.js", "!pages/_*.js", "!pages/api"]);
+  }
+  const pages = await globby(["./*.js", "!./_*.js", "!./api"]);
   // const staticPages = fs
   //   .readdirSync(pages)
   //   .filter((staticPage) => {
@@ -42,6 +44,8 @@ export const getServerSideProps = async ({ res }) => {
       .join("")}
     </urlset>
   `;
+
+  // console.log(sitemap)
 
   res.setHeader("Content-Type", "text/xml");
   res.write(sitemap);
