@@ -26,7 +26,7 @@ export const getServerSideProps = async ({ res }) => {
   //   return `${baseUrl}/${staticPagePath}`;
   // });
   const staticPages = fs
-    .readdirSync("pages")
+    .readdirSync("./pages")
     .filter((staticPage) => {
       return ![
         "_app.js",
