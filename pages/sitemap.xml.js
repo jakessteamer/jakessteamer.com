@@ -6,13 +6,13 @@ const Sitemap = () => {};
 export const getServerSideProps = async ({ res }) => {
   const baseUrl = {
     development: "http://localhost:5000",
-    production: "https://mydomain.com",
+    production: "https://jakessteamer.com",
   }[process.env.NODE_ENV];
   const staticPages = fs
     .readdirSync(
       {
         development: "pages",
-        production: "./",
+        production: "pages",
       }[process.env.NODE_ENV]
     )
     .filter((staticPage) => {
