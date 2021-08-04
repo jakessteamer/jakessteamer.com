@@ -3,7 +3,7 @@ import fs from "fs";
 
 const Sitemap = () => {};
 
-export const getServerSideProps = ({ res }) => {
+export const getServerSideProps = async ({ res }) => {
   const baseUrl = {
     development: "http://localhost:5000",
     production: "https://mydomain.com",
