@@ -35,7 +35,7 @@ export default function StainAndOdorRemoval() {
           },
         ]}
       />
-      <article className="relative flex flex-col mx-auto px-6 lg:px-0 prose lg:prose-lg theme-text">
+      <article className="section-content relative flex flex-col mx-auto px-6 lg:px-0 prose lg:prose-lg theme-text">
         <div className="aspect-w-16 aspect-h-9 my-12">
           <img src="/images/stain-and-odor-removal.jpg" alt="" />
         </div>
@@ -133,78 +133,73 @@ export default function StainAndOdorRemoval() {
             all of the stain is removed and any remaining odors are eliminated.
           </li>
         </ol>
-        <div className="flex flex-col md:flex-row">
-          <div className="pr-8">
-            <h3 className="dark:text-blue-500 text-center">
-              The Water Claw Stain Extractor
-            </h3>
-            <hr className="max-w-4xl text-center bg-black dark:bg-white border-black dark:border-white" />
-            <Image
-              src="/images/carpets/water-claw-480.jpg"
-              width={480}
-              height={480}
-              alt="Jake's Steamer can remove stains and odors from carpets using the water claw stain and odor extractor."
-              className="self-center rounded-lg mx-auto"
-            />
-            <p>
-              For severe stains we use an cleaning solution that breaks down the
-              salts in the urine and the Water Claw to flushes contaminants from
-              carpet face fibers, backing and pad.{" "}
-            </p>
-            <h2 className="seo seo-title uppercase tracking-wide text-sm text-indigo-500 font-semibold">
-              Stain and Odor Removal Service in West Texas
-            </h2>
-            <p className="section--heading">
-              Don't Mess With The Mess Call Jake's Steamer!
-            </p>
-            <hr className="article-section--divider text-center bg-black dark:bg-white border-black dark:border-white my-0" />
-
-            <p>
-              We specialize in eliminating all kinds of stains and odors in the
-              carpets.{" "}
-            </p>
-            <ol>
-              <li>
-                <strong className="content-title">
-                  Petroleum based stains:{" "}
-                </strong>
-                gum, grease, tar, ink, adhesive, oils, etc.
-              </li>
-              <li>
-                <strong className="content-title">
-                  Stains containing synthetic man made dye:{" "}
-                </strong>
-                kool-aid, fruit punch, colored candy, cough syrup, etc.
-              </li>
-              <li>
-                <strong className="content-title">
-                  Stains containing organic dyes:{" "}
-                </strong>
-                wood stains, mustard, organic inks, Red wine, natural red
-                juices, ketchup, food coloring, etc.
-              </li>
-              <li>
-                <strong className="content-title">
-                  Stains from biological source:{" "}
-                </strong>
-                blood, vomit, food stains, etc.
-              </li>
-              <li>
-                <strong className="content-title">
-                  Organic tannin stains:{" "}
-                </strong>
-                coffee, tea, dark beer, etc.
-              </li>
-            </ol>
-          </div>
-        </div>
+        <h3 className="dark:text-blue-500 text-center">
+          The Water Claw Stain Extractor
+        </h3>
+        <hr className="max-w-4xl text-center bg-black dark:bg-white border-black dark:border-white" />
+        <Image
+          src="/images/carpets/water-claw-480.jpg"
+          width={480}
+          height={480}
+          alt="Jake's Steamer can remove stains and odors from carpets using the water claw stain and odor extractor."
+          className="self-center rounded-lg mx-auto"
+        />
+        <p>
+          For severe stains we use an cleaning solution that breaks down the
+          salts in the urine and the Water Claw to flushes contaminants from
+          carpet face fibers, backing and pad.{" "}
+        </p>
+        <h2 className="seo seo-title uppercase tracking-wide text-sm text-bl font-semibold">
+          Stain and Odor Removal Service in West Texas
+        </h2>
+        <p className="section--heading">
+          Don't Mess With The Mess Call Jake's Steamer!
+        </p>
+        <hr className="article-section--divider text-center bg-black dark:bg-white border-black dark:border-white my-0" />
+        <p>
+          There are many types of stains, and each one has it's own removal
+          method. Most stains can be removed. We will discuss what can be done
+          in each case.
+        </p>
+        <p className="font-bold text-black dark:text-blue-500 ">
+          Types of Stains
+        </p>
+        <ol>
+          <li>
+            <strong className="content-title">Petroleum based stains: </strong>
+            gum, grease, tar, ink, adhesive, oils, etc.
+          </li>
+          <li>
+            <strong className="content-title">
+              Stains containing synthetic man made dye:{" "}
+            </strong>
+            kool-aid, fruit punch, colored candy, cough syrup, etc.
+          </li>
+          <li>
+            <strong className="content-title">
+              Stains containing organic dyes:{" "}
+            </strong>
+            wood stains, mustard, organic inks, Red wine, natural red juices,
+            ketchup, food coloring, etc.
+          </li>
+          <li>
+            <strong className="content-title">
+              Stains from biological source:{" "}
+            </strong>
+            blood, vomit, food stains, etc.
+          </li>
+          <li>
+            <strong className="content-title">Organic tannin stains: </strong>
+            coffee, tea, dark beer, etc.
+          </li>
+        </ol>
         <div className="container mx-auto my-5">
           <div className="relative rounded-lg flex flex-col  items-center  mx-2">
             <div className="z-0 order-1  relative w-full  h-80  overflow-hidden rounded-lg  ">
               <div className="absolute inset-0 w-full h-full object-fill object-center bg-blue-400 bg-white bg-opacity-30 bg-cover bg-bottom tile-cleaning-cta-bg-img" />
               <div className=" absolute bottom-0 p-6 pb-6 flex items-start cta-card--gradient ">
                 <h2 className="w-full cta-card-title">
-                  Simple & Quick Pet Spot and Odor Removal with Jake's Steamer!
+                  Simple & Quick Stain and Odor Removal with Jake's Steamer!
                 </h2>
               </div>
               {/* <svg
@@ -216,14 +211,14 @@ export default function StainAndOdorRemoval() {
             </div>
 
             <div className="z-10 order-2  w-full h-full  flex items-center -mt-6 ">
-              <div className="px-4 mx-2  h-full bg-white rounded-lg md:rounded-none  shadow-xl ">
+              <div className="px-4 mx-2  h-full bg-white rounded-lg   shadow-xl ">
                 {/* <h2 className="hidden md:block h2-prose-override">
-                  Simple & Quick Pet Spot and Odor Removal with Jake's Steamer!{" "}
+                  Fro
                 </h2> */}
-                <p className="text-black pt-6  override">
+                <p className="text-black override">
                   When you hire the professionals at Jake's Steamer, every
-                  cleaning comes with our 100% satisfaction guarantee!
-                  <a href="tel:+1432459220"> Get a quote</a> and{" "}
+                  cleaning comes with our 100% satisfaction guarantee!{" "}
+                  <a href="tel:+1432459220">Get a quote</a> and{" "}
                   <a>schedule now!</a>
                 </p>
               </div>

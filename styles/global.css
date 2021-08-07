@@ -891,24 +891,25 @@ html {
   @apply px-6 prose lg:prose-lg text-blue-500 font-bold;
 }
 
-h2.seo.seo-title {
-  @apply mt-8 uppercase tracking-wide text-sm lg:text-sm text-sky-500 dark:text-sky-300 font-semibold;
+article.section-content > h2.seo.seo-title {
+  @apply mt-8 uppercase tracking-wide text-sm lg:text-sm text-sky-500 dark:text-sky-300 font-semibold mb-0;
 }
 
-p.section--heading {
+article.section-content > p.section--heading {
   font-weight: 700;
   font-size: 1.5em;
-  margin-top: 2em;
+  margin-top: 1rem;
   line-height: 1.3333333;
   margin-bottom: 1rem !important;
   color: #0069ff !important;
 }
+/* #__next > main > article > h2:nth-child(4) */
 
 @lg {
-  p.article.section--heading {
+  article.section-content > p.section--heading {
     font-weight: 700;
     font-size: 1.6666667em;
-    margin-top: 1.8666667em;
+    margin-top: 0 !important;
     margin-bottom: 1rem !important;
     line-height: 1.3333333;
     color: #0069ff !important;
