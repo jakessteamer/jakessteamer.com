@@ -43,8 +43,8 @@ export default function StainAndOdorRemoval() {
         {/* HOW DO YOU DO THE THINGS */}
         {/* PROVE IT */}
         {/* WHAT WILL WE GIVE ME */}
-        <h1 className="content-title">Stain and Odor Removal</h1>
-        <hr className="max-w-4xl text-center bg-black dark:bg-white border-black dark:border-white my-0" />
+        <h1 className="seo seo-title">Stain and Odor Removal</h1>
+        <hr className="article-section--divider text-center bg-black dark:bg-white border-black dark:border-white my-0" />
         At Jake's Steamer, our priority is to provide you with a fresh, clean,
         and healthy environment in the shortest amount of time. Our pet spot
         removal system features a potent pre-treatment that begins to dissolve

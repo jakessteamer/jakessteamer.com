@@ -180,9 +180,10 @@ html {
 }
 
 /* classname="bold tracking-tight" */
-.content-title {
-  color: #031b4e;
+article.section-content > h1.seo.seo-title {
+  color: #0069ff;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 #home-hero {
@@ -919,5 +920,5 @@ article.section-content > p.section--heading {
 .article-section--divider {
   max-width: 56rem;
   margin-top: 0 !important;
-  margin-bottom: 1rem !important;
+  margin-bottom: 2rem !important;
 }
