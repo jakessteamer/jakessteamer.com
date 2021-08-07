@@ -7,7 +7,7 @@ import Fab from "./Fab";
 // import Footer from "./Footer";
 import Modal from "./Modal";
 import Footer from "./Homepage/Footer";
-import Topbar from "./Topbar";
+// import Topbar from "./Topbar";
 
 export default function Layout({ children }) {
   const [isClosed, setClosed] = useState(true);
@@ -58,9 +58,9 @@ export default function Layout({ children }) {
 
   return (
     <PlausibleAnalytics domain="jakessteamer.com">
-      <Topbar />
+      {/* <Topbar /> */}
       <Navbar />
-      <main className="flex flex-col flex-nowrap mt-32">
+      <main className="flex flex-col flex-nowrap mt-16">
         {children}
         <Footer />
       </main>

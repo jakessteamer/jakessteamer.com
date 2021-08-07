@@ -1,8 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useEffect } from "react";
-import Image from "next/image";
-import TableOfContents from "@components/TableOfContents";
-import References from "@components/References";
 import { FAQPageJsonLd } from "next-seo";
 import { PageSeo } from "../components/SEO";
 import siteMetadata from "../data/siteMetadata.json";
@@ -46,22 +43,46 @@ export default function CarpetCleaning() {
           {
             questionName: "Do you move furniture?",
             acceptedAnswerText:
-              "Our crews are professionally trained to move your furniture, and return it to its rightful place when cleaning is completed. There are several items we recommend not moving, such as: pianos, electronics, china cabinets, waterbeds, some large beds, dressers with mirrors, etc. We do suggest you remove items off of your furniture like plants, lamps and knick knacks.",
+              "We move big couches, chairs and dining room tables from side to side. We do not move beds, dressers, china cabinets, entertainment centers, or these types of items. We ask you get all smaller items off of areas to be cleaned. We could move some of these big items, but we would need to charge more money. We charge moderate prices and believe in cleaning only the areas that need to be cleaned. If you need to have large items moved, you will need to discuss this with us when you call us.",
+          },
+          {
+            questionName:
+              "Why should I hire a professional instead of doing it myself?",
+            acceptedAnswerText:
+              "We clean area rugs of all kinds. From synthetic rugs (nylon, polyester, olefin, triexta etc.) to Oriental rugs, Persian rugs, Navajo rugs and more.",
+          },
+          {
+            questionName: "Do you clean area rugs?",
+            acceptedAnswerText:
+              "During the hot water extraction method, professionals usually apply a cleaning solution first to loosen and break up soil. Then they spray hot water onto the carpet fibers and extract it immediately to flush the fibers clean and remove soil and stains. Although there are steam cleaners and extractors available for rental or purchase, doing the job yourself might not be the best idea as these types of cleaners can soak the carpet, leave detergent residue and lead to mold without proper ventilation for drying. Professional cleaners follow a process that prevents leaving detergent residue behind as that reside can attract dirt and lead to dirty carpets faster. Professional carpet cleaners remove as much of the water as possible and ensure that the carpets dry quickly.",
+          },
+
+          {
+            questionName: "Should I vacuum before my scheduled service?",
+            acceptedAnswerText:
+              "No need to vacuum since we’ll do that for you. We include pre-vacuuming with a commercial vacuum cleaner as part of our standard service since it’s important to remove loose soils, pet hair or other things from the carpet before we begin the hot water extraction (steam cleaning) phase of the cleaning",
+          },
+          {
+            questionName:
+              "How do you treat natural fiber carpets, rugs & upholstery?",
+            acceptedAnswerText:
+              "Wool and cotton are treated much differently than synthetic fibers. We use neutral cleaning solutions. We have to be careful not to cause a condition called cellulose browning. This is caused by cleaning a natural fiber with a solution with too high a pH level or if the fibers remain wet for too long. After we clean with neutral cleaners, we dry the fibers as quickly as we can.",
           },
         ]}
       />
-      <article className="relative max-w-3xl mx-auto px-6 prose lg:prose-lg theme-text">
+      <article className="relative flex flex-col mx-auto px-6 lg:px-0 prose lg:prose-lg theme-text">
         <div className="aspect-w-16 aspect-h-9 my-12">
           <img src="/images/carpets/baby-hands-on-carpet.jpg" alt="" />
         </div>
         {/* WHY ARE YOU TALKING TO ME [EDUCATING THEM ABOUT THE PROBLEM ] */}
         <h1 className="content-title">Carpet Cleaning</h1>
+        <hr className="max-w-4xl text-center bg-black dark:bg-white border-black dark:border-white my-0" />
 
         {/* HOW DO YOU DO THE THINGS */}
         {/* PROVE IT */}
 
         {/* WHAT WILL WE GIVE ME */}
-        <p>
+        <p className="">
           Although regular vacuuming can remove dry soil and debris from your
           carpeting, it leaves behind oily soils and particles that are produced
           from cooking vapors, pets, and dirt tracked in from outside the home.
@@ -74,6 +95,8 @@ export default function CarpetCleaning() {
           allergens that thrive deep in the carpet.
         </p>
         <h2 className="content-title">Carpet Cleaning Process</h2>
+        <hr className="max-w-4xl text-center bg-black dark:bg-white border-black dark:border-white" />
+
         <p>
           We will evaluate your carpet’s needs. Every carpet must be treated
           differently. We will decide what will be the best method for cleaning
@@ -161,9 +184,9 @@ export default function CarpetCleaning() {
           <div className="container px-5 py-24 mx-auto">
             <div className="text-center mb-20">
               <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-blue mb-4">
-                Frequently Asked Question
+                Frequently Asked Questions
               </h1>
-              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-300">
+              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-black dark:text-white">
                 The most common questions about how our business works and what
                 can do for you.
               </p>
@@ -210,35 +233,15 @@ export default function CarpetCleaning() {
                   </summary>
 
                   <span className="theme-text px-4 py-2">
-                    Our crews are professionally trained to move your furniture,
-                    and return it to its rightful place when cleaning is
-                    completed. There are several items we recommend not moving,
-                    such as: pianos, electronics, china cabinets, waterbeds,
-                    some large beds, dressers with mirrors, etc. We do suggest
-                    you remove items off of your furniture like plants, lamps
-                    and knick knacks.
-                  </span>
-                </details>
-                <details className="mb-4">
-                  <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                    How many sites I can create at once?
-                  </summary>
-
-                  <span className="theme-text px-4 py-2">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
-                  </span>
-                </details>
-                <details className="mb-4">
-                  <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                    How can I communicate with you?
-                  </summary>
-
-                  <span className="theme-text px-4 py-2">
-                    Laboris qui labore cillum culpa in sunt quis sint veniam.
-                    Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                    minim velit nostrud pariatur culpa magna in aute.
+                    We move big couches, chairs and dining room tables from side
+                    to side. We do not move beds, dressers, china cabinets,
+                    entertainment centers, or these types of items. We ask you
+                    get all smaller items off of areas to be cleaned. We could
+                    move some of these big items, but we would need to charge
+                    more money. We charge moderate prices and believe in
+                    cleaning only the areas that need to be cleaned. If you need
+                    to have large items moved, you will need to discuss this
+                    with us when you call us.
                   </span>
                 </details>
               </div>
