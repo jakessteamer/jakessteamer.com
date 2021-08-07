@@ -1,4 +1,5 @@
 import ServiceCard from "@components/ServiceCard";
+import Image from "../Image";
 
 export default function Services() {
   return (
@@ -116,7 +117,7 @@ export default function Services() {
             the DIY for another project.
           </p>
         </div>
-        <img
+        <Image
           className="lg:w-1/2 dark:bg-gradient-to-r dark:from-blue-900 dark:to-white bg-gradient-to-l from-white to-blue-900   object-cover object-center rounded-lg xl:ml-auto"
           alt="hero"
           src="/images/iicrc-certification.png"

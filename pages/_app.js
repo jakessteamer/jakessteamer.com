@@ -10,6 +10,16 @@ import { SEO } from "../components/SEO";
 import { Store } from "../context/AppState";
 import Layout from "../components/Layout";
 
+if (typeof window !== "undefined") {
+  require("lazysizes/plugins/attrchange/ls.attrchange.js");
+  require("lazysizes/plugins/respimg/ls.respimg.js");
+  require("lazysizes");
+  window.lazySizesConfig = window.lazySizesConfig || {};
+  window.lazySizesConfig.rias = window.lazySizesConfig.rias || {};
+
+  window.lazySizesConfig.rias.widths = [320, 480, 600, 960];
+}
+
 function Application({ Component, pageProps }) {
   return (
     <>

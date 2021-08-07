@@ -1,3 +1,5 @@
+import Image from "../Image";
+
 export default function ImageGallery() {
   return (
     <div id="image-gallery-section" className="theme-surface-inverse pt-24">
@@ -29,7 +31,7 @@ export default function ImageGallery() {
                   duration-300
                   ease-in-out
                 ">
-                <img
+                <Image
                   className="gallery-img"
                   src="images/carpets/clean-carpet-before-after.jpg"
                   alt=""
@@ -51,7 +53,7 @@ export default function ImageGallery() {
                   duration-300
                   ease-in-out
                 ">
-                <img
+                <Image
                   className="gallery-img"
                   src="images/carpets/carpet-deep-clean.jpg"
                   alt=""
@@ -73,7 +75,7 @@ export default function ImageGallery() {
                   duration-300
                   ease-in-out
                 ">
-                <img
+                <Image
                   className="gallery-img"
                   src="images/carpets/carpet-8-after-640x640-md.jpg"
                   alt=""
@@ -95,7 +97,7 @@ export default function ImageGallery() {
                   duration-300
                   ease-in-out
                 ">
-                <img
+                <Image
                   className="gallery-img"
                   src="images/carpets/carpet-comparison-2.jpg"
                   alt=""
@@ -117,7 +119,7 @@ export default function ImageGallery() {
                   duration-300
                   ease-in-out
                 ">
-                <img
+                <Image
                   className="gallery-img"
                   src="images/carpets/carpet-comparison-3.jpg"
                   alt=""

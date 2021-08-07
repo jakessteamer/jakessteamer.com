@@ -36,8 +36,7 @@ module.exports = {
         800: "#002861",
         900: "#001129",
       },
-      cyan: "#04F9F2",
-      indigo: colors.indigo,
+      sky: colors.sky,
     },
 
     extend: {

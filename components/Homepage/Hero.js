@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import { useAppContext } from "../../context/AppState";
+import Image from "../Image";
 
 export default function Hero() {
   const [elementRef, isIntersecting] = useIntersectionObserver({
@@ -19,10 +20,15 @@ export default function Hero() {
     <>
       <section className="hero__section relative" ref={elementRef}>
         <div className="hero-content absolute bottom-0  w-full linear-gradient-bg">
-          <div className="flex flex-col px-4 md:px-16  gap-y-36 md:gap-y-20 xl:gap-y-10 pb-7% md:pb-14%">
+          <div className="flex flex-col px-4 md:px-16  gap-y-16 md:gap-y-20 xl:gap-y-10 pb-7% md:pb-14%">
             <div className="flex flex-col gap-y-8">
               <div className="">
-                <img src="/images/logos/jakessteamer-logo-sm.png" alt="" />
+                <Image
+                  src="/images/logos/jakessteamer-logo-sm.png"
+                  width={256}
+                  height={157.5}
+                  alt="Jake's Steamer is a certified, licensed, and insured carpet cleaning company. Call 432-847-4600 for carpet, upholstery, tile, air duct, area rug, water damage services. Jake's steamer is based in Seminole, Texas. We proudly serve Seminole and the surrounding counties."
+                />{" "}
               </div>
               {/* text-5xl md:text-6xl lg:text-5xl */}
               {/* <p className="text-4xl xl:text-5xl font-bold  theme-blue">

@@ -1,13 +1,15 @@
+import Image from "./Image";
+
 export default function ServiceCard(props) {
   const { imgSrc, title, desc, href, alt, tags } = props;
 
   return (
     <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/3 p-4">
-      <div className="relative aspect-w-1 aspect-h-1">
-        <img
+      <div className="imagecontainer">
+        <Image
           src={imgSrc}
           alt={alt}
-          className="absolute inset-0 w-full object-cover object-center rounded-lg shadow-md"
+          className="imagecontainer-img rounded-lg shadow-md"
         />
       </div>
 

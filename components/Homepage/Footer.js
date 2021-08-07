@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import Image from "../Image";
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
             <div className="px-6">
               <div>
                 <a href="/" className="">
-                  <img
+                  <Image
                     src="/images/logos/jakes-steamer-carpet-cleaning-company-footer-logo-cropped.png"
                     alt=""
                   />

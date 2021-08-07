@@ -80,8 +80,24 @@
   .max-w-960 {
     max-width: 960px;
   }
+  .width-960 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+  }
   .BgGray200 {
     background-color: theme("colors.gray.200");
+  }
+  .prose h1,
+  .prose h2 {
+    margin-bottom: 1rem;
+  }
+  /* .prose h1 {
+    margin-bottom: 1rem;
+  } */
+  .prose hr {
+    margin-top: 0;
+    margin-bottom: 1rem;
   }
 }
 
@@ -164,9 +180,10 @@ html {
 }
 
 /* classname="bold tracking-tight" */
-.content-title {
-  color: #031b4e;
+article.section-content > h1.seo.seo-title {
+  color: #0069ff;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 #home-hero {
@@ -425,7 +442,7 @@ html {
   letter-spacing: -0.02em;
 }
 #navbar {
-  top: 3.5rem;
+  top: 0;
   height: 4rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125);
 }
@@ -865,4 +882,72 @@ html {
 
 .white-text {
   color: #fcfcfd !important;
+}
+
+.article--text {
+  @apply px-6   lg:prose-lg dark:text-gray-300 text-blue-900;
+}
+
+.article--heading {
+  @apply px-6 prose lg:prose-lg text-blue-500 font-bold;
+}
+
+article.section-content > h2.seo.seo-title {
+  @apply mt-8 uppercase tracking-wide text-sm lg:text-sm text-sky-500 dark:text-sky-300 font-semibold mb-0;
+}
+
+article.section-content > p.section--heading {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-top: 1rem;
+  line-height: 1.3333333;
+  margin-bottom: 1rem !important;
+  color: #0069ff !important;
+}
+/* #__next > main > article > h2:nth-child(4) */
+
+@lg {
+  article.section-content > p.section--heading {
+    font-weight: 700;
+    font-size: 1.6666667em;
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.3333333;
+    color: #0069ff !important;
+  }
+}
+
+.article-section--divider {
+  max-width: 56rem;
+  margin-top: 0 !important;
+  margin-bottom: 2rem !important;
+}
+
+.imagecontainer {
+  position: relative;
+}
+
+.imagecontainer:before {
+  display: block;
+  width: 100%;
+  content: "";
+  padding-bottom: 100%;
+  height: 0;
+}
+
+.imagecontainer-img {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 400ms transform;
+
+  object-fit: cover;
+  font-family: "object-fit: cover";
+}
+
+.imagecontainer-img:hover {
+  transform: scale(1.1);
 }

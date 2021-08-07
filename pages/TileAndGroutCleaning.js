@@ -16,11 +16,50 @@ export default function TileAndGroutCleaning() {
         mainEntity={[
           {
             questionName: "How Long does it take to clean tile and grout?",
-            acceptedAnswerText: "3-5 business days.",
+            acceptedAnswerText: "Generally 4-6 hours",
           },
           {
-            questionName: "Where can I find information about product recalls?",
-            acceptedAnswerText: "Read more on under information.",
+            questionName: "How do you clean tile and grout?",
+            acceptedAnswerText:
+              "First, we apply an environmentally safe solution to your tile & grout floors which emulsifies the dirt. Secondly, we allow the solution enough time to dwell to reach its maximum potential. Next we agitate the grout lines with a grout cleaning brush. Finally we use a high pressure rotary tool with dual rotating jets to clean the floor and extract the dirt and grime out to our truck. We use over 200 degrees of heat to steam and clean your floors back to looking new.",
+          },
+          {
+            questionName: "Why is it important to have your grout sealed?",
+            acceptedAnswerText:
+              "After professional cleaning is completed, the pores in the grout are opened up again and will trap dirt and soak up liquids. Some liquids such as red wine, soy sauce, coffee and other dark/colored liquids will discolor the grout and often the discoloration is permanent. Sealers block the pores inside the grout and keep the liquids on top and that gives you time to wipe up the mess.",
+          },
+          {
+            questionName:
+              "How soon can we walk on the tile floors after the grout is sealed?",
+            acceptedAnswerText:
+              "Usually it takes roughly 1 hour for a clear, penetrating sealer to soak into the grout and dry. Color sealers dry much quicker and may be stepped on 5 minutes after installation. Once the sealer is dry, the floors may be used normally. Both sealer require 48 hours to fully cure and harden. During the curing process, the grout should not be exposed to any liquids.",
+          },
+          {
+            questionName: "What is color seal?",
+            acceptedAnswerText:
+              "Color sealer is a sealer that has color added to it. Not only does the color sealer seal the grout, it makes the grout color consistent which makes the tile floors look new. We use the highest quality color sealers that may last up to 15 years.",
+          },
+          {
+            questionName: "What is clear sealer?",
+            acceptedAnswerText:
+              "Clear sealer is a sealer with no colour added. We use the penetrating clear sealer, which penetrates deep into the grout and blocks any dirt and liquids from getting into the pores of the grout. Clear sealer does not affect the look of the grout.",
+          },
+          {
+            questionName:
+              "How soon can we start walking on the floors that have been deep cleaned?",
+            acceptedAnswerText:
+              "About 30 minutes after we rinse the tile floors with our truck-mounted system.",
+          },
+          {
+            questionName: "Can I use bleach to clean the grout?",
+            acceptedAnswerText:
+              "No. Bleach is a chemical that is too harsh for the grout; it erodes the grout and can cause discoloration.",
+          },
+
+          {
+            questionName: "Can I use vinegar to clean tile surfaces?",
+            acceptedAnswerText:
+              "Yes and no. Vinegar contains acid, which will erode the grout slowly if not neutralized. To neutralize the acid, use baking soda mixed with water and mop over the area that was cleaned with vinegar.",
           },
         ]}
       />
@@ -188,7 +227,7 @@ export default function TileAndGroutCleaning() {
               <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-blue mb-4">
                 Frequently Asked Question
               </h1>
-              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-black">
+              <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-black dark:text-white">
                 The most common questions about how our business works and what
                 can do for you.
               </p>
@@ -197,29 +236,91 @@ export default function TileAndGroutCleaning() {
               <div className="w-full lg:w-1/2 px-4 py-2">
                 <details className="mb-4">
                   <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                    How long does it take to clean tile and grout?
-                  </summary>
-
-                  <span className="theme-text">Generally 4-6 hours</span>
-                </details>
-                <details className="mb-4">
-                  <summary className="font-semibold bg-gray-200 rounded-md py-2 px-4">
-                    How do you clean tile and grout?{" "}
+                    How do you clean tile and grout?
                   </summary>
 
                   <span className="theme-text">
-                    First, we spray down the solution, we then manually scrub
-                    the grout with our special brushes that get deep into the
-                    grout lines in the worst areas, then we let the chemicals
-                    dwell some time. After the dirt is loose and is ready to be
-                    picked up, we use our truck-mounted system called “steam
-                    cleaner” that rinses the tile surfaces with hot, pressurized
-                    water that is contained under vacuum pressure.
+                    First, we apply an environmentally safe solution to your
+                    tile & grout floors which emulsifies the dirt. Secondly, we
+                    allow the solution enough time to dwell to reach its maximum
+                    potential. Next we agitate the grout lines with a grout
+                    cleaning brush. Finally we use a high pressure rotary tool
+                    with dual rotating jets to clean the floor and extract the
+                    dirt and grime out to our truck. We use over 200 degrees of
+                    heat to steam and clean your floors back to looking new.
+                  </span>
+                </details>
+                <details className="mb-4">
+                  <summary className="font-semibold bg-gray-200 rounded-md py-2 px-4">
+                    How soon can we start walking on the floors that have been
+                    deep cleaned?
+                  </summary>
+
+                  <span className="theme-text">
+                    About 30 minutes after we rinse the tile floors with our
+                    truck-mounted system.
                   </span>
                 </details>
                 <details className="mb-4">
                   <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                    Can I use vinegar to clean tile surfaces?{" "}
+                    Why is it important to have your grout sealed?
+                  </summary>
+
+                  <span className="theme-text">
+                    After professional cleaning is completed, the pores in the
+                    grout are opened up again and will trap dirt and soak up
+                    liquids. Some liquids such as red wine, soy sauce, coffee
+                    and other dark/colored liquids will discolor the grout and
+                    often the discoloration is permanent. Sealers block the
+                    pores inside the grout and keep the liquids on top and that
+                    gives you time to wipe up the mess.
+                  </span>
+                </details>
+                <details className="mb-4">
+                  <summary className="font-semibold bg-gray-200 rounded-md py-2 px-4">
+                    How soon can we walk on the tile floors after the grout is
+                    sealed?
+                  </summary>
+
+                  <span className="theme-text">
+                    Usually it takes roughly 1 hour for a clear, penetrating
+                    sealer to soak into the grout and dry. Color sealers dry
+                    much quicker and may be stepped on 5 minutes after
+                    installation. Once the sealer is dry, the floors may be used
+                    normally. Both sealer require 48 hours to fully cure and
+                    harden. During the curing process, the grout should not be
+                    exposed to any liquids.
+                  </span>
+                </details>
+                <details className="mb-4">
+                  <summary className="font-semibold bg-gray-200 rounded-md py-2 px-4">
+                    What is color seal?
+                  </summary>
+
+                  <span className="theme-text">
+                    Color sealer is a sealer that has color added to it. Not
+                    only does the color sealer seal the grout, it makes the
+                    grout color consistent which makes the tile floors look new.
+                    We use the highest quality color sealers that may last up to
+                    15 years.
+                  </span>
+                </details>
+                <details className="mb-4">
+                  <summary className="font-semibold bg-gray-200 rounded-md py-2 px-4">
+                    What is clear sealer?
+                  </summary>
+
+                  <span className="theme-text">
+                    Clear sealer is a sealer with no colour added. We use the
+                    penetrating clear sealer, which penetrates deep into the
+                    grout and blocks any dirt and liquids from getting into the
+                    pores of the grout. Clear sealer does not affect the look of
+                    the grout.
+                  </span>
+                </details>
+                <details className="mb-4">
+                  <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                    Can I use vinegar to clean tile surfaces?
                   </summary>
 
                   <span className="theme-text">
@@ -244,7 +345,7 @@ export default function TileAndGroutCleaning() {
                 <details className="mb-4">
                   <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
                     How soon can we start walking on the floors that have been
-                    deep cleaned?{" "}
+                    deep cleaned?
                   </summary>
 
                   <span className="theme-text px-4 py-2">
