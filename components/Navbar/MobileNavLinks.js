@@ -9,13 +9,14 @@ export default function MobileNavLinks() {
   return (
     <div
       id="mobile-navlinks"
-      className=" flex h-full w-full px-4 sm:px-6 justify-between items-center">
+      className=" flex h-full w-full px-4 sm:px-6 justify-between items-center"
+    >
       <div id="mobile-navlinks__container" className="flex items-center">
         {/* Company Logo or company name */}
         <div className="flex items-center gap-x-4 h-full">
           <a href="/" className="">
             <img
-              src="/images/logos/jakessteamer-logo-icon-transparent-40wx32h.png"
+              src="/images/logos/jakessteamer-carpet-cleaning-company-logo-40w-37h.png"
               alt=""
               className="pr-4"
             />
@@ -44,7 +45,8 @@ export default function MobileNavLinks() {
           <button
             type="button"
             className="text-blue-900 w-10 h-10 relative focus:outline-none  rounded-md xl:hidden "
-            onClick={toggleNavMenu}>
+            onClick={toggleNavMenu}
+          >
             <span className="sr-only">Open main menu</span>
             <div className="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2 text-blue-900 dark:text-white">
               <span

@@ -11,26 +11,30 @@ export default function DesktopNavLinks() {
         </a>
         <a
           href="/CarpetCleaning"
-          className="text-lg text-blue-900 dark:text-white px-4 py-5">
+          className="text-lg text-blue-900 dark:text-white px-4 py-5"
+        >
           <span className="2xl:hidden">Carpets</span>
           <span className="hidden 2xl:inline">Carpet&nbsp;Cleaning</span>
         </a>
         <a
           href="/AirDuctCleaning"
-          className="text-lg text-blue-900 dark:text-white px-4 py-5">
+          className="text-lg text-blue-900 dark:text-white px-4 py-5"
+        >
           <span className="2xl:hidden">Air&nbsp;Ducts</span>
           <span className="hidden 2xl:inline">Air&nbsp;Duct&nbsp;Cleaning</span>
         </a>
 
         <a
           href="/WaterDamageRestoration"
-          className="text-lg text-blue-900 dark:text-white px-4 py-5">
+          className="text-lg text-blue-900 dark:text-white px-4 py-5"
+        >
           Emergency&nbsp;Flood
         </a>
 
         <a
           href="/StainAndOdorRemoval"
-          className="text-lg text-blue-900 dark:text-white px-4 py-5">
+          className="text-lg text-blue-900 dark:text-white px-4 py-5"
+        >
           <span className="2xl:hidden">Stain&nbsp;and&nbsp;Odor</span>
           <span className="hidden 2xl:inline">
             Pet&nbsp;Stain&nbsp;and&nbsp;Odor&nbsp;Removal
@@ -39,7 +43,8 @@ export default function DesktopNavLinks() {
 
         <a
           href="/TileAndGroutCleaning"
-          className="text-lg text-blue-900 dark:text-white px-4 py-5">
+          className="text-lg text-blue-900 dark:text-white px-4 py-5"
+        >
           <span className="2xl:hidden">Tile&nbsp;and&nbsp;Grout</span>
           <span className="hidden 2xl:inline">
             Tile&nbsp;and&nbsp;Grout&nbsp;Cleaning
@@ -47,7 +52,8 @@ export default function DesktopNavLinks() {
         </a>
         <a
           href="/UpholsteryCleaning"
-          className="text-lg text-blue-900 dark:text-white px-4 py-5">
+          className="text-lg text-blue-900 dark:text-white px-4 py-5"
+        >
           <span className="2xl:hidden">Upholstery</span>
           <span className="hidden 2xl:inline">Upholstery&nbsp;Cleaning</span>
         </a>
@@ -63,6 +69,15 @@ export default function DesktopNavLinks() {
           className="flex items-center justify-center h-12 px-4 text-sm font-bold text-center rounded-md lg:h-10 scheduling-btn bg-blue-500 text-white tracking-wide">
           Schedule <span className="lg:hidden xl:inline">&nbsp;Now!</span>
         </a> */}
+        {/* <button
+          className="flex items-center justify-center h-12 px-4 text-sm font-bold text-center rounded-md lg:h-10 scheduling-btn bg-blue-500 text-white tracking-wide"
+          type="button"
+          onClick={() => {
+            openBookingModal();
+          }}
+        >
+          Schedule <span className="lg:hidden xl:inline">&nbsp;Now!</span>
+        </button> */}
       </div>
     </div>
   );

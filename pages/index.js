@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { LocalBusinessJsonLd } from "next-seo";
 import Hero from "@components/Homepage/Hero";
+// import ContactForm from "@components/ContactForm";
 import ImageGallery from "../components/Homepage/ImageGallery";
 // import HomeHero from "../components/Homepage/HomeHero";
 import { PageSeo } from "../components/SEO";
@@ -72,6 +73,7 @@ export default function Index() {
       <SVGWaveDivider />
       <Testimonials />
       <ImageGallery />
+      {/* <ContactForm /> */}
       {/* <AboutUs /> */}
     </>
   );

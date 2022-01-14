@@ -15,7 +15,7 @@ class MyDocument extends Document {
           type="font/woff2"
           crossOrigin="anonymous"
         />
-        <link href="/favicons/favicon.ico" rel="shortcut icon" />
+        <link href="/favicons/favicon.ico" rel="icon" />
         <link href="/favicons/site.webmanifest" rel="manifest" />
         <link
           href="/favicons/apple-touch-icon.png"

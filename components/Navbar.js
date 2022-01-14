@@ -1,24 +1,26 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { memo, useState, useRef } from "react";
+import React, { memo, useState, Fragment } from "react";
 import { useTheme } from "next-themes";
 import clsx from "clsx";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
-
+import { useMachine } from "@xstate/react";
+import { inspect } from "@xstate/inspect";
+import toggleMachine from "../state/machines/toggleMachine";
 import { useAppContext } from "../context/AppState";
 import DropdownMenu from "./Navbar/DropdownMenu";
 import DesktopNavLinks from "./Navbar/DesktopNavLinks";
 import MobileNavLinks from "./Navbar/MobileNavLinks";
+import SchedulingModal from "./SchedulingModal";
+
+// if (typeof window !== "undefined") {
+//   inspect({
+//     iframe: false,
+//   });
+// }
 
 function Nav() {
   const [hideOnScroll, setHideOnScroll] = useState(true);
-  // const [showNav, setShowNav] = useState(true);
-  // const navState = useRef(true);
-  //   hideOnScroll === false && isNavMenuOpen === false
-  //   ? "flex nav-appear-transition"
-  //   : "hidden nav-disappear-transition",
-  // hideOnScroll === false && isNavMenuOpen === true
-  //   ? "flex nav-appear-transition"
-  //   : "working",
+
   useScrollPosition(
     ({ prevPos, currPos }) => {
       const isShow = currPos.y > prevPos.y;
@@ -55,30 +57,49 @@ function Nav() {
     }
   };
 
+  // const modalState = useMachine(toggleMachine, { devTools: true });
+  // const [current, send] = modalState;
   return (
-    <nav
-      id="navbar"
-      role="navigation"
-      aria-label="Main Navigation"
-      className={clsx(
-        "fixed  z-50 w-full",
-        "text-blue-900 dark:text-white-accent bg-white dark:bg-blue-900",
-        navState(hideOnScroll, isNavMenuOpen),
-        { BgWhite: isNavMenuOpen && isLightTheme(resolvedTheme) },
-        { BgDarkTheme: isNavMenuOpen && isDarkTheme(resolvedTheme) }
-      )}>
-      <div
-        id="menubar"
+    <>
+      {/* <div className="w-full bg-white dark:bg-blue-900 fixed inset-0 flex items-center justify-center z-50 h-8">
+        <button
+          type="button"
+          className="px-4 py-2 text-sm font-medium text-blue rounded-md"
+          onClick={() => send("TOGGLE")}
+        >
+          schedule now
+        </button>
+        {current.matches("active") && (
+          <SchedulingModal modalState={modalState} />
+        )}
+      </div> */}
+
+      <nav
+        id="navbar"
+        role="navigation"
+        aria-label="Main Navigation"
         className={clsx(
-          "w-full mx-auto",
-          " lg:flex lg:items-center lg:justify-between",
-          "bg-transparent"
-        )}>
-        <MobileNavLinks />
-        <DesktopNavLinks />
-        <DropdownMenu />
-      </div>
-    </nav>
+          "fixed  z-50 w-full",
+          "text-blue-900 dark:text-white-accent bg-white dark:bg-blue-900",
+          navState(hideOnScroll, isNavMenuOpen),
+          { BgWhite: isNavMenuOpen && isLightTheme(resolvedTheme) },
+          { BgDarkTheme: isNavMenuOpen && isDarkTheme(resolvedTheme) }
+        )}
+      >
+        <div
+          id="menubar"
+          className={clsx(
+            "w-full mx-auto",
+            " lg:flex lg:items-center lg:justify-between",
+            "bg-transparent"
+          )}
+        >
+          <MobileNavLinks />
+          <DesktopNavLinks />
+          <DropdownMenu />
+        </div>
+      </nav>
+    </>
   );
 }
 

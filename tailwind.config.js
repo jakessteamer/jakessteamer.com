@@ -3,8 +3,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const { spacing, fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: ["./components/**/*.js", "./pages/**/*.js"],
-  mode: "jit",
+  content: ["./components/**/*.js", "./pages/**/*.js"],
   darkMode: "class",
   theme: {
     colors: {
@@ -67,7 +66,6 @@ module.exports = {
   plugins: [
     require("@tailwindcss/line-clamp"),
     require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/typography"),
     require("postcss-easing-gradients"),
   ],
 };

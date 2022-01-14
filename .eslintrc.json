@@ -31,8 +31,7 @@
         "singleQuote": false,
         "printWidth": 80,
         "semi": true,
-        "trailingComma": "es5",
-        "jsxBracketSameLine": true
+        "trailingComma": "es5"
       }
     ],
     "react/react-in-jsx-scope": "off",

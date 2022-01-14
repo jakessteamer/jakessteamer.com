@@ -7,7 +7,6 @@ import Fab from "./Fab";
 // import Footer from "./Footer";
 import Modal from "./Modal";
 import Footer from "./Homepage/Footer";
-// import Topbar from "./Topbar";
 
 export default function Layout({ children }) {
   const [isClosed, setClosed] = useState(true);
@@ -58,7 +57,6 @@ export default function Layout({ children }) {
 
   return (
     <PlausibleAnalytics domain="jakessteamer.com">
-      {/* <Topbar /> */}
       <Navbar />
       <main className="flex flex-col flex-nowrap mt-16">
         {children}
@@ -73,7 +71,8 @@ export default function Layout({ children }) {
         className={`${modalOpen ? "hidden" : ""} reviewsBtn`}
         aria-label="Open menu"
         title="Open menu"
-        onClick={() => handleModalClick()}>
+        onClick={() => handleModalClick()}
+      >
         <div className="pl-2 pr-1 text-base font-medium leading-6">
           <p className="sm:text-xl font-semibold text-center text-white">R</p>
           <p className="sm:text-xl font-semibold text-center text-white">E</p>
