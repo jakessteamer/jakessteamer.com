@@ -34,7 +34,7 @@ export default function Services() {
               manufacturers. Our <strong>truck-mounted</strong> unit allows us
               to extract all the way down to the backing, providing the{" "}
               <strong>deepest clean</strong> possible and the shortest dry time.
-              Backed by our <strong>100% satisfaction guarentee</strong>.
+              Backed by our <strong>100% satisfaction guarantee</strong>.
             </p>
             <p>
               Steam cleaning can improve indoor air quality, remove stains,
@@ -74,7 +74,7 @@ export default function Services() {
             alt="Carpet cleaning service card"
             title="Carpet & Area Rug Cleaning"
             desc="
-            Carpets trap a multitude of dust particles, dirt, and bacteria between the fibers. While vacuuming helps remove some of this debris, vacuuming alone cannot get rid of it all. To remove embedded dirt, stains, odors, kill germs you have to steam clean your carpets.
+            Carpets trap a multitude of dust particles, dirt, and bacteria between the fibers. While vacuuming helps remove some of this debris, vacuuming alone cannot get rid of it all. To remove embedded dirt, stains, odors, and kill germs you have to steam clean your carpets.
         "
             href="/CarpetCleaning"
             tags={["stains", "smells", "odors"]}
@@ -94,7 +94,7 @@ export default function Services() {
             alt="Jake's Steamer Water Damage Restoration Service Card"
             title="Emergency Flood"
             desc="
-            Manybuilding materials act like sponges, soaking up enough water in minutes to take weeks to dry out. If moisture is not removed as soon as possible wood warps, buckles, cups, and splits.  Sheetrock and gypsum board sag and crumble. Bacteria and mold growth thrive is moist environments causing smelly odors and material decay.
+            Many building materials act like sponges, soaking up enough water in minutes to take weeks to dry out. If moisture is not removed as soon as possible wood warps, buckles, cups, and splits.  Sheetrock and gypsum board sag and crumble. Bacteria and mold growth thrive in moist environments causing smelly odors and material decay.
            "
             href="/WaterDamageRestoration"
             tags={["Water Removal", "mold removal", "24/7"]}
@@ -112,8 +112,8 @@ export default function Services() {
             and Insured
           </p>
           <p className="mb-8 leading-relaxed theme-text">
-            You are looking for an professional cleaning service you can trust.
-            Our technicians have been trained specificially for the job. Leave
+            You are looking for a professional cleaning service you can trust.
+            Our technicians have been trained specifically for the job. Leave
             the DIY for another project.
           </p>
         </div>

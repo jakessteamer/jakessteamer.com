@@ -142,12 +142,12 @@ export default function CarpetCleaning() {
             <strong className="content-title">POST SPOT</strong> Any spots or
             stains still remaining will get extra treatment with our many
             specialty spotting solutions. For longer carpet life and fewer
-            permanent stain, be sure to have professional carpet protector
+            permanent stains, be sure to have professional a carpet protector
             applied to your carpet.
           </li>
           <li>
             <strong className="content-title">POST GROOM</strong> Some fibers
-            require post cleaning groom to assure there is no fiber distortion.
+            require a post cleaning groom to assure there is no fiber distortion.
             It also helps the fiber dry faster. When <strong>necessary</strong>{" "}
             we will place blocks or foil under furniture legs to protect them
             during the drying process and groom the carpet for a clean inviting
@@ -167,7 +167,7 @@ export default function CarpetCleaning() {
         </ol>
         <p>
           <strong className="content-title">
-            What you should do after the carpet cleaning:
+          WHAT YOU SHOULD DO AFTER THE CARPET CLEANING:
           </strong>{" "}
           To decrease drying time try to keep the room temperature about 72
           degrees and use fans to circulate the air around the cleaned carpet.

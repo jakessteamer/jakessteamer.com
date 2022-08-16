@@ -145,7 +145,7 @@ export default function StainAndOdorRemoval() {
           className="self-center rounded-lg mx-auto"
         />
         <p>
-          For severe stains we use an cleaning solution that breaks down the
+          For severe stains we use a cleaning solution that breaks down the
           salts in the urine and the Water Claw to flushes contaminants from
           carpet face fibers, backing and pad.{" "}
         </p>
@@ -157,7 +157,7 @@ export default function StainAndOdorRemoval() {
         </p>
         <hr className="article-section--divider text-center bg-black dark:bg-white border-black dark:border-white my-0" />
         <p>
-          There are many types of stains, and each one has it's own removal
+          There are many types of stains, and each one has its own removal
           method. Most stains can be removed. We will discuss what can be done
           in each case.
         </p>
@@ -184,7 +184,7 @@ export default function StainAndOdorRemoval() {
           </li>
           <li>
             <strong className="content-title">
-              Stains from biological source:{" "}
+              Stains from biological sources:{" "}
             </strong>
             blood, vomit, food stains, etc.
           </li>

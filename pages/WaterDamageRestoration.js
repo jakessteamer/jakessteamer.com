@@ -71,10 +71,6 @@ export default function WaterDamageRestoration() {
             items.
           </li>
           <li>
-            Wipe excess water from wood furniture after removing any tabletop
-            items.
-          </li>
-          <li>
             Place aluminum foil or wood blocks between furniture legs and wet
             carpeting.
           </li>
@@ -82,7 +78,7 @@ export default function WaterDamageRestoration() {
           <li>Remove any artwork to a safe and dry place.</li>
           <li>Gather loose items from floors.</li>
           <li>Keep out of rooms where ceilings are sagging.</li>
-          <li>Shut off breaker panel.</li>
+          <li>Shut off the breaker panel.</li>
           <li>Turning off the water line.</li>
         </ul>
         <h2 className="content-title">
@@ -135,15 +131,15 @@ export default function WaterDamageRestoration() {
           Need Help With The Repair & Rebuild Process?
         </h2>
         <ul>
-          <li>Water proofing damage experts</li>
+          <li>Waterproofing damage experts</li>
           <li>Water extraction & remediation</li>
           <li>Complete drying services</li>
-          <li>Carpet re-installation</li>
-          <li>Dry wall re-installation</li>
+          <li>Carpet reinstallation</li>
+          <li>Drywall reinstallation</li>
           <li>Carpentry</li>
-          <li>Sheet rock re-installation</li>
-          <li>Base boards re-installation</li>
-          <li>Insulation re-installation</li>
+          <li>Sheetrock reinstallation</li>
+          <li>Baseboards reinstallation</li>
+          <li>Insulation reinstallation</li>
         </ul>
 
         {/* <footer>

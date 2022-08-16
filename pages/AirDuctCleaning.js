@@ -43,12 +43,12 @@ export default function AirDuctCleaning() {
           We report back to you before moving forward with a cleaning. The air
           duct cleaning inspection ensures your air ducts are properly cleaned.
           Dirty ducts can cost you in additional repair, maintenance, and early
-          replacement of air conditioning and heating system.
+          replacement of the air conditioning and heating system.
         </p>
         <h2 className="content-title">How To Clean Air Ducts</h2>
         <p>
-          Clean & healthy air quality require air duct cleaning. Our air duct
-          cleaning take advantage proper cleaning methods that include an
+          Clean & healthy air quality requires air duct cleaning. Our air duct
+          cleaning takes advantage of proper cleaning methods that include an
           anti-bacterial coating. We use patented equipment to ensure every part
           of your duct system is cleaned properly. All contaminants collected
           are disposed of safely.
