@@ -52,13 +52,15 @@ export default function Reviews({ isClosed, setClosed }) {
       id="reviewsPanel"
       className={`${
         isClosed ? "hidden" : "w-screen"
-      } absolute right-0 bg-white flex flex-col z-50`}>
+      } absolute right-0 bg-white flex flex-col z-50`}
+    >
       <button
         tabIndex="1"
         className="w-10 ml-auto pr-4"
         aria-label="Close menu"
         title="Close menu"
-        onClick={() => setClosed(true)}>
+        onClick={() => setClosed(true)}
+      >
         <svg
           className="h-10 w-10"
           fill="none"
@@ -66,7 +68,8 @@ export default function Reviews({ isClosed, setClosed }) {
           strokeLinejoin="round"
           strokeWidth="2"
           viewBox="0 0 24 24"
-          stroke="currentColor">
+          stroke="currentColor"
+        >
           <path d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>

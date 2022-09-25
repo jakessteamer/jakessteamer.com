@@ -342,16 +342,16 @@ article.section-content > h1.seo.seo-title {
 
 .fabWrap {
   align-items: center;
-  bottom: 3rem;
+  bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   position: fixed;
-  right: 1rem;
+  left: 1rem;
   z-index: 100;
 }
 
 #fabIcon::before {
-  background-image: url("/images/fab-phone.png");
+  background-image: url("/images/phone.png");
   background-size: cover;
   content: "";
   height: 80%;
@@ -954,4 +954,8 @@ article.section-content > p.section--heading {
 
 .imagecontainer-img:hover {
   transform: scale(1.1);
+}
+
+.bg-c {
+  background: #2378cf;
 }

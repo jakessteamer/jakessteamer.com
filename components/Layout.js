@@ -2,6 +2,7 @@
 /* eslint-disable react/button-has-type */
 import React, { useState, useEffect } from "react";
 import PlausibleAnalytics from "next-plausible";
+import Script from "next/script";
 import Navbar from "./Navbar";
 import Fab from "./Fab";
 // import Footer from "./Footer";
@@ -94,6 +95,13 @@ export default function Layout({ children }) {
           key={loading}
         />
       ) : null}
+      <Script
+        id="housecall-pro-chat-bubble"
+        src="https://chat.housecallpro.com/proChat.js"
+        type="text/javascript"
+        data-color="#2378cf"
+        data-organization="99a699f2-c01d-4a40-9690-d49c6b8eea83"
+      />
     </PlausibleAnalytics>
   );
 }
