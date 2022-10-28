@@ -1,0 +1,756 @@
+---
+// Component Imports
+import Button from '../components/Button.astro';
+import Layout from '../components/Layout.astro';
+import Image from '../components/Image.astro';
+import ServiceCards from '../components/ServiceCards.astro';
+import ContactForm from '../components/ContactForm.astro';
+---
+
+<!-- SEO Prop Idea --><!-- x-data="{
+	// Data
+	hero: {
+		title: 'Jake\'s Steamer',
+		subtitle: 'Steam Cleaning Services',
+		image: {
+			src: '/images/hero.jpg',
+			alt: 'Jake\'s Steamer',
+		},
+	},
+	services: [
+		{
+			title: 'Carpet Cleaning',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nunc nisl aliquam nisl, vel aliquam nunc nisl vel lorem.',
+			image: {
+				src: '/images/carpet-cleaning.jpg',
+				alt: 'Carpet Cleaning',
+			},
+		},
+		{
+			title: 'Upholstery Cleaning',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nunc nisl aliquam nisl, vel aliquam nunc nisl vel lorem.',
+			image: {
+				src: '/images/upholstery-cleaning.jpg',
+				alt: 'Upholstery Cleaning',
+			},
+		},
+		{
+			title: 'Tile & Grout Cleaning',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nunc nisl aliquam nisl, vel aliquam nunc nisl vel lorem.',
+			image: {
+				src: '/images/tile-cleaning.jpg',
+				alt: 'Tile & Grout Cleaning',
+			},
+		},
+	],
+	// Methods
+	bookNow() {
+		alert('Book Now');
+	},
+}" -->
+<Layout title="Jake's Steamer">
+  <main id="animated-bubbles-background" class="background-wrap overflow-clip">
+    <!-- Hero -->
+    <header
+      class="text-primary-content grid grid-cols-1 grid-rows-1 w-full items-end gap-4 bg-gradient-to-r from-[#002bdc] to-[#32ded4] pt-24 mb-10"
+    >
+      <!-- <div class="col-start-1 row-start-1">
+        <div class="max-w-lg md:max-w-screen-2xl flex items-start px-4 sm:px-6 md:px-8 mx-auto">
+          <div class="z-20">
+            <img
+              src="/images/logos/jakessteamer-carpet-cleaning-company-logo-256w.png"
+              width="256"
+              height="237"
+              alt="Jake's Steamer is a certified, licensed, and insured carpet cleaning company. Call 432-847-4600 for carpet, upholstery, tile, air duct, area rug, water damage services. Jake's steamer is based in Seminole, Texas. We proudly serve Seminole and the surrounding counties."
+              decoding="async"
+              sizes="256px"
+            />
+          </div>
+        </div>
+      </div> -->
+
+      <!-- max-w-7xl mx-auto px-4 sm:px-6 md:px-8 -->
+      <!-- flex max-w-lg md:max-w-screen-2xl flex-col justify-between gap-10 pb-40 lg:flex-row lg:items-end lg:gap-0 xl:gap-20 -->
+      <div class="col-start-1 row-start-1 pb-24">
+        <div class="max-w-lg md:max-w-screen-2xl mx-auto">
+          <div class="grid grid-cols-1 grid-rows-2 lg:grid-rows-1 lg:grid-cols-2">
+            <!-- space-y-6 pb-6 sm:max-w-md sm:pr-5 md:space-y-4 md:pb-0 lg:max-w-lg lg:space-y-8 lg:pr-0 xl:space-y-9 -->
+            <div class="order-last lg:order-first px-4 sm:px-6 md:px-8">
+              <h1
+                class="relative z-20 mt-6 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:mt-0 lg:text-5xl xl:text-6xl"
+              >
+                <span class="z-20 block xl:inline">For Life's Mistakes</span>
+                <span class="text-indigo-600 z-20 block xl:inline">Call Jake!</span>
+              </h1>
+              <p
+                class="relative pb-6 z-20 mx-auto text-base text-white sm:max-w-md md:max-w-3xl lg:text-xl"
+              >
+                Jake's Steamer is certified, licensed, and Insured. Call for carpet, upholstery,
+                tile, air duct, area rug, water damage services. We proudly serve Seminole and the
+                surrounding counties.
+              </p>
+              <a
+                class="relative z-20 mx-auto font-extrabold text-white sm:max-w-md text-3xl md:text-4xl"
+              >
+                432-847-4600
+              </a>
+            </div>
+
+            <div
+              id="Carousel"
+              class="relative px-4 sm:px-6 md:px-8 z-20 order-first lg:order-last"
+              x-data="carousel"
+            >
+              <template x-for="slide in slides" :key="slide.id">
+                <div x-show="activeSlide === slide.id" class="aspect-w-4 aspect-h-3">
+                  <img
+                    class="w-full h-full object-center object-cover lg:w-full lg:h-full lazyload rounded-lg shadow-xl"
+                    :src="slide.src"
+                  />
+                </div>
+              </template>
+
+              <!-- Buttons -->
+              <div class="absolute bottom-2 flex w-full items-center justify-center px-4">
+                <template x-for="slide in slides" :key="slide.id">
+                  <button
+                    @click="activeSlide = slide.id"
+                    :class="{ 'bg-blue-700': activeSlide === slide.id, 'bg-white': activeSlide !== slide.id }"
+                    class="mx-2 mt-4 mb-0 h-3 w-3 rounded-full transition-colors duration-200 ease-out hover:bg-blue-600 hover:shadow-lg focus:outline-none"
+                  ></button>
+                </template>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="hero-svg-overlay-section" class="relative col-start-1 row-start-2 w-full">
+        <svg
+          id="hero-svg-overlay-mobile"
+          class="fill-secondary absolute bottom-0 col-start-1 row-start-1 h-auto w-full fill-white lg:hidden overflow-"
+          width="1600"
+          height="595"
+          viewBox="0 0 1600 595"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 338L53.3 349.2C106.7 360.3 213.3 382.7 320 393.8C426.7 405 533.3 405 640 359.3C746.7 313.7 853.3 222.3 960 189.2C1066.7 156 1173.3 181 1280 159.2C1386.7 137.3 1493.3 68.7 1546.7 34.3L1600 0V595H1546.7C1493.3 595 1386.7 595 1280 595C1173.3 595 1066.7 595 960 595C853.3 595 746.7 595 640 595C533.3 595 426.7 595 320 595C213.3 595 106.7 595 53.3 595H0V338Z"
+          ></path>
+        </svg>
+
+        <svg
+          id="hero-desktop-svg-overlay"
+          class="fill-secondary absolute bottom-0 col-start-1 row-start-1 hidden h-auto w-full fill-white lg:block"
+          width="1600"
+          height="400"
+          viewBox="0 0 1600 400"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 338L53.3 349.2C106.7 360.3 213.3 382.7 320 393.8C426.7 405 533.3 405 640 359.3C746.7 313.7 853.3 222.3 960 189.2C1066.7 156 1173.3 181 1280 159.2C1386.7 137.3 1493.3 68.7 1546.7 34.3L1600 0V595H1546.7C1493.3 595 1386.7 595 1280 595C1173.3 595 1066.7 595 960 595C853.3 595 746.7 595 640 595C533.3 595 426.7 595 320 595C213.3 595 106.7 595 53.3 595H0V338Z"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+    Cards
+ ========================================================================== -->
+
+    <!-- Card Container Layout -->
+    <!-- mx-auto max-w-lg px-4 md:max-w-screen-2xl md:px-6 xl:px-8 2xl:px-12 pt-12 -->
+    <!-- max-w-7xl mx-auto px-4 sm:px-6 md:px-8-->
+    <section
+      class="relative z-20 max-w-lg md:max-w-screen-2xl bg-white mx-auto px-4 sm:px-6 md:px-8 py-10 md:py-16 lg:py-20"
+    >
+      <!-- Card Container Grid -->
+      <div class="mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:gap-8 2xl:gap-12">
+        <!-- Card -->
+        <div>
+          <div class="imagecontainer">
+            <img
+              class="imagecontainer-img lazyload rounded-lg shadow-xl"
+              data-srcset="/images/carpet-cleaning-service-card.webp"
+              data-sizes="auto"
+              decoding="async"
+            />
+          </div>
+          <div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div class="flex-1">
+                <a class="group block" href="/stain-and-odor-removal">
+                  <div class="flex items-center justify-between">
+                    <h3
+                      class="group-hover:text-cool-indigo-600 flex items-center text-xl font-bold leading-7 text-gray-900"
+                    >
+                      Carpet and Area Rug Cleaning
+                    </h3>
+                  </div>
+                  <p class="mt-1 text-base font-medium leading-6 text-gray-500">
+                    Remove embedded dirt, stains, odors, and kill germs
+                  </p>
+                  <span
+                    class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-sky-50 text-sky-600 hover:bg-sky-100 hover:text-sky-700 focus:ring-sky-600 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                    href="/carpet-cleaning"
+                    >Learn more<span class="sr-only">, utility-first fundamentals</span><svg
+                      class="overflow-visible ml-3 text-indigo-300 group-hover:text-indigo-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                      width="3"
+                      height="6"
+                      viewBox="0 0 3 6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      ><path d="M0 0L3 3L0 6"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div>
+          <div class="imagecontainer">
+            <img
+              class="imagecontainer-img lazyload rounded-lg shadow-xl"
+              data-srcset="/images/carpets/jakes-steamer-carpet-cleaning-service-card.png"
+              data-sizes="auto"
+              decoding="async"
+            />
+          </div>
+          <div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div class="flex-1">
+                <a class="group block" href="/air-duct-cleaning">
+                  <div class="flex items-center justify-between">
+                    <h3
+                      class="group-hover:text-cool-indigo-600 flex items-center text-xl font-bold leading-7 text-gray-900"
+                    >
+                      Air Duct Cleaning
+                    </h3>
+                  </div>
+                  <p class="mt-1 text-base font-medium leading-6 text-gray-500">
+                    Breathe easier knowing that there is less airborne dust, pollen, mold and other
+                    allergens floating through your home
+                  </p>
+                  <span
+                    class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-sky-50 text-sky-600 hover:bg-sky-100 hover:text-sky-700 focus:ring-sky-600 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                    href="/air-duct-cleaning"
+                    >Learn more<span class="sr-only">, utility-first fundamentals</span><svg
+                      class="overflow-visible ml-3 text-indigo-300 group-hover:text-indigo-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                      width="3"
+                      height="6"
+                      viewBox="0 0 3 6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      ><path d="M0 0L3 3L0 6"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div>
+          <div class="imagecontainer">
+            <img
+              class="imagecontainer-img lazyload rounded-lg shadow-xl"
+              data-srcset="/images/water-damage-restoration/service-card.jpg"
+              data-sizes="auto"
+              decoding="async"
+            />
+          </div>
+          <div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div class="flex-1">
+                <a class="group block" href="/water-damage-restoration">
+                  <div class="flex items-center justify-between">
+                    <h3
+                      class="group-hover:text-cool-indigo-600 flex items-center text-xl font-bold leading-7 text-gray-900"
+                    >
+                      Emergency Flood
+                    </h3>
+                  </div>
+                  <p class="z-10 mt-1 bg-white text-base font-medium leading-6 text-gray-500">
+                    Water leak? We can help. We are available 24/7 for emergency water damage
+                  </p>
+                  <span
+                    class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-sky-50 text-sky-600 hover:bg-sky-100 hover:text-sky-700 focus:ring-sky-600 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                    href="/water-damage-restoration"
+                    >Learn more<span class="sr-only">, utility-first fundamentals</span><svg
+                      class="overflow-visible ml-3 text-indigo-300 group-hover:text-indigo-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                      width="3"
+                      height="6"
+                      viewBox="0 0 3 6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      ><path d="M0 0L3 3L0 6"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="imagecontainer">
+            <img
+              class="imagecontainer-img lazyload rounded-lg shadow-xl override-cover"
+              data-srcset="/images/tile/tile-3-640x480-md.jpg"
+              data-sizes="auto"
+              decoding="async"
+            />
+          </div>
+          <div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div class="flex-1">
+                <a class="group block" href="/tile-and-grout-cleaning">
+                  <div class="flex items-center justify-between">
+                    <h3
+                      class="group-hover:text-cool-indigo-600 flex items-center text-xl font-bold leading-7 text-gray-900"
+                    >
+                      Title and Grout Cleaning
+                    </h3>
+                  </div>
+                  <p class="mt-1 text-base font-medium leading-6 text-gray-500">
+                    Restore and refresh your tile and grout to its original beauty
+                  </p>
+                  <span
+                    class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-sky-50 text-sky-600 hover:bg-sky-100 hover:text-sky-700 focus:ring-sky-600 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                    href="/tile-and-grout-cleaning"
+                    >Learn more<span class="sr-only">, utility-first fundamentals</span><svg
+                      class="overflow-visible ml-3 text-indigo-300 group-hover:text-indigo-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                      width="3"
+                      height="6"
+                      viewBox="0 0 3 6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      ><path d="M0 0L3 3L0 6"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="imagecontainer">
+            <img
+              class="imagecontainer-img lazyload rounded-lg shadow-xl override-cover"
+              data-srcset="/images/pet-stain-and-odor-removal-service-card-2.webp"
+              data-sizes="auto"
+              decoding="async"
+            />
+          </div>
+          <div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div class="flex-1">
+                <a class="group block" href="/pet-stain-and-odor-removal">
+                  <div class="flex items-center justify-between">
+                    <h3
+                      class="group-hover:text-cool-indigo-600 flex items-center text-xl font-bold leading-7 text-gray-900"
+                    >
+                      Pet Stain and Odor Removal
+                    </h3>
+                  </div>
+                  <p class="mt-1 text-base font-medium leading-6 text-gray-500">
+                    We love our pets just not their messes
+                  </p>
+                  <span
+                    class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-sky-50 text-sky-600 hover:bg-sky-100 hover:text-sky-700 focus:ring-sky-600 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                    href="/pet-stain-and-odor-removal"
+                    >Learn more<span class="sr-only">, utility-first fundamentals</span><svg
+                      class="overflow-visible ml-3 text-indigo-300 group-hover:text-indigo-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                      width="3"
+                      height="6"
+                      viewBox="0 0 3 6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      ><path d="M0 0L3 3L0 6"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div>
+          <div class="imagecontainer">
+            <img
+              class="imagecontainer-img lazyload rounded-lg shadow-xl"
+              data-srcset="/images/upholstery/couch-upholstery-square.jpg"
+              data-sizes="auto"
+              decoding="async"
+            />
+          </div>
+          <div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div class="flex-1">
+                <a class="group block" href="/furniture-cleaning">
+                  <div class="flex items-center justify-between">
+                    <h3
+                      class="group-hover:text-cool-indigo-600 flex items-center text-xl font-bold leading-7 text-gray-900"
+                    >
+                      Furniture Cleaning
+                    </h3>
+                  </div>
+                  <p class="z-10 mt-1 bg-white text-base font-medium leading-6 text-gray-500">
+                    We clean all kinds of fabrics including sofas, love seats, dining chairs,
+                    curtains, and mattresses.
+                  </p>
+                  <span
+                    class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-sky-50 text-sky-600 hover:bg-sky-100 hover:text-sky-700 focus:ring-sky-600 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
+                    href="furniture-cleaning"
+                    >Learn more<span class="sr-only">, utility-first fundamentals</span><svg
+                      class="overflow-visible ml-3 text-indigo-300 group-hover:text-indigo-400 dark:text-slate-500 dark:group-hover:text-slate-400"
+                      width="3"
+                      height="6"
+                      viewBox="0 0 3 6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      ><path d="M0 0L3 3L0 6"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+    <section
+      class="relative z-20 mx-auto max-w-lg bg-white px-4 md:max-w-screen-2xl md:px-6 xl:px-8 2xl:px-12 py-10 md:py-16 lg:py-20"
+    >
+      <div class="mx-auto grid gap-6 md:grid-cols-2 xl:gap-8 2xl:gap-12">
+        <div class="flex flex-col mt-4 max-w-3xl space-y-6">
+          <h2
+            class="text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight dark:text-slate-50"
+          >
+            Hot Water Extraction
+          </h2>
+          <p>
+            Hot Water Extraction Carpet Cleaning, also known as Steam Cleaning, is the recommended
+            choice by most Carpet Manufacturers in the US. This Carpet Cleaning method is done by
+            our Truck-Mounted machine that uses temperatures up to 230 degrees,
+            <strong>eliminating bacteria and germs found in your Carpets.</strong>
+          </p>
+
+          <p>
+            Next, we apply an emulsifier to break down dirt and stains. Following this is the proper
+            agitation of the carpet with our equipment The water that comes out of our machines can
+            be anywhere from 300-600PSI, which is another source of agitation. Having this PSI level
+            ensures the best results. You will see our Technicians using a carpet wand to help fully
+            extract the debris and clean your carpet.
+          </p>
+          <p>
+            Finally we use powerful vacuum suction to remove the soil, water and cleaning solution
+            leaving your carpets dry in 1-2 hours.
+          </p>
+        </div>
+        <div class="flex flex-col max-w-3xl space-y-6">
+          <div>
+            <img
+              src="/images/iicrc-certification.png"
+              alt="Jake's Steamer is certified by the Institute of Inspection Cleaning and Restoration Certification. Jake's Steamer carpet cleaning company is certified, licensed, and insured."
+            />
+          </div>
+          <p class="font-bold text-slate-900">
+            Licensed + Certified + Insured | Family + Locally Owned
+          </p>
+          <div class="flex">
+            <a href="https://www.facebook.com/jakessteamer01/" class="mx-2" aria-label="Facebook"
+              ><svg class="w-10 h-10 fill-blue-500" viewBox="0 0 512 512"
+                ><path
+                  d="M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z"
+                ></path>
+              </svg>
+            </a><a
+              href="https://www.facebook.com/jakessteamer01/"
+              class="text-slate-900 text-sm md:text-lg">Follow Us On Facebook</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="text-center max-w-lg md:max-w-screen-2xl mx-auto py-10 md:py-16 lg:py-20">
+      <h2
+        class="text-slate-900 text-4xl tracking-tight font-extrabold sm:text-5xl dark:text-white px-8"
+      >
+        “Best practices” don’t actually work.
+      </h2><figure>
+        <blockquote>
+          <p class="mt-6 max-w-3xl mx-auto text-lg">
+            I’ve written<!-- -->
+            <a
+              href="https://adamwathan.me/css-utility-classes-and-separation-of-concerns/"
+              class="text-sky-500 font-semibold dark:text-sky-400">a few thousand words</a
+            >
+            <!-- -->on why traditional “semantic class names” are the reason CSS is hard to
+            maintain, but the truth is you’re never going to believe me until you actually try it.
+            If you can suppress the urge to retch long enough to give it a chance, I really think
+            you’ll wonder how you ever worked with CSS any other way.
+          </p>
+        </blockquote>
+      </figure>
+    </section>
+    <section
+      tabindex="-1"
+      x-data="{
+				data: {},
+				showAllReviews: false,
+				loading: false,
+				getTestimonials() {
+					fetch('https://app.housecallpro.com/alpha/organizations/99a699f2-c01d-4a40-9690-d49c6b8eea83/reviews?page=1&count=50')
+						.then((response) => response.json())
+						.then((data) => {
+							this.data = data;
+							
+						});
+				},
+				init(){
+					this.$watch('loading', (value) => {
+						if(value){
+							this.getTestimonials();
+						}
+					})
+				}
+			}"
+      x-intersect.margin.300px="loading = true"
+      class="relative max-w-7xl mx-auto px-4 focus:outline-none sm:px-3 md:px-5 py-10 md:py-16 lg:py-20"
+    >
+      <h2 class="sr-only">Testimonials</h2>
+      <div
+        :class="showAllReviews ? '' : 'max-h-[40rem] overflow-hidden'"
+        class="grid grid-cols-1 gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        <template x-for="reviews in data.data" :key="reviews.created_at">
+          <ul class="space-y-8">
+            <li class="text-sm leading-6">
+              <figure
+                x-data="{
+								starRating: undefined,
+								dateOfReview: undefined,
+								convertToPercentage(fraction) {
+									return ((fraction/5) * 100).toFixed(2);
+								},
+								fractionToPercentage(fraction) {
+									return `${this.convertToPercentage(fraction)}%`;
+								},
+								formatDate(string) {
+									const options = { year: 'numeric', month: 'long', day: 'numeric' };
+									return new Date(string).toLocaleDateString([], options);
+								},
+							init(){
+								this.starRating = this.fractionToPercentage(reviews.rating);
+								this.dateOfReview = this.formatDate(reviews.created_at);
+							}}"
+                class="relative flex flex-col-reverse bg-slate-50 rounded-2xl p-6 dark:bg-slate-800 dark:highlight-white/5"
+              >
+                <blockquote class="mt-6 text-slate-700 dark:text-slate-300">
+                  <p x-text="reviews.comments"></p>
+                </blockquote>
+                <figcaption class="flex items-center">
+                  <div class="flex-auto">
+                    <div class="text-base text-slate-900 font-semibold dark:text-slate-300">
+                      <p x-text="reviews.customer_name" class=""></p>
+                    </div>
+                    <div class="flex h-14 space-x-0">
+                      <svg viewBox="0 0 1000 200" class="rating w-20">
+                        <defs>
+                          <polygon
+                            id="star"
+                            points="100,0 131,66 200,76 150,128 162,200 100,166 38,200 50,128 0,76 69,66 "
+                          ></polygon>
+
+                          <clipPath id="stars">
+                            <use xlink:href="#star"></use>
+                            <use xlink:href="#star" x="20%"></use>
+                            <use xlink:href="#star" x="40%"></use>
+                            <use xlink:href="#star" x="60%"></use>
+                            <use xlink:href="#star" x="80%"></use>
+                          </clipPath>
+                        </defs>
+
+                        <rect
+                          id="rating__background"
+                          class="fill-yellow-200 h-full w-full"
+                          clip-path="url(#stars)"></rect>
+
+                        <!-- Change the width of this rect to change the rating -->
+                        <rect
+                          x-bind:style="{ width: starRating }"
+                          id="rating__value"
+                          class="fill-yellow-300 h-full"
+                          clip-path="url(#stars)"></rect>
+                      </svg>
+                    </div>
+                    <p x-text="dateOfReview"></p>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </template>
+      </div>
+      <!-- Gradient Mask -->
+      <!-- <div
+				x-show="!showAllReviews"
+				class="inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-white pt-32 pb-8 pointer-events-none dark:from-slate-900 absolute">
+				<button
+					x-on:click="showAllReviews = !showAllReviews"
+					type="button"
+					class="relative bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-sm text-white font-semibold h-12 px-6 rounded-lg flex items-center dark:bg-slate-700 dark:hover:bg-slate-600 pointer-events-auto"
+					>Show more...</button
+				>
+			</div>
+			<div
+				x-show="showAllReviews"
+				class="inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-white pt-32 pb-8 pointer-events-none dark:from-slate-900 sticky -mt-52 transition-opacity duration-300 opacity-100">
+				<button
+					x-on:click="showAllReviews = !showAllReviews"
+					type="button"
+					class="relative bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-sm text-white font-semibold h-12 px-6 rounded-lg flex items-center dark:bg-slate-700 dark:hover:bg-slate-600 transition-transform pointer-events-auto"
+					>Okay, I get the point</button
+				>
+			</div> -->
+      <div
+        x-show="!showAllReviews"
+        class="inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-white pt-32 pb-8 pointer-events-none dark:from-slate-900 absolute"
+      >
+        <button
+          x-on:click="showAllReviews = !showAllReviews"
+          type="button"
+          class="relative bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-sm text-white font-semibold h-12 px-6 rounded-lg flex items-center dark:bg-slate-700 dark:hover:bg-slate-600 pointer-events-auto"
+          >Show more...</button
+        >
+      </div>
+      <div
+        x-show="showAllReviews"
+        class="inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-white pt-32 pb-8 pointer-events-none dark:from-slate-900 sticky -mt-52 transition-opacity duration-300 opacity-100"
+      >
+        <button
+          x-on:click="showAllReviews = !showAllReviews"
+          type="button"
+          class="relative bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 text-sm text-white font-semibold h-12 px-6 rounded-lg flex items-center dark:bg-slate-700 dark:hover:bg-slate-600 transition-transform pointer-events-auto"
+          >Okay, I get the point</button
+        >
+      </div>
+    </section>
+
+    <ContactForm />
+    <div class="bubble x1"></div>
+    <div class="bubble x2"></div>
+    <div class="bubble x3"></div>
+    <div class="bubble x4"></div>
+    <div class="bubble x5"></div>
+    <div class="bubble x6"></div>
+    <div class="bubble x7"></div>
+    <div class="bubble x8"></div>
+    <div class="bubble x10"></div>
+  </main>
+</Layout>
+
+<script>
+  import Alpine from 'alpinejs';
+  import intersect from '@alpinejs/intersect';
+  Alpine.plugin(intersect);
+
+  import lazySizes from 'lazysizes';
+  import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('carousel', () => ({
+      slides: [
+        { id: 1, src: '/images/carousel/slide-1.webp' },
+        { id: 2, src: '/images/carousel/slide-2.webp' },
+        { id: 3, src: '/images/carousel/slide-3.webp' },
+        { id: 4, src: '/images/carousel/slide-4.webp' },
+        { id: 5, src: '/images/carousel/slide-5.webp' },
+      ],
+      activeSlide: 1,
+      nextSlide() {
+        this.activeSlide = this.activeSlide === this.slides.length ? 1 : this.activeSlide + 1;
+      },
+      goToNext() {
+        this.activeSlide = this.activeSlide === this.slides.length ? 1 : this.activeSlide + 1;
+      },
+      init() {
+        setInterval(() => {
+          this.goToNext();
+        }, 5000);
+      },
+    }));
+  });
+  // const {
+  // 	data: [{ reviews }],
+  // } = await fetch(
+  // 	'https://app.housecallpro.com/alpha/organizations/99a699f2-c01d-4a40-9690-d49c6b8eea83/reviews?page=1&count=10'
+  // );
+
+  // function carouselData(slides) {
+  // 	return {
+  // 		slides,
+  // 		activeSlide: 1,
+  // 		goToPrevious() {
+  // 			this.activeSlide = this.activeSlide === 1 ? this.slides.length : this.activeSlide - 1;
+  // 		},
+  // 		goToNext() {
+  // 			this.activeSlide = this.activeSlide === this.slides.length ? 1 : this.activeSlide + 1;
+  // 		},
+  // 	};
+  // }
+  document.addEventListener('alpine:init', () => {
+    Alpine.data('testimonials', () => ({
+      reviews: [],
+      fetchReviews: false,
+      async getReviews() {
+        await fetch(
+          'https://app.housecallpro.com/alpha/organizations/99a699f2-c01d-4a40-9690-d49c6b8eea83/reviews?page=1&count=10',
+        )
+          .then((res) => res.json())
+          .then((data) => {
+            this.reviews = data.data;
+          });
+      },
+    }));
+  });
+  //convert iso string to date with the format of August 20, 2020
+  function formatDate(string) {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return new Date(string).toLocaleDateString([], options);
+  }
+
+  // convert fraction to percentage
+  function convertToPercentage(fraction) {
+    return (fraction * 100).toFixed(2);
+  }
+  // fraction as a percentage
+  function fractionToPercentage(fraction) {
+    return `${convertToPercentage(fraction)}%`;
+  }
+</script>

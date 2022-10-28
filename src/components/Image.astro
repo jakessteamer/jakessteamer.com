@@ -1,0 +1,17 @@
+---
+export interface Props {
+	src: string;
+	alt: string;
+	classes?: string;
+}
+
+const { src, alt, classes } = Astro.props as Props;
+---
+
+<div class={classes}>
+	<img
+		src={src}
+		alt={alt}
+		class="w-full h-full object-center object-cover lg:w-full lg:h-full lazyload"
+	/>
+</div>
