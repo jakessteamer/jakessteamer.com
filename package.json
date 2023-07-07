@@ -68,5 +68,19 @@
     "googleapis": "^118.0.0",
     "googleapis-common": "^6.0.4",
     "nodemailer": "^6.9.3"
+  },
+  "browserlist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": "19.9.0",
+    "npm": "9.6.3"
+  },
+  "volta": {
+    "node": "19.9.0",
+    "npm": "9.6.3"
   }
 }
