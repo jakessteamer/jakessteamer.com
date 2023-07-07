@@ -1,0 +1,372 @@
+.custom-shape-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider .shape-fill {
+  fill: #fff;
+}
+
+/* Hero */
+
+.hero {
+  background: linear-gradient(to right, #002bdc, #32ded4);
+  position: relative;
+}
+
+.header {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  /* width: 100%; */
+  max-width: 80rem;
+  margin: auto;
+  align-items: end;
+  gap: 1rem;
+  /* background: linear-gradient(to right, #002bdc, #32ded4); */
+  margin-bottom: 2.5rem;
+  overflow-x: hidden;
+}
+
+.header__content {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6rem;
+  padding: 0.5rem 1rem 2rem;
+}
+
+.header__logo-wrapper {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.header__carousel-headline {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.header__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+
+}
+
+.header__title h1 {
+  position: relative;
+  z-index: 20;
+  padding: 1.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #1a202c;
+  text-align: left;
+}
+
+.header__title p {
+  position: relative;
+  z-index: 20;
+  max-width: 45rem;
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.header__title a {
+  position: relative;
+  font-weight: 800;
+  font-size: 1.875rem;
+  color: #fff;
+}
+
+.header__logo-brand {
+  display: flex;
+  flex-direction: column;
+
+  .company-logo {
+    align-self: center;
+  }
+
+  @media (width >=768px) {
+    flex-direction: row;
+  }
+}
+
+.header__contact-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  justify-content: center;
+}
+
+
+
+.header__carousel {
+  position: relative;
+  z-index: 10;
+  margin: auto;
+  width: auto;
+
+  @media (width >=768px) {
+    max-width: 550px;
+  }
+}
+
+.header__svg-overlay {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  position: relative;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  aspect-ratio: 4/3;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.carousel-picture {
+  flex: shrink 0;
+
+}
+
+
+
+
+/* Company Intro */
+
+.company-intro {
+  overflow: hidden;
+  padding-top: 4rem;
+
+  @media (width >=1024px) {
+    padding-top: 6rem;
+  }
+}
+
+.company-intro__container {
+  position: relative;
+  max-width: 80rem;
+  /* Adjust the value according to your needs */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media (width >=640px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.company-intro__grid {
+  position: relative;
+
+  @media (min-width: 1024px) {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+.company-intro__text {
+  position: relative;
+
+  &>.company-intro__highlight {
+    color: var(--slate-500);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &>.company-intro__title {
+    margin-top: 0.5rem;
+    /* equivalent to mt-2 */
+    font-size: 2rem;
+    /* equivalent to text-2xl */
+    font-weight: 800;
+    /* equivalent to font-extrabold */
+    color: #1f2937;
+    /* equivalent to text-gray-900 */
+    letter-spacing: -0.025em;
+    /* equivalent to tracking-tight */
+  }
+
+  @media (min-width: 640px) {
+    .company-intro__title {
+      font-size: 3rem;
+      /* equivalent to sm:text-3xl */
+    }
+  }
+
+  &>p {
+    margin-top: 0.75rem;
+  }
+}
+
+.company-intro__cert-image {
+  padding-top: 1rem;
+}
+
+.company-intro__cert-text {
+  padding-top: 1rem;
+}
+
+.company-intro__social {
+  display: flex;
+  padding-top: 1rem;
+
+  .company-intro__social-link {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .company-intro__social-icon {
+    width: 40px;
+    height: 40px;
+    fill: #3b82f6;
+  }
+
+  .company-intro__social-text {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+/* Service Cards */
+
+.service-cards {
+  position: relative;
+  padding-bottom: 4rem;
+
+  @media (width >=640px) {
+    padding-bottom: 6rem;
+  }
+
+  @media (width >=1024px) {
+    padding-bottom: 8rem;
+  }
+}
+
+.service-cards__container {
+  margin: 0 auto;
+  max-width: 28rem;
+  padding: 0 1rem;
+  text-align: center;
+
+  @media (width >=640px) {
+    max-width: 48rem;
+    padding: 0 1.5rem;
+  }
+
+  @media (width >=1024px) {
+    padding: 0 2rem;
+    max-width: 80rem;
+  }
+}
+
+.service-cards__grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+}
+
+.card__img-container {
+  position: relative;
+  width: 100%;
+}
+
+.card__img {
+  /* width: 100%;
+  height: 100%; */
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
+}
+
+.card__title {
+  margin-bottom: 0.5rem;
+}
+
+.card__title-text {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #000b33;
+  text-align: left;
+}
+
+.card__title-subtext {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+  text-align: left;
+}
+
+.card__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__description {
+  text-align: left;
+}
+
+.card__details-link {
+  padding-top: 1rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--blue-500);
+}
+
+/* Testimonials */

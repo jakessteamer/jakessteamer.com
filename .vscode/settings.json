@@ -1,0 +1,13 @@
+{
+  "workbench.colorTheme": "GitHub Dark",
+  "editor.inlineSuggest.enabled": true,
+  "editor.formatOnSave": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.minimap.enabled": false,
+  "workbench.iconTheme": "icons",
+  "emmet.triggerExpansionOnTab": true,
+  "editor.tabSize": 2,
+}
