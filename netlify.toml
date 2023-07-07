@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  functions = "netlify/functions"
+  functions = "functions"
   publish = "dist"
 
 [build.environment]
@@ -10,7 +10,7 @@
 
 [dev]
   command = "npm run dev"
-  functions = "netlify/functions"
+  functions = "functions"
   publish = "dist"
 
 [functions]
