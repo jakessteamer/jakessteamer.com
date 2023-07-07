@@ -69,7 +69,7 @@
     "googleapis-common": "^6.0.4",
     "nodemailer": "^6.9.3"
   },
-  "browserlist": [
+  "browserslist": [
     "last 1 version",
     "> 1%",
     "maintained node versions",
