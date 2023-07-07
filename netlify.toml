@@ -13,10 +13,3 @@
   functions = "functions"
   publish = "dist"
 
-[functions]
-  node_bundler = "esbuild"
-  external_node_modules = [
-    "googleapis",
-    "google-auth-library",
-    "nodemailer"
-  ]
