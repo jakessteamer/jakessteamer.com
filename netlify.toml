@@ -3,6 +3,11 @@
   functions = "netlify/functions"
   publish = "dist"
 
+[build.environment]
+  NODE_VERSION = "19.9.0"
+  NPM_VERSION = "9.6.3"
+
+
 [dev]
   command = "npm run dev"
   functions = "netlify/functions"
